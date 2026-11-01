@@ -1,6 +1,6 @@
 # VR Kanojo Mod Installer v1.0.0 readiness
 
-Final release identity and local files are prepared at the owner's explicit request. Application: VR Kanojo Mod Installer; version/tag: `1.0.0` / `v1.0.0`; title: VR Kanojo Mod Installer v1.0.0; maintainer: FeriousX. No GitHub publication was performed.
+[VR Kanojo Mod Installer v1.0.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0) is publicly released by the project owner as a full GitHub Release, not a pre-release. Version/tag: `1.0.0` / `v1.0.0`; maintainer: FeriousX. Publication does not expand the testing or qualification results below.
 
 The naming change is not a new compatibility certification. The EXE is **unsigned**. Independent testing of stock Windows 10/11 x64 and other Windows configurations remains **NOT VERIFIED**. The confirmed owner environment is Windows X-Lite Optimum (modified Windows 11 Pro x64), with working fresh installation, reinstallation, game launch and Desktop controls without separate Python. Those observations apply to the identical implementation retained in this packaging; the renamed/versioned EXE has focused packaging checks, not a new gameplay test.
 
@@ -13,4 +13,4 @@ The cleared runtime, all 80 embedded resource bytes, approved reduced payload, l
 - General upgrade/uninstallation is not a qualified workflow; visible finger animation is not verified by the Fist indicator.
 - Final naming does not promise future features or a mod-menu release date.
 
-Use CLEAN_WINDOWS_TESTING.md to record further independent tests. Review hashes, corresponding source and individual licenses before any redistribution. The owner handles commits, tag v1.0.0 and GitHub release creation; no Git command or .git modification was performed here. See FINAL_RELEASE_PACKAGING.md for the focused verification and artifact identity.
+Use CLEAN_WINDOWS_TESTING.md to record further independent tests. Review hashes, corresponding source and individual licenses before any redistribution. The owner completed tag v1.0.0 and GitHub release publication. The local packaging report remains a historical record of what occurred at build time; this documentation cleanup does not perform Git commands or alter .git. See FINAL_RELEASE_PACKAGING.md for the focused verification and artifact identity.

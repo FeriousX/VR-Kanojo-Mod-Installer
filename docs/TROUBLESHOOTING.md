@@ -30,8 +30,8 @@ Local non-root paths are required. UNC/network paths, symlinks and junctions are
 
 The current release EXE is **unsigned**, so Windows may display an unrecognized-app/unknown-publisher warning. That warning is not proof that a file is safe or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation).
 
-1. Verify that the download comes from [FeriousX/VR-Kanojo-Mod-Installer Releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), when the owner makes the release available, rather than an advertisement, mirror or forwarded attachment. Before public availability, use only the exact release file supplied by the owner.
-2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. This prepared release's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
+1. Verify that the download comes from [published v1.0.0 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0), rather than an advertisement, mirror or forwarded attachment.
+2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. The published release's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
 
    ```powershell
    Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0.exe'

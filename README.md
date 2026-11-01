@@ -25,7 +25,7 @@ The installer checks the selected directory, presents an exact file plan, asks f
 
 ## Download and install
 
-Download **VRK-Mod-Installer-v1.0.0.exe** and `SHA256SUMS.txt` from the owner's [Releases page](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases) when the owner publishes this release. No separate ZIP extraction, Python or Backend folder is needed to run the EXE. The corresponding source is supplied separately as `VRK-Mod-Installer-v1.0.0-Source.zip`. Verify the hash for that exact build; [artifact information](docs/RELEASE_ARTIFACTS.json) records this release. Local preparation does not itself publish a release.
+Download **VRK-Mod-Installer-v1.0.0.exe** and `SHA256SUMS.txt` from [published v1.0.0 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0). No separate ZIP extraction, Python or Backend folder is needed to run the EXE. The corresponding source is supplied separately as `VRK-Mod-Installer-v1.0.0-Source.zip`. Verify the hash for that exact build; [artifact information](docs/RELEASE_ARTIFACTS.json) records this release.
 
 1. Close the game and back up your game folder and user data. Use a separate writable copy for initial testing.
 2. Run the single EXE normally. Review the scrollable runtime conditions; Accept continues and Decline exits. Administrator privileges are not normally required.
@@ -70,4 +70,4 @@ Read the [detailed comparison](docs/ORIGINAL_HF_PATCH_COMPARISON.md) and [manual
 
 Project source is GPL-3.0; inherited files retain their original notices, including GPL-3.0-or-later where stated. Bundled components have separate licenses. [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES.md) and the [component audit](docs/license-audit.csv) explain those obligations. Runtime Windows conditions apply to Microsoft Distributable Code, not to the GPL application as a whole.
 
-[Build instructions](docs/BUILDING.md) document the official Python 3.14.10 runtime, pinned PyInstaller 6.22.3 and Inno Setup 7.1.1 toolchain. This source tree contains no compiled installer, plugin DLLs, game assets, credentials or recovery state. The binary and matching source ZIP are separate review artifacts. No future features or dates are promised by this release scope.
+[Build instructions](docs/BUILDING.md) document the official Python 3.14.10 runtime, pinned PyInstaller 6.22.3 and Inno Setup 7.1.1 toolchain. This source tree contains no compiled installer, plugin DLLs, game assets, credentials or recovery state. The published binary and corresponding source ZIP are separate release assets. No future features or dates are promised by this release scope.

@@ -26,4 +26,4 @@ Use `VRK-Mod-Installer-v1.0.0.exe` with its matching `SHA256SUMS.txt`, plus `VRK
 
 See README, installation/troubleshooting/recovery guides and original HF Patch comparison in the source package/repository. Never run original Play Without VR together with FeriousX Desktop. GPL source and separate component notices are supplied; preserve them when redistributing.
 
-Publication, tag `v1.0.0` and GitHub release are performed exclusively by the project owner. This local packaging step does not publish anything.
+The project owner published [VR Kanojo Mod Installer v1.0.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0) as a full GitHub Release (not a pre-release), under tag `v1.0.0`.

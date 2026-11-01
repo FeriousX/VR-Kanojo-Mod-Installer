@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "FINAL_V1_0_0_FILES_PREPARED",
+  "status": "PUBLISHED",
   "preview_version": "1.0.0",
   "licensing_cleared": true,
   "runtime_provenance_qualified": true,
@@ -29,5 +29,11 @@
   "publication_performed": false,
   "title": "VR Kanojo Mod Installer v1.0.0",
   "unsigned": true,
-  "independent_windows_compatibility": "INCOMPLETE"
+  "independent_windows_compatibility": "INCOMPLETE",
+  "published": true,
+  "release_url": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0",
+  "prerelease": false,
+  "draft": false,
+  "published_at": "2026-11-01T21:46:43Z",
+  "historical_packaging_flags_note": "public_release_approved and publication_performed retain their historical local-packaging values. They are not current GitHub publication or independent Windows qualification indicators. The project owner subsequently published the full release, recorded by published/release_url/prerelease."
 }
