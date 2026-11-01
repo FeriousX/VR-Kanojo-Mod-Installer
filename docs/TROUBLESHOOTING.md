@@ -28,18 +28,18 @@ Local non-root paths are required. UNC/network paths, symlinks and junctions are
 
 ## Windows SmartScreen or download warnings
 
-The current pre-release EXE is **unsigned**, so Windows may display an unrecognized-app/unknown-publisher warning. That warning is not proof that a file is safe or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation).
+The current release EXE is **unsigned**, so Windows may display an unrecognized-app/unknown-publisher warning. That warning is not proof that a file is safe or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation).
 
-1. Verify that the download comes from [FeriousX/VR-Kanojo-Mod-Installer Releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), when the owner makes the pre-release available, rather than an advertisement, mirror or forwarded attachment. Before public availability, use only the exact candidate supplied by the owner.
-2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. This prepared RC's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
+1. Verify that the download comes from [FeriousX/VR-Kanojo-Mod-Installer Releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), when the owner makes the release available, rather than an advertisement, mirror or forwarded attachment. Before public availability, use only the exact release file supplied by the owner.
+2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. This prepared release's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0-rc.1.exe'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0.exe'
    ```
 
 3. If the hash differs, the source is uncertain, or security software identifies a threat, do not run it; obtain the correct file or contact the maintainer. A matching hash verifies consistency with that reference, not universal safety.
 
-Do not disable SmartScreen/antivirus or change system security policy. Review the warning and verify the source before deciding whether to run any unsigned program. No signed-publisher identity is claimed for this RC.
+Do not disable SmartScreen/antivirus or change system security policy. Review the warning and verify the source before deciding whether to run any unsigned program. No signed-publisher identity is claimed for this release.
 
 ## Interrupted installation or uncertain result
 

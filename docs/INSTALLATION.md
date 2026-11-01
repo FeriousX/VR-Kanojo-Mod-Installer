@@ -1,6 +1,6 @@
 # Installation
 
-These instructions apply to v1.0.0-rc.1 and the approved reduced profile. Use `VRK-Mod-Installer-v1.0.0-rc.1.exe` with its matching checksum from the owner. This is a pre-release, not a final v1.0.0 stable release; the owner handles publication.
+These instructions apply to VR Kanojo Mod Installer v1.0.0 and the approved reduced profile. Use `VRK-Mod-Installer-v1.0.0.exe` and its matching checksum. This unsigned release has incomplete independent Windows compatibility testing; the confirmed owner environment is documented in the README. The owner manages GitHub publication.
 
 1. Close the game. Back up the game directory and user data; start with a writable disposable copy.
 2. Run the single EXE normally; Python and an adjacent Backend folder are not needed. Read the scrollable Windows runtime conditions. Accept explicitly to continue; Decline, Escape or closing that dialog must not authorize installation.

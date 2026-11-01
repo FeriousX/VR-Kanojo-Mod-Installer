@@ -1,6 +1,6 @@
 # Source provenance
 
-This is the corresponding source preparation for public pre-release v1.0.0-rc.1. No Git operations were performed. It retains the approved application/backend implementation and bounded license dialog, with only public RC metadata and wording changes to the packaging/UI source. Source-to-build-input checks compare those files against the retained packaging snapshot; the RC hash and embedded-resource inventory are recorded separately. Documentation/build-helper updates are not represented as a reproducible compiler rebuild.
+This is the corresponding source preparation for release v1.0.0. No Git operations were performed. It retains the approved application/backend implementation and bounded license dialog, with only release metadata and wording changes to the packaging/UI source. Source-to-build-input checks compare those files against the retained packaging snapshot; the release hash and embedded-resource inventory are recorded separately. Documentation/build-helper updates are not represented as a reproducible compiler rebuild.
 
 Original lineage: [ManlyMarco VR Kanojo HF Patch](https://github.com/ManlyMarco/VRK-HF_Patch), v1.1-era GPL source and retained author notices. The modernization reuses that lineage but not its historical game asset/helper binaries or destructive installation routines. FeriousX maintains the new installer and Desktop plugin.
 

@@ -1,6 +1,6 @@
 {
-  "artifact": "VRK-Mod-Installer-v1.0.0-rc.1.exe",
-  "artifact_sha256": "77BA8B48AFEA304D708DA2FE23C28827590BE3FF58DF4ECDE1C183C0475548C1",
+  "artifact": "VRK-Mod-Installer-v1.0.0.exe",
+  "artifact_sha256": "4ECD964F3F9CCFC4DF5184E497223488B0F477AD764FC34E790B4FD6B127826F",
   "resource_bundle": "81896c44bd1ee122",
   "resource_count": 80,
   "resources": [

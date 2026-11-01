@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "status": "PUBLIC_RC_PREPARED",
-  "preview_version": "1.0.0-rc.1",
+  "status": "FINAL_V1_0_0_FILES_PREPARED",
+  "preview_version": "1.0.0",
   "licensing_cleared": true,
   "runtime_provenance_qualified": true,
   "complete_corresponding_source": true,
   "clean_windows_10": "NOT VERIFIED",
   "clean_windows_11": "NOT VERIFIED",
   "release_candidate_built": true,
-  "milestone": "PUBLIC_RC1",
+  "milestone": "FINAL100",
   "essential_framework_licenses_collected": true,
   "desktop_corresponding_source_present": true,
   "initial_release_components": [
@@ -21,10 +21,13 @@
   "public_release_approved": false,
   "license_dialog": "bounded scrollable native form; current desktop verified",
   "dpi_matrix": "geometry passed; interactive six-mode verification pending",
-  "target_release": "1.0.0-rc.1",
+  "target_release": "1.0.0",
   "owner_manual_functionality": "APPROVED for corrected 8C.3A RC",
-  "final_binary_built": false,
-  "tag": "v1.0.0-rc.1",
-  "eligible_for_public_prerelease": true,
-  "publication_performed": false
+  "final_binary_built": true,
+  "tag": "v1.0.0",
+  "eligible_for_public_prerelease": false,
+  "publication_performed": false,
+  "title": "VR Kanojo Mod Installer v1.0.0",
+  "unsigned": true,
+  "independent_windows_compatibility": "INCOMPLETE"
 }

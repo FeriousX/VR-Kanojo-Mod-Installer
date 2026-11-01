@@ -1,6 +1,6 @@
 # Build instructions and source relationship
 
-The current candidate is v1.0.0-rc.1. It reuses the exact cleared Phase 8C.3A frozen backend/resources; the Inno packaging layer was rebuilt with public RC metadata and wording only. Its application/backend/wizard/build source is provided in this tree. No backend or installation behavior was changed. Source checksums and artifact hashes are supplied; bit-for-bit rebuilds are not claimed because build timestamps and packaging metadata can vary.
+The current release is v1.0.0. It reuses the exact cleared Phase 8C.3A frozen backend/resources; the Inno packaging layer was rebuilt with release metadata and wording only. Its application/backend/wizard/build source is provided in this tree. No backend or installation behavior was changed. Source checksums and artifact hashes are supplied; bit-for-bit rebuilds are not claimed because build timestamps and packaging metadata can vary.
 
 ## Qualified inputs
 
@@ -19,15 +19,15 @@ Use an existing trusted Python only to prepare the isolated build environment. T
 & $ExistingPython -B tools/prepare_official_runtime.py --archive cache/python-3.14.10-embed-amd64.zip --wheels cache/pyinstaller-6.22.3-wheels --destination cache/qualified-python
 $PythonExe = (Resolve-Path cache/qualified-python/python.exe).Path
 & $PythonExe -I -B tools/prepare_notice_inputs.py
-& $PythonExe -I -B tools/build_single_exe.py --milestone RC1 --python $PythonExe
-& tools/compile_single_exe.ps1 -Kind RC1
+& $PythonExe -I -B tools/build_single_exe.py --milestone FINAL100 --python $PythonExe
+& tools/compile_single_exe.ps1 -Kind FINAL100
 ```
 
 The preparation helper verifies the official archive and pinned wheel hashes, verifies PSF signatures and creates only an application-local build environment. It does not install Python system-wide or alter system PATH. Stock Windows PowerShell Security is imported by explicit path for signature verification. The build uses an explicit qualified interpreter and must exclude unrelated development-native DLL search paths; use Windows System32/Windows only in the build process's PATH and remove inherited PYTHONHOME/PYTHONPATH. The builder refuses existing output directories rather than overwriting evidence. `prepare_notice_inputs.py` likewise requires a fresh notice-input directory.
 
-The RC1 target emits `out/PublicReleaseCandidate/VRK-Mod-Installer-v1.0.0-rc.1.exe`, AppVersion/ProductVersion `1.0.0-rc.1` and numeric Windows file version `1.0.0.1`. The numeric file-version field cannot encode a semantic pre-release suffix; the product version and description explicitly identify the RC. Never present this file as the final stable `VRK-Mod-Installer-v1.0.0.exe`.
+The FINAL100 target emits `out/FinalRelease_v1.0.0/VRK-Mod-Installer-v1.0.0.exe`, AppVersion/ProductVersion `1.0.0` and numeric Windows file version `1.0.0.0`. Final product/release title is VR Kanojo Mod Installer v1.0.0; the owner's tag is `v1.0.0`.
 
-For the recorded public RC, Inno reused all 80 existing embedded resource bytes with a new source include, rather than needlessly recompiling the frozen Python backend. A complete from-source build uses the RC1 commands above and must independently qualify its resulting bytes; timestamp-dependent output is not claimed identical. The published source includes the current build target as well as the exact application source. The `PRIVATE_GAME` preprocessor flag, `private-gui` CLI command, profile keys and other legacy internal identifiers are retained for compatibility. They do not impose the removed single-copy enrollment restriction. Do not rename them or change state/transaction formats merely for branding.
+The recorded final packaging reused all 80 cleared backend/resource bytes and rebuilt only the Inno layer with final version and wording. A complete from-source build uses the commands above and independently qualifies its resulting bytes; timestamp-dependent output is not claimed identical. Internal legacy preprocessor flags, CLI/profile names and persistent state identifiers stay unchanged to preserve compatibility; they do not impose individual-copy enrollment. Do not rename those identifiers or transaction formats merely for branding.
 
 The wizard must embed the entire prepared backend, current notices and approved payload; do not ship or rely on a user-managed sidecar runtime. Persistent transaction state stays at `%LOCALAPPDATA%\FeriousX\VRKMI`, never in the temporary build/extraction directory.
 

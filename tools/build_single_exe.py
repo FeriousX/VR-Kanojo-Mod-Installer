@@ -5,8 +5,8 @@ W=Path(__file__).resolve().parents[1];sys.path.insert(0,str(W/'src'))
 from hf_payload.recovery import digest
 from hf_payload.validator import stable_hash
 from hf_payload.real_components import validate_catalog
-p=argparse.ArgumentParser();p.add_argument('--qualification',action='store_true');p.add_argument('--milestone',choices=('B81','B82','RC83','RC1'),default='RC1');p.add_argument('--python',required=True,help='Explicit qualified Python executable');a=p.parse_args()
-kind='Q8' if a.qualification else a.milestone;OUT=W/'out'/kind;REPORT=W/'out'/('public-rc1' if kind=='RC1' else ('phase8c3' if kind=='RC83' else ('phase8b2' if kind=='B82' else 'phase8b1')));BUILD=W/'build'/kind
+p=argparse.ArgumentParser();p.add_argument('--qualification',action='store_true');p.add_argument('--milestone',choices=('B81','B82','RC83','RC1','FINAL100'),default='FINAL100');p.add_argument('--python',required=True,help='Explicit qualified Python executable');a=p.parse_args()
+kind='Q8' if a.qualification else a.milestone;OUT=W/'out'/kind;REPORT=W/'out'/('final-v1.0.0' if kind=='FINAL100' else 'public-rc1' if kind=='RC1' else ('phase8c3' if kind=='RC83' else ('phase8b2' if kind=='B82' else 'phase8b1')));BUILD=W/'build'/kind
 OUT.mkdir(exist_ok=False);REPORT.mkdir(exist_ok=True);BUILD.mkdir(parents=True,exist_ok=True)
 policy=dict(schema=1,scope='compatible-original-game-v1',protected_roots=[],game_version=None);scope='FeriousX\\VRKMI'
 if a.qualification:

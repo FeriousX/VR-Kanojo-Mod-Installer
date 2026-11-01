@@ -26,5 +26,9 @@
   {
     "path": "Public RC1 metadata/packaging",
     "change": "AppVersion/ProductVersion 1.0.0-rc.1, numeric file version 1.0.0.1, public filename and wording; explicit RC1 build targets. All embedded resource bytes, backend code, protocol/state IDs, license text and UI design preserved."
+  },
+  {
+    "path": "Final v1.0.0 naming",
+    "change": "Owner-authorized final metadata/title/tag/filenames, matching source/build targets and documentation. Backend/resource bytes, protocols, license dialog and recovery remain unchanged; unsigned status and incomplete independent Windows tests disclosed."
   }
 ]

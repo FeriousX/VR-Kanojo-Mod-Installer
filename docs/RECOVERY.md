@@ -8,7 +8,7 @@ Closing the wizard does not intentionally terminate an active worker. Keep the d
 & "$env:LOCALAPPDATA\FeriousX\VRKMI\packages\<matching-bundle>\Recover.ps1" -Job '<64-character-job-ID>'
 ```
 
-The RC's runtime bundle is `81896c44bd1ee122`. Its helper verifies its pinned resource manifest and hashes before invoking recovery. Earlier transactions may need an earlier retained bundle. Respect local script policy. A verified matching cached `Backend/HFBackend.exe private-gui recover --job <job-ID>` is the existing native alternative if scripts are disallowed; obtain maintainer guidance if uncertain. Never weaken checks or delete journals to make a refusal disappear.
+The release's runtime bundle is `81896c44bd1ee122`. Its helper verifies its pinned resource manifest and hashes before invoking recovery. Earlier transactions may need an earlier retained bundle. Respect local script policy. A verified matching cached `Backend/HFBackend.exe private-gui recover --job <job-ID>` is the existing native alternative if scripts are disallowed; obtain maintainer guidance if uncertain. Never weaken checks or delete journals to make a refusal disappear.
 
 Recovery may report reconciled completion, rollback, conflict or uncertainty. A recovered failure is not a successful installation, and spent consent does not authorize another execution. Preserve user-modified files and error details; do not manually restore unrelated files or terminate unrelated processes.
 

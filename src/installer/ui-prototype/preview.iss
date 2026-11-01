@@ -14,15 +14,15 @@ AppName=VR Kanojo Mod Installer
 #else
 AppName=VR Kanojo Mod Installer
 #endif
-AppVersion=1.0.0-rc.1
+AppVersion=1.0.0
 AppPublisher=FeriousX
 AppPublisherURL=https://github.com/FeriousX/VR-Kanojo-Mod-Installer
-VersionInfoDescription=VR Kanojo Mod Installer v1.0.0-rc.1 (Pre-release)
+VersionInfoDescription=VR Kanojo Mod Installer v1.0.0
 VersionInfoProductName=VR Kanojo Mod Installer
 VersionInfoCompany=FeriousX
-VersionInfoVersion=1.0.0.1
-OutputBaseFilename=VRK-Mod-Installer-v1.0.0-rc.1
-OutputDir=..\..\..\out\PublicReleaseCandidate
+VersionInfoVersion=1.0.0.0
+OutputBaseFilename=VRK-Mod-Installer-v1.0.0
+OutputDir=..\..\..\out\FinalRelease_v1.0.0
 PrivilegesRequired=lowest
 CreateAppDir=no
 Uninstallable=no
@@ -47,7 +47,7 @@ WizardSizePercent=140,150
 Name: "en"; MessagesFile: "compiler:Default.isl"
 
 [Messages]
-WelcomeLabel1=VR Kanojo Mod Installer v1.0.0-rc.1
+WelcomeLabel1=VR Kanojo Mod Installer v1.0.0
 WelcomeLabel2=Pre-release for original VR Kanojo (2018). Review the selected folder and file plan before installation.
 ReadyLabel1=Review the selected installation plan before giving consent.
 ButtonInstall=&Start
@@ -129,7 +129,7 @@ begin
   LabelAt(Result, 84, 38, 10, Subtitle);
   Notice := LabelAt(Result, 0, 24, 9,
 #ifdef PRIVATE_GAME
-    'v1.0.0-rc.1  /  Maintained by FeriousX');
+    'v1.0.0  /  Maintained by FeriousX');
 #else
 #ifdef REAL_COMPONENTS
     'PRIVATE REAL-FILE TEST  /  NO GAME INSTALLATION');

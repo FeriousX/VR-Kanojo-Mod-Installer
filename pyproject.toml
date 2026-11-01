@@ -1,11 +1,11 @@
 [project]
 name = "vr-kanojo-mod-installer"
-version = "1.0.0rc1"
-description = "VR Kanojo Mod Installer source preparation — public binary release blocked"
+version = "1.0.0"
+description = "VR Kanojo Mod Installer v1.0.0 source"
 requires-python = ">=3.11,<3.15"
 dependencies = []
 
 [tool.vrk-mod-installer]
-application-version = "1.0.0-rc.1"
+application-version = "1.0.0"
 release-qualified = false
-notes = "Source-only RC preparation; final qualification pending. Runtime payloads and game files are not included."
+notes = "Source-only v1.0.0 preparation; independent Windows qualification incomplete. Runtime payloads and game files are not included."
