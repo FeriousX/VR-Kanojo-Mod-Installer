@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "catalog_digest": "dda357cc231c6368a2d617e710fd0ecff37d5dd1eb0051e37ebef3f2f1394dcc",
+  "approved_components": [
+    "bepinex",
+    "loader-config",
+    "vrkanojo-desktop"
+  ],
+  "scope": "Essential component documentary license/provenance review only. Not authenticated ownership, runtime clearance or installation consent.",
+  "staging_root": "payload"
+}

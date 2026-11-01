@@ -1,0 +1,325 @@
+{
+  "release": "https://github.com/BepInEx/BepInEx/releases/tag/v5.4.12",
+  "tag": "v5.4.12",
+  "asset": "BepInEx_x64_5.4.12.0.zip",
+  "asset_id": 40674160,
+  "publisher_digest": null,
+  "expected_sha256": "7f3c7914d922da4f9fa65ffeb9722f50a5959079e5b4acb3277727a3878c4377",
+  "actual_sha256": "7f3c7914d922da4f9fa65ffeb9722f50a5959079e5b4acb3277727a3878c4377",
+  "official_asset_matches": true,
+  "bytes": 618840,
+  "all_21_files_match": true,
+  "licenses": [
+    {
+      "repository": "NeighTools/UnityDoorstop",
+      "ref": "v3.4.0.0",
+      "status": "captured",
+      "license": "CC0-1.0",
+      "url": "https://github.com/NeighTools/UnityDoorstop/blob/v3.4.0.0/LICENSE",
+      "blob": "3bbbc1ee92562e6a2eebfc6a366f4309d06c7d54",
+      "sha256": "5537d4d10b76b81b6e8dfd8b644480a4b1efa332fbb0cdb61126c5be781ef7b4",
+      "file": "Doorstop-3.4.0.0-LICENSE.txt"
+    },
+    {
+      "repository": "BepInEx/BepInEx",
+      "ref": "v5.4.12",
+      "status": "captured",
+      "license": "MIT",
+      "url": "https://github.com/BepInEx/BepInEx/blob/v5.4.12/LICENSE",
+      "blob": "95d9ddeceb34ca0ec1cc794e13a3af0c18bd53f2",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933",
+      "file": "BepInEx-5.4.12-LICENSE.txt"
+    },
+    {
+      "repository": "BepInEx/HarmonyX",
+      "ref": "v2.5.1",
+      "status": "captured",
+      "license": "MIT",
+      "url": "https://github.com/BepInEx/HarmonyX/blob/v2.5.1/LICENSE",
+      "blob": "39e6760a10e8a0db8ea6410c1d929c565cc20c35",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36",
+      "file": "HarmonyX-2.5.1-LICENSE.txt"
+    },
+    {
+      "repository": "MonoMod/MonoMod",
+      "ref": "v21.07.08.03",
+      "status": "captured",
+      "license": "MIT",
+      "url": "https://github.com/MonoMod/MonoMod/blob/v21.07.08.03/LICENSE",
+      "blob": "c408559f06f29887251ff56b562424eabc6d9891",
+      "sha256": "0b64833222e3c6a426ad29362d26334619fe02eaf2b89ea9c37805521896c920",
+      "file": "MonoMod-21.7.8.3-LICENSE.txt"
+    },
+    {
+      "repository": "jbevain/cecil",
+      "ref": "0.10.4",
+      "status": "captured",
+      "license": "MIT",
+      "url": "https://github.com/jbevain/cecil/blob/0.10.4/LICENSE.txt",
+      "blob": "afd0ae6818ed67ef4fef7edeb7e9580b9ef27bf8",
+      "sha256": "13d58ecbed676511c0c4c4009bff107025e50007ff5e7901dc562700ec62509e",
+      "file": "Cecil-0.10.4-LICENSE.txt"
+    }
+  ],
+  "bepinex_source": {
+    "url": "https://api.github.com/repos/BepInEx/BepInEx/zipball/v5.4.12",
+    "sha256": "446d4a993aafb362992c44a8fe8f630ff4cae7848474bf8dd389643316a046fd",
+    "bytes": 432613,
+    "source_root": "BepInEx-BepInEx-5dce1f8",
+    "dependency_evidence": [
+      {
+        "path": ".gitmodules",
+        "lines": [
+          "[submodule \"submodules/BepInEx.Harmony\"]",
+          "path = submodules/BepInEx.Harmony",
+          "url = https://github.com/BepInEx/BepInEx.Harmony"
+        ]
+      },
+      {
+        "path": "BepInEx.Patcher/BepInEx.Patcher.csproj",
+        "lines": [
+          "<Reference Include=\"Mono.Cecil, Version=0.10.3.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.3\\lib\\net35\\Mono.Cecil.dll</HintPath>"
+        ]
+      },
+      {
+        "path": "BepInEx.Patcher/packages.config",
+        "lines": [
+          "<package id=\"Mono.Cecil\" version=\"0.10.3\" targetFramework=\"net35\" />"
+        ]
+      },
+      {
+        "path": "BepInEx.Preloader/BepInEx.Preloader.csproj",
+        "lines": [
+          "<Reference Include=\"0Harmony, Version=2.5.1.0, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\HarmonyX.2.5.1\\lib\\net35\\0Harmony.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Mdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Pdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Rocks.dll</HintPath>",
+          "<Reference Include=\"MonoMod.RuntimeDetour, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\MonoMod.RuntimeDetour.21.7.8.3\\lib\\net35\\MonoMod.RuntimeDetour.dll</HintPath>",
+          "<Reference Include=\"MonoMod.Utils, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\MonoMod.Utils.21.7.8.3\\lib\\net35\\MonoMod.Utils.dll</HintPath>",
+          "<Compile Include=\"RuntimeFixes\\HarmonyInteropFix.cs\" />",
+          "<ProjectReference Include=\"..\\submodules\\BepInEx.Harmony\\HarmonyXInterop\\HarmonyXInterop.csproj\">",
+          "<Name>HarmonyXInterop</Name>"
+        ]
+      },
+      {
+        "path": "BepInEx.Preloader/packages.config",
+        "lines": [
+          "<package id=\"HarmonyX\" version=\"2.5.1\" targetFramework=\"net35\" />",
+          "<package id=\"Mono.Cecil\" version=\"0.10.4\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.RuntimeDetour\" version=\"21.7.8.3\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.Utils\" version=\"21.7.8.3\" targetFramework=\"net35\" />"
+        ]
+      },
+      {
+        "path": "BepInEx/BepInEx.csproj",
+        "lines": [
+          "<Reference Include=\"0Harmony, Version=2.5.1.0, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\HarmonyX.2.5.1\\lib\\net35\\0Harmony.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Mdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Pdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Rocks.dll</HintPath>",
+          "<Reference Include=\"MonoMod.RuntimeDetour, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\MonoMod.RuntimeDetour.21.7.8.3\\lib\\net35\\MonoMod.RuntimeDetour.dll</HintPath>",
+          "<Reference Include=\"MonoMod.Utils, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\packages\\MonoMod.Utils.21.7.8.3\\lib\\net35\\MonoMod.Utils.dll</HintPath>",
+          "<Compile Include=\"Logging\\HarmonyLogSource.cs\" />",
+          "<ProjectReference Include=\"..\\submodules\\BepInEx.Harmony\\BepInEx.Harmony\\BepInEx.Harmony.csproj\">",
+          "<Name>BepInEx.Harmony</Name>"
+        ]
+      },
+      {
+        "path": "BepInEx/packages.config",
+        "lines": [
+          "<package id=\"HarmonyX\" version=\"2.5.1\" targetFramework=\"net35\" />",
+          "<package id=\"Mono.Cecil\" version=\"0.10.4\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.RuntimeDetour\" version=\"21.7.8.3\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.Utils\" version=\"21.7.8.3\" targetFramework=\"net35\" />"
+        ]
+      },
+      {
+        "path": "build.cake",
+        "lines": [
+          "const string DOORSTOP_VER_WIN = \"3.4.0.0\";",
+          "const string DOORSTOP_VER_NIX = \"1.5.1.0\";",
+          "const string DOORSTOP_DLL = \"winhttp.dll\";",
+          "Task(\"DownloadDoorstop\")",
+          "Information(\"Downloading Doorstop\");",
+          "var doorstopPath = Directory(\"./bin/doorstop\");",
+          "var doorstopX64Path = doorstopPath + File(\"doorstop_x64.zip\");",
+          "var doorstopX86Path = doorstopPath + File(\"doorstop_x86.zip\");",
+          "var doorstopLinuxPath = doorstopPath + File(\"doorstop_linux.zip\");",
+          "var doorstopMacPath = doorstopPath + File(\"doorstop_macos.zip\");",
+          "CreateDirectory(doorstopPath);",
+          "DownloadFile($\"https://github.com/NeighTools/UnityDoorstop/releases/download/v{DOORSTOP_VER_WIN}/Doorstop_x64_{DOORSTOP_VER_WIN}.zip\", doorstopX64Path);",
+          "DownloadFile($\"https://github.com/NeighTools/UnityDoorstop/releases/download/v{DOORSTOP_VER_WIN}/Doorstop_x86_{DOORSTOP_VER_WIN}.zip\", doorstopX86Path);",
+          "DownloadFile($\"https://github.com/NeighTools/UnityDoorstop.Unix/releases/download/v{DOORSTOP_VER_NIX}/doorstop_v{DOORSTOP_VER_NIX}_linux.zip\", doorstopLinuxPath);",
+          "DownloadFile($\"https://github.com/NeighTools/UnityDoorstop.Unix/releases/download/v{DOORSTOP_VER_NIX}/doorstop_v{DOORSTOP_VER_NIX}_macos.zip\", doorstopMacPath);",
+          "Information(\"Extracting Doorstop\");",
+          "ZipUncompress(doorstopX86Path, doorstopPath + Directory(\"x86\"));",
+          "ZipUncompress(doorstopX64Path, doorstopPath + Directory(\"x64\"));",
+          "ZipUncompress(doorstopLinuxPath, doorstopPath + Directory(\"nix\"));",
+          "ZipUncompress(doorstopMacPath, doorstopPath + Directory(\"nix\"));",
+          ".IsDependentOn(\"DownloadDoorstop\")",
+          "var doorstopPath = Directory(\"./bin/doorstop\");",
+          "void PackageBepin(string arch, string copyPattern, string doorstopConfigPattern, string libDir = null, bool ensureLf = false)",
+          "var doorstopTargetDir = distArchDir;",
+          "if(libDir != null) doorstopTargetDir += Directory(libDir);",
+          "var doorstopFiles = doorstopPath + Directory(arch) + File(copyPattern);",
+          "CreateDirectory(doorstopTargetDir);",
+          "CopyFiles($\"./doorstop/{doorstopConfigPattern}\", distArchDir);",
+          "ReplaceTextInFiles($\"{distArchDir}/{doorstopConfigPattern}\", \"\\r\\n\", \"\\n\");",
+          "CopyFiles(doorstopFiles, doorstopTargetDir);",
+          "PackageBepin(\"x86\", DOORSTOP_DLL, \"doorstop_config.ini\");",
+          "PackageBepin(\"x64\", DOORSTOP_DLL, \"doorstop_config.ini\");",
+          "PackageBepin(\"nix\", \"*.*\", \"run_bepinex.sh\", \"doorstop_libs\", true);",
+          "[\"description\"] = \"Hardpatcher for BepInEx. IMPORTANT: USE ONLY IF DOORSTOP DOES NOT WORK FOR SOME REASON!\""
+        ]
+      }
+    ]
+  },
+  "pyinstaller": {
+    "version": "6.22.3",
+    "wheel_sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b",
+    "member": "pyinstaller-6.22.3.dist-info/licenses/COPYING.txt",
+    "copying_sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64",
+    "matches_embedded_notice": true
+  },
+  "harmony_submodule": {
+    "commit": "928c8116e9352ae48ca8d998ff114bbdb0c400a7",
+    "url": "https://github.com/BepInEx/BepInEx.Harmony/tree/928c8116e9352ae48ca8d998ff114bbdb0c400a7",
+    "license": "MIT",
+    "license_url": "https://github.com/BepInEx/BepInEx.Harmony/blob/928c8116e9352ae48ca8d998ff114bbdb0c400a7/LICENSE",
+    "license_file": "BepInEx-Harmony-928c8116-LICENSE.txt",
+    "license_sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+    "source_sha256": "763b61227cb6dc0601896608759c36c97da87c79ed51047c71db0500eb934a0b",
+    "dependency_evidence": [
+      {
+        "path": "BepInEx.Harmony/BepInEx.Harmony.csproj",
+        "lines": [
+          "<RootNamespace>BepInEx.Harmony</RootNamespace>",
+          "<AssemblyName>BepInEx.Harmony</AssemblyName>",
+          "<DocumentationFile>bin\\Release\\BepInEx.Harmony.xml</DocumentationFile>",
+          "<DocumentationFile>bin\\Release\\BepInEx.Harmony.xml</DocumentationFile>",
+          "<Reference Include=\"0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>$(SolutionDir)\\packages\\HarmonyX.2.0.6\\lib\\net35\\0Harmony.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Mdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Pdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Rocks.dll</HintPath>",
+          "<Reference Include=\"MonoMod.RuntimeDetour, Version=20.5.21.5, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>$(SolutionDir)\\packages\\MonoMod.RuntimeDetour.20.5.21.5\\lib\\net35\\MonoMod.RuntimeDetour.dll</HintPath>",
+          "<Reference Include=\"MonoMod.Utils, Version=20.5.21.5, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>$(SolutionDir)\\packages\\MonoMod.Utils.20.5.21.5\\lib\\net35\\MonoMod.Utils.dll</HintPath>",
+          "<Compile Include=\"HarmonyExtensions.cs\" />",
+          "<Compile Include=\"HarmonyWrapper.cs\" />",
+          "<ProjectReference Include=\"..\\HarmonyX2Interop\\HarmonyX2Interop.csproj\">",
+          "<Name>HarmonyX2Interop</Name>",
+          "<Copy SourceFiles=\"$(TargetDir)0Harmony20.dll;$(TargetDir)BepInEx.Harmony.dll\""
+        ]
+      },
+      {
+        "path": "BepInEx.Harmony/packages.config",
+        "lines": [
+          "<package id=\"HarmonyX\" version=\"2.0.6\" targetFramework=\"net35\" />",
+          "<package id=\"Mono.Cecil\" version=\"0.10.4\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.RuntimeDetour\" version=\"20.5.21.5\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.Utils\" version=\"20.5.21.5\" targetFramework=\"net35\" />"
+        ]
+      },
+      {
+        "path": "HarmonyX2Interop/HarmonyX2Interop.csproj",
+        "lines": [
+          "<RootNamespace>HarmonyLib</RootNamespace>",
+          "<AssemblyName>0Harmony20</AssemblyName>",
+          "<Reference Include=\"Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Mdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Pdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Rocks.dll</HintPath>",
+          "<Reference Include=\"MonoMod.RuntimeDetour, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\..\\..\\packages\\MonoMod.RuntimeDetour.21.7.8.3\\lib\\net35\\MonoMod.RuntimeDetour.dll</HintPath>",
+          "<Reference Include=\"MonoMod.Utils, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\..\\..\\packages\\MonoMod.Utils.21.7.8.3\\lib\\net35\\MonoMod.Utils.dll</HintPath>",
+          "<Compile Include=\"Harmony.cs\" />",
+          "<Compile Include=\"HarmonyMethod.cs\" />",
+          "<ProjectReference Include=\"..\\HarmonyXInterop\\HarmonyXInterop.csproj\">",
+          "<Name>HarmonyXInterop</Name>"
+        ]
+      },
+      {
+        "path": "HarmonyX2Interop/packages.config",
+        "lines": [
+          "<package id=\"Mono.Cecil\" version=\"0.10.4\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.RuntimeDetour\" version=\"21.7.8.3\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.Utils\" version=\"21.7.8.3\" targetFramework=\"net35\" />"
+        ]
+      },
+      {
+        "path": "HarmonyXInterop/HarmonyXInterop.csproj",
+        "lines": [
+          "<RootNamespace>HarmonyXInterop</RootNamespace>",
+          "<AssemblyName>HarmonyXInterop</AssemblyName>",
+          "<Reference Include=\"0Harmony, Version=2.5.1.0, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\..\\..\\packages\\HarmonyX.2.5.1\\lib\\net35\\0Harmony.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Mdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Pdb.dll</HintPath>",
+          "<Reference Include=\"Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e\">",
+          "<HintPath>$(SolutionDir)\\packages\\Mono.Cecil.0.10.4\\lib\\net35\\Mono.Cecil.Rocks.dll</HintPath>",
+          "<Reference Include=\"MonoMod.RuntimeDetour, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\..\\..\\packages\\MonoMod.RuntimeDetour.21.7.8.3\\lib\\net35\\MonoMod.RuntimeDetour.dll</HintPath>",
+          "<Reference Include=\"MonoMod.Utils, Version=21.7.8.3, Culture=neutral, PublicKeyToken=null\">",
+          "<HintPath>..\\..\\..\\packages\\MonoMod.Utils.21.7.8.3\\lib\\net35\\MonoMod.Utils.dll</HintPath>",
+          "<Compile Include=\"HarmonyInterop.cs\" />"
+        ]
+      },
+      {
+        "path": "HarmonyXInterop/packages.config",
+        "lines": [
+          "<package id=\"HarmonyX\" version=\"2.5.1\" targetFramework=\"net35\" />",
+          "<package id=\"Mono.Cecil\" version=\"0.10.4\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.RuntimeDetour\" version=\"21.7.8.3\" targetFramework=\"net35\" />",
+          "<package id=\"MonoMod.Utils\" version=\"21.7.8.3\" targetFramework=\"net35\" />"
+        ]
+      }
+    ],
+    "embedded_legacy_harmony": []
+  },
+  "doorstop_source": {
+    "url": "https://api.github.com/repos/NeighTools/UnityDoorstop/zipball/v3.4.0.0",
+    "sha256": "4238cb57f07a702ce0d9d1e80cc6bf8e8705f9be3b221999696385f7585bb226",
+    "bytes": 130198,
+    "notices": [
+      {
+        "path": "LICENSE",
+        "text": "CC0 1.0 Universal\n\nStatement of Purpose\n\nThe laws of most jurisdictions throughout the world automatically confer\nexclusive Copyright and Related Rights (defined below) upon the creator and\nsubsequent owner(s) (each and all, an \"owner\") of an original work of\nauthorship and/or a database (each, a \"Work\").\n\nCertain owners wish to permanently relinquish those rights to a Work for the\npurpose of contributing to a commons of creative, cultural and scientific\nworks (\"Commons\") that the public can reliably and without fear of later\nclaims of infringement build upon, modify, incorporate in other works, reuse\nand redistribute as freely as possible in any form whatsoever and for any\npurposes, including without limitation commercial purposes. These owners may\ncontribute to the Commons to promote the ideal of a free culture and the\nfurther production of creative, cultural and scientific works, or to gain\nreputation or greater distribution for their Work in part through the use and\nefforts of others.\n\nFor these and/or other purposes and motivations, and without any expectation\nof additional consideration or compensation, the person associating CC0 with a\nWork (the \"Affirmer\"), to the extent that he or she is an owner of Copyright\nand Related Rights in the Work, voluntarily elects to apply CC0 to the Work\nand publicly distribute the Work under its terms, with knowledge of his or her\nCopyright and Related Rights in the Work and the meaning and intended legal\neffect of CC0 on those rights.\n\n1. Copyright and Related Rights. A Work made available under CC0 may be\nprotected by copyright and related or neighboring rights (\"Copyright and\nRelated Rights\"). Copyright and Related Rights include, but are not limited\nto, the following:\n\n  i. the right to reproduce, adapt, distribute, perform, display, communicate,\n  and translate a Work;\n\n  ii. moral rights retained by the original author(s) and/or performer(s);\n\n  iii. publicity and privacy rights pertaining to a person's image or likeness\n  depicted in a Work;\n\n  iv. rights protecting against unfair competition in regards to a Work,\n  subject to the limitations in paragraph 4(a), below;\n\n  v. rights protecting the extraction, dissemination, use and reuse of data in\n  a Work;\n\n  vi. database rights (such as those arising under Directive 96/9/EC of the\n  European Parliament and of the Council of 11 March 1996 on the legal\n  protection of databases, and under any national implementation thereof,\n  including any amended or successor version of such directive); and\n\n  vii. other similar, equivalent or corresponding rights throughout the world\n  based on applicable law or treaty, and any national implementations thereof.\n\n2. Waiver. To the greatest extent permitted by, but not in contravention of,\napplicable law, Affirmer hereby overtly, fully, permanently, irrevocably and\nunconditionally waives, abandons, and surrenders all of Affirmer's Copyright\nand Related Rights and associated claims and causes of action, whether now\nknown or unknown (including existing as well as future claims and causes of\naction), in the Work (i) in all territories worldwide, (ii) for the maximum\nduration provided by applicable law or treaty (including future time\nextensions), (iii) in any current or future medium and for any number of\ncopies, and (iv) for any purpose whatsoever, including without limitation\ncommercial, advertising or promotional purposes (the \"Waiver\"). Affirmer makes\nthe Waiver for the benefit of each member of the public at large and to the\ndetriment of Affirmer's heirs and successors, fully intending that such Waiver\nshall not be subject to revocation, rescission, cancellation, termination, or\nany other legal or equitable action to disrupt the quiet enjoyment of the Work\nby the public as contemplated by Affirmer's express Statement of Purpose.\n\n3. Public License Fallback. Should any part of the Waiver for any reason be\njudged legally invalid or ineffective under applicable law, then the Waiver\nshall be preserved to the maximum extent permitted taking into account\nAffirmer's express Statement of Purpose. In addition, to the extent the Waiver\nis so judged Affirmer hereby grants to each affected person a royalty-free,\nnon transferable, non sublicensable, non exclusive, irrevocable and\nunconditional license to exercise Affirmer's Copyright and Related Rights in\nthe Work (i) in all territories worldwide, (ii) for the maximum duration\nprovided by applicable law or treaty (including future time extensions), (iii)\nin any current or future medium and for any number of copies, and (iv) for any\npurpose whatsoever, including without limitation commercial, advertising or\npromotional purposes (the \"License\"). The License shall be deemed effective as\nof the date CC0 was applied by Affirmer to the Work. Should any part of the\nLicense for any reason be judged legally invalid or ineffective under\napplicable law, such partial invalidity or ineffectiveness shall not\ninvalidate the remainder of the License, and in such case Affirmer hereby\naffirms that he or she will not (i) exercise any of his or her remaining\nCopyright and Related Rights in the Work or (ii) assert any associated claims\nand causes of action with respect to the Work, in either case contrary to\nAffirmer's express Statement of Purpose.\n\n4. Limitations and Disclaimers.\n\n  a. No trademark or patent rights held by Affirmer are waived, abandoned,\n  surrendered, licensed or otherwise affected by this document.\n\n  b. Affirmer offers the Work as-is and makes no representations or warranties\n  of any kind concerning the Work, express, implied, statutory or otherwise,\n  including without limitation warranties of title, merchantability, fitness\n  for a particular purpose, non infringement, or the absence of latent or\n  other defects, accuracy, or the present or absence of errors, whether or not\n  discoverable, all to the greatest extent permissible under applicable law.\n\n  c. Affirmer disclaims responsibility for clearing rights of other persons\n  that may apply to the Work or any use thereof, including without limitation\n  any person's Copyright and Related Rights in the Work. Further, Affirmer\n  disclaims responsibility for obtaining any necessary consents, permissions\n  or other rights required for any use of the Work.\n\n  d. Affirmer understands and acknowledges that Creative Commons is not a\n  party to this document and has no duty or obligation with respect to this\n  CC0 or use of the Work.\n\nFor more information, please see\n<http://creativecommons.org/publicdomain/zero/1.0/>"
+      }
+    ],
+    "source_headers": [],
+    "submodules": []
+  }
+}

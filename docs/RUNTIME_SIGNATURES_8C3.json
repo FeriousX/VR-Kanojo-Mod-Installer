@@ -1,0 +1,30 @@
+[
+  {
+    "File": "python.exe",
+    "Status": "Valid",
+    "Signer": "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US",
+    "FileVersion": "3.14.10",
+    "SHA256": "D718435B892DB4AD5B547D12FEC61BE7BAA7FAF7A58D857EA58053BE24C7A000"
+  },
+  {
+    "File": "python314.dll",
+    "Status": "Valid",
+    "Signer": "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US",
+    "FileVersion": "3.14.10",
+    "SHA256": "D8A06CC6CA3348925EA29E343E1C5C5895FE0BB433FF913E1CEE44CAF358AA6A"
+  },
+  {
+    "File": "vcruntime140_1.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "FileVersion": "14.51.36247.0",
+    "SHA256": "A7146C08F89FE5B04541AB507CDB59FF7B44534D4BA3C668A426C6450A03434E"
+  },
+  {
+    "File": "vcruntime140.dll",
+    "Status": "Valid",
+    "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "FileVersion": "14.51.36247.0",
+    "SHA256": "D1F4225DF2CD877DBF130D5668A021DCE3F94118455FF5EC952061C30AFC9CE7"
+  }
+]

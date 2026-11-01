@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "source_attestation": "User supplied as official downloads; hashes rechecked locally, not vendor signatures",
+  "packages": [
+    {
+      "name": "BepInEx_x64_5.4.12.0.zip",
+      "size": 618840,
+      "sha256": "7f3c7914d922da4f9fa65ffeb9722f50a5959079e5b4acb3277727a3878c4377",
+      "files": [
+        {
+          "path": "changelog.txt",
+          "size": 864,
+          "sha256": "311edeec93a17327cb87cf8a7862383179e34ca77f3e16ab3290571e5179186a"
+        },
+        {
+          "path": "doorstop_config.ini",
+          "size": 891,
+          "sha256": "2255e7640434fdfccbfeb123a5f4fccb05032481b39c2ba822e905ccba58d20e"
+        },
+        {
+          "path": "winhttp.dll",
+          "size": 25088,
+          "sha256": "cf9dd372ca0ddbe01153502c49f8f756197bb260001792fe766f6c0242dc7fc0"
+        },
+        {
+          "path": "BepInEx/core/0Harmony.dll",
+          "size": 188416,
+          "sha256": "e6a6b007a3ffc66e85d55853f83599ae5355924f128e7f1b015d9a14f08e919c"
+        },
+        {
+          "path": "BepInEx/core/0Harmony.xml",
+          "size": 256871,
+          "sha256": "9648a747665ca564da965e6734600bfa6a69641ccc6a924d262646c361a31601"
+        },
+        {
+          "path": "BepInEx/core/0Harmony20.dll",
+          "size": 111616,
+          "sha256": "4fa9e51fc8358cd65e77db6474f2e99ff78b119947c5d326b300277268407b67"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.dll",
+          "size": 115200,
+          "sha256": "1fcab889e61d6375c27de36fb1bcf3bde592b880c68a7c6c414c7afcb12e641b"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.Harmony.dll",
+          "size": 5632,
+          "sha256": "d0739c4a13f369094cb164c205ee4cca5392bdd7241b9f242ee13f0d4c0b1856"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.Harmony.xml",
+          "size": 4056,
+          "sha256": "a04fedf08f7c81f5d01aba6f2840a7ffce50b79bbd24587d8dbe69ab73971d29"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.Preloader.dll",
+          "size": 41984,
+          "sha256": "26fa8186f570ce64cbff0fbf07cf2f8e333f86468a6a4d635d837c0b7ac0b996"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.Preloader.xml",
+          "size": 7972,
+          "sha256": "f62d6a5daeee5452b037b8ed46b4051a5dd38aeb6edd2d116be15e222b28c615"
+        },
+        {
+          "path": "BepInEx/core/BepInEx.xml",
+          "size": 85730,
+          "sha256": "ec13c1e7c4a9756c5c9c731b13be53518f21d99e81a51aaa58ab73ff42f984a1"
+        },
+        {
+          "path": "BepInEx/core/HarmonyXInterop.dll",
+          "size": 23552,
+          "sha256": "7e1b072dc80a82af96fd30f59c9a5a147c1e5c1086a3a8e7ae8ca6f2b16f981a"
+        },
+        {
+          "path": "BepInEx/core/Mono.Cecil.dll",
+          "size": 339456,
+          "sha256": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6"
+        },
+        {
+          "path": "BepInEx/core/Mono.Cecil.Mdb.dll",
+          "size": 43008,
+          "sha256": "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e"
+        },
+        {
+          "path": "BepInEx/core/Mono.Cecil.Pdb.dll",
+          "size": 86528,
+          "sha256": "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984"
+        },
+        {
+          "path": "BepInEx/core/Mono.Cecil.Rocks.dll",
+          "size": 27648,
+          "sha256": "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927"
+        },
+        {
+          "path": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "size": 102912,
+          "sha256": "20d0fd579beb1bb497dc8fd8c4cc1aa83a52c46ffee85f6e3198273f3c6098f0"
+        },
+        {
+          "path": "BepInEx/core/MonoMod.RuntimeDetour.xml",
+          "size": 9414,
+          "sha256": "54887808960d156550b37d602d08847607aa9e908d039f2765fb0b5e79394aa4"
+        },
+        {
+          "path": "BepInEx/core/MonoMod.Utils.dll",
+          "size": 183296,
+          "sha256": "d51df191db0f791b8638a76527c212ac57aea896434cc1c8b907e69b0fda4fed"
+        },
+        {
+          "path": "BepInEx/core/MonoMod.Utils.xml",
+          "size": 78799,
+          "sha256": "bf5f3a30377d0ae24459f2e44c9cf6c97b99cd1397e669446861125ae8b4d4d0"
+        }
+      ],
+      "component": "bepinex"
+    }
+  ]
+}

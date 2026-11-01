@@ -1,0 +1,1402 @@
+{
+  "schema_version": 1,
+  "profile": "real-component-preparation",
+  "runtime_required_components": [
+    "bepinex",
+    "loader-config"
+  ],
+  "release_scope": {
+    "description": "Initial public profile: BepInEx 5.4.12, loader settings and optional FeriousX Desktop 1.0.4 only. Native runtime clearance still blocked.",
+    "desktop_modes": [
+      "vrkanojo-desktop",
+      "neither"
+    ],
+    "excluded_components": [
+      "configuration-manager",
+      "credits",
+      "developer-runtime",
+      "doorstop-config",
+      "fps",
+      "full-save",
+      "game-repair",
+      "graphics",
+      "helper",
+      "launcher",
+      "message-center",
+      "mouse-config",
+      "mute",
+      "orphan-config",
+      "play-without-vr",
+      "resource-redirector",
+      "runtime-editor",
+      "script-loader",
+      "uncensor-loader",
+      "uncensor-pack"
+    ],
+    "external_assets": "Uncensor Loader is optional and includes no compatible model assets.",
+    "game_repair_necessity": "Repair payloads omitted. Owner-tested copies worked without bundled repairs; no general repair necessity claim.",
+    "historical_attribution": "Preserve all contributor credits and component licenses; historical full-patch readmes are references, not a claim of installed features.",
+    "id": "plugins-original-2018-initial-v1",
+    "included_components": [
+      "bepinex",
+      "loader-config",
+      "vrkanojo-desktop"
+    ],
+    "real_game_installation_enabled": false,
+    "required_components": [
+      "bepinex",
+      "loader-config"
+    ],
+    "schema_version": 1,
+    "target": "Original VR Kanojo (2018), general technical validation; exact game version unverified"
+  },
+  "components": [
+    {
+      "id": "helper",
+      "required": false,
+      "readiness": "BLOCKED",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco; ProcessWaiter: Marcin Szeniak/Klocman"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Embedded helper/dontcopy",
+      "license_evidence": [
+        "GPL-3.0-or-later source plus Apache-2.0 ProcessWaiter notices"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "launcher",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "HF Patch"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Common",
+      "license_evidence": [
+        "Provenance to confirm"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "credits",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "HF Patch/credited contributors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Common",
+      "license_evidence": [
+        "HF source GPL-3.0-or-later context; individual third-party notices separate"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "game-repair",
+      "required": false,
+      "readiness": "BLOCKED",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence.",
+        "Official update redistribution/source rights and restore versus hpatch partition unresolved; preserve original Data-folder spelling."
+      ],
+      "authors": [
+        "Game/Unity/Mono and bundled third-party authors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly",
+        "1.0.5079.40370",
+        "0.0.0.0",
+        "2.0.9.5",
+        "2.0.0.0",
+        "2.0.5.0",
+        "3.5.0.0",
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Patch (candidate)",
+      "license_evidence": [
+        "Mixed proprietary and third-party; not covered by HF GPL"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "doorstop-config",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "BepInEx/Doorstop"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx (candidate)",
+      "license_evidence": [
+        "Config provenance required"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "loader-config",
+      "required": true,
+      "readiness": "READY",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "permitted-with-obligations",
+        "scope": "Essential release source/license clearance; aggregate runtime gate remains BLOCKED."
+      },
+      "blockers": [],
+      "authors": [
+        "BepInEx/HF configuration authors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": true,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx",
+      "license_evidence": [
+        "Config provenance required"
+      ],
+      "runtime_files": [
+        {
+          "destination": "BepInEx/config/BepInEx.cfg",
+          "path": "BepInEx/config/BepInEx.cfg",
+          "plugin_attributes": [],
+          "sha256": "9b12b167d8a23b052e891688030232e93985201cf9653f8c588889ed45677ca2",
+          "size": 87,
+          "staged_source": "component-review/loader-config/BepInEx/config/BepInEx.cfg"
+        }
+      ],
+      "runtime_verification": "local-files-verified",
+      "historical_required": true
+    },
+    {
+      "id": "configuration-manager",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence.",
+        "v16.3 root LGPL-3.0/code-header GPL-3.0 scope unresolved.",
+        "BepInEx.BepIn4Patcher 1.0.0.0 is absent from the historical payload; SavedKeyboardShortcut inherits its legacy type. Modern F1 failure is NOT proven; exact environment qualification required."
+      ],
+      "authors": [
+        "MarC0/ManlyMarco, BepInEx contributors"
+      ],
+      "versions": [
+        "16.3.0.0",
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx\\ConfigurationManager",
+      "license_evidence": [
+        "v16.3 root LGPL-3.0 text; code headers GPL-3.0: clarify exact scope"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "message-center",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "BepInEx contributors"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx\\MessageCenter",
+      "license_evidence": [
+        "Utility upstream GPL-3.0 text; exact revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "developer-runtime",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "Mono/Unity distribution contributors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx\\Dev",
+      "license_evidence": [
+        "Exact modified runtime/license provenance required"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "mute",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "BepInEx contributors"
+      ],
+      "versions": [
+        "1.1.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Feature\\MuteInBackground",
+      "license_evidence": [
+        "Utility upstream GPL-3.0 text; exact revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "graphics",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "BepInEx/keelhauled"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Feature\\GraphicsSettings",
+      "license_evidence": [
+        "Upstream GPL-3.0 text; exact revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "mouse-config",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "play-without-vr"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco/config contributors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Feature\\PlayWithoutVR\\MouseConfig",
+      "license_evidence": [
+        "Configuration provenance pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "play-without-vr",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [
+        "vrkanojo-desktop"
+      ],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Feature\\PlayWithoutVR",
+      "license_evidence": [
+        "Upstream GPL-3.0 text; exact source revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "bepinex",
+      "required": true,
+      "readiness": "READY",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "permitted-with-obligations",
+        "scope": "Essential release source/license clearance; aggregate runtime gate remains BLOCKED."
+      },
+      "blockers": [],
+      "authors": [
+        "BepInEx/Bepis; component dependencies have separate authors"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly",
+        "2.5.1.0",
+        "2.0.0.0",
+        "5.4.12.0",
+        "1.0.0.0",
+        "0.10.4.0",
+        "21.7.8.3"
+      ],
+      "initial_release_included": true,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; BepInEx",
+      "license_evidence": [
+        "BepInEx v5.4.12 MIT; subdependencies separately licensed"
+      ],
+      "runtime_files": [
+        {
+          "destination": "changelog.txt",
+          "path": "changelog.txt",
+          "plugin_attributes": [],
+          "sha256": "311edeec93a17327cb87cf8a7862383179e34ca77f3e16ab3290571e5179186a",
+          "size": 864,
+          "staged_source": "component-review/bepinex/changelog.txt"
+        },
+        {
+          "destination": "doorstop_config.ini",
+          "path": "doorstop_config.ini",
+          "plugin_attributes": [],
+          "sha256": "2255e7640434fdfccbfeb123a5f4fccb05032481b39c2ba822e905ccba58d20e",
+          "size": 891,
+          "staged_source": "component-review/bepinex/doorstop_config.ini"
+        },
+        {
+          "assembly_metadata": {
+            "machine": "Amd64",
+            "native_or_unreadable": "Exception calling \"GetMetadataReader\" with \"1\" argument(s): \"PE image does not have metadata.\"",
+            "path": "payload\\component-review\\bepinex\\winhttp.dll"
+          },
+          "destination": "winhttp.dll",
+          "path": "winhttp.dll",
+          "plugin_attributes": [],
+          "sha256": "cf9dd372ca0ddbe01153502c49f8f756197bb260001792fe766f6c0242dc7fc0",
+          "size": 25088,
+          "staged_source": "component-review/bepinex/winhttp.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "0Harmony",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\0Harmony.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "MonoMod.RuntimeDetour",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "2.5.1.0"
+          },
+          "destination": "BepInEx/core/0Harmony.dll",
+          "path": "BepInEx/core/0Harmony.dll",
+          "plugin_attributes": [],
+          "sha256": "e6a6b007a3ffc66e85d55853f83599ae5355924f128e7f1b015d9a14f08e919c",
+          "size": 188416,
+          "staged_source": "component-review/bepinex/BepInEx/core/0Harmony.dll"
+        },
+        {
+          "destination": "BepInEx/core/0Harmony.xml",
+          "path": "BepInEx/core/0Harmony.xml",
+          "plugin_attributes": [],
+          "sha256": "9648a747665ca564da965e6734600bfa6a69641ccc6a924d262646c361a31601",
+          "size": 256871,
+          "staged_source": "component-review/bepinex/BepInEx/core/0Harmony.xml"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "0Harmony20",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\0Harmony20.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "MonoMod.RuntimeDetour",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "HarmonyXInterop",
+                "version": "1.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "2.0.0.0"
+          },
+          "destination": "BepInEx/core/0Harmony20.dll",
+          "path": "BepInEx/core/0Harmony20.dll",
+          "plugin_attributes": [],
+          "sha256": "4fa9e51fc8358cd65e77db6474f2e99ff78b119947c5d326b300277268407b67",
+          "size": 111616,
+          "staged_source": "component-review/bepinex/BepInEx/core/0Harmony20.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "BepInEx",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\BepInEx.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "UnityEngine",
+                "version": "0.0.0.0"
+              },
+              {
+                "name": "0Harmony",
+                "version": "2.5.1.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "5.4.12.0"
+          },
+          "destination": "BepInEx/core/BepInEx.dll",
+          "path": "BepInEx/core/BepInEx.dll",
+          "plugin_attributes": [],
+          "sha256": "1fcab889e61d6375c27de36fb1bcf3bde592b880c68a7c6c414c7afcb12e641b",
+          "size": 115200,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "BepInEx.Harmony",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\BepInEx.Harmony.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "0Harmony",
+                "version": "2.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "2.0.0.0"
+          },
+          "destination": "BepInEx/core/BepInEx.Harmony.dll",
+          "path": "BepInEx/core/BepInEx.Harmony.dll",
+          "plugin_attributes": [],
+          "sha256": "d0739c4a13f369094cb164c205ee4cca5392bdd7241b9f242ee13f0d4c0b1856",
+          "size": 5632,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.Harmony.dll"
+        },
+        {
+          "destination": "BepInEx/core/BepInEx.Harmony.xml",
+          "path": "BepInEx/core/BepInEx.Harmony.xml",
+          "plugin_attributes": [],
+          "sha256": "a04fedf08f7c81f5d01aba6f2840a7ffce50b79bbd24587d8dbe69ab73971d29",
+          "size": 4056,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.Harmony.xml"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "BepInEx.Preloader",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\BepInEx.Preloader.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "BepInEx",
+                "version": "5.4.12.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "0Harmony",
+                "version": "2.5.1.0"
+              },
+              {
+                "name": "HarmonyXInterop",
+                "version": "1.0.0.0"
+              },
+              {
+                "name": "MonoMod.RuntimeDetour",
+                "version": "21.7.8.3"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "5.4.12.0"
+          },
+          "destination": "BepInEx/core/BepInEx.Preloader.dll",
+          "path": "BepInEx/core/BepInEx.Preloader.dll",
+          "plugin_attributes": [],
+          "sha256": "26fa8186f570ce64cbff0fbf07cf2f8e333f86468a6a4d635d837c0b7ac0b996",
+          "size": 41984,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.Preloader.dll"
+        },
+        {
+          "destination": "BepInEx/core/BepInEx.Preloader.xml",
+          "path": "BepInEx/core/BepInEx.Preloader.xml",
+          "plugin_attributes": [],
+          "sha256": "f62d6a5daeee5452b037b8ed46b4051a5dd38aeb6edd2d116be15e222b28c615",
+          "size": 7972,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.Preloader.xml"
+        },
+        {
+          "destination": "BepInEx/core/BepInEx.xml",
+          "path": "BepInEx/core/BepInEx.xml",
+          "plugin_attributes": [],
+          "sha256": "ec13c1e7c4a9756c5c9c731b13be53518f21d99e81a51aaa58ab73ff42f984a1",
+          "size": 85730,
+          "staged_source": "component-review/bepinex/BepInEx/core/BepInEx.xml"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "HarmonyXInterop",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\HarmonyXInterop.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "0Harmony",
+                "version": "2.5.1.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "1.0.0.0"
+          },
+          "destination": "BepInEx/core/HarmonyXInterop.dll",
+          "path": "BepInEx/core/HarmonyXInterop.dll",
+          "plugin_attributes": [],
+          "sha256": "7e1b072dc80a82af96fd30f59c9a5a147c1e5c1086a3a8e7ae8ca6f2b16f981a",
+          "size": 23552,
+          "staged_source": "component-review/bepinex/BepInEx/core/HarmonyXInterop.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "Mono.Cecil",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\Mono.Cecil.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "0.10.4.0"
+          },
+          "destination": "BepInEx/core/Mono.Cecil.dll",
+          "path": "BepInEx/core/Mono.Cecil.dll",
+          "plugin_attributes": [],
+          "sha256": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6",
+          "size": 339456,
+          "staged_source": "component-review/bepinex/BepInEx/core/Mono.Cecil.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "Mono.Cecil.Mdb",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\Mono.Cecil.Mdb.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "0.10.4.0"
+          },
+          "destination": "BepInEx/core/Mono.Cecil.Mdb.dll",
+          "path": "BepInEx/core/Mono.Cecil.Mdb.dll",
+          "plugin_attributes": [],
+          "sha256": "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e",
+          "size": 43008,
+          "staged_source": "component-review/bepinex/BepInEx/core/Mono.Cecil.Mdb.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "Mono.Cecil.Pdb",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\Mono.Cecil.Pdb.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "0.10.4.0"
+          },
+          "destination": "BepInEx/core/Mono.Cecil.Pdb.dll",
+          "path": "BepInEx/core/Mono.Cecil.Pdb.dll",
+          "plugin_attributes": [],
+          "sha256": "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984",
+          "size": 86528,
+          "staged_source": "component-review/bepinex/BepInEx/core/Mono.Cecil.Pdb.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "Mono.Cecil.Rocks",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\Mono.Cecil.Rocks.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "0.10.4.0"
+          },
+          "destination": "BepInEx/core/Mono.Cecil.Rocks.dll",
+          "path": "BepInEx/core/Mono.Cecil.Rocks.dll",
+          "plugin_attributes": [],
+          "sha256": "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927",
+          "size": 27648,
+          "staged_source": "component-review/bepinex/BepInEx/core/Mono.Cecil.Rocks.dll"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "MonoMod.RuntimeDetour",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\MonoMod.RuntimeDetour.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "MonoMod.Utils",
+                "version": "21.7.8.3"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "21.7.8.3"
+          },
+          "destination": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "path": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "plugin_attributes": [],
+          "sha256": "20d0fd579beb1bb497dc8fd8c4cc1aa83a52c46ffee85f6e3198273f3c6098f0",
+          "size": 102912,
+          "staged_source": "component-review/bepinex/BepInEx/core/MonoMod.RuntimeDetour.dll"
+        },
+        {
+          "destination": "BepInEx/core/MonoMod.RuntimeDetour.xml",
+          "path": "BepInEx/core/MonoMod.RuntimeDetour.xml",
+          "plugin_attributes": [],
+          "sha256": "54887808960d156550b37d602d08847607aa9e908d039f2765fb0b5e79394aa4",
+          "size": 9414,
+          "staged_source": "component-review/bepinex/BepInEx/core/MonoMod.RuntimeDetour.xml"
+        },
+        {
+          "assembly_metadata": {
+            "assembly": "MonoMod.Utils",
+            "machine": "I386",
+            "path": "payload\\component-review\\bepinex\\BepInEx\\core\\MonoMod.Utils.dll",
+            "references": [
+              {
+                "name": "mscorlib",
+                "version": "2.0.0.0"
+              },
+              {
+                "name": "System.Core",
+                "version": "3.5.0.0"
+              },
+              {
+                "name": "Mono.Cecil",
+                "version": "0.10.4.0"
+              },
+              {
+                "name": "System",
+                "version": "2.0.0.0"
+              }
+            ],
+            "runtime": "v2.0.50727",
+            "version": "21.7.8.3"
+          },
+          "destination": "BepInEx/core/MonoMod.Utils.dll",
+          "path": "BepInEx/core/MonoMod.Utils.dll",
+          "plugin_attributes": [],
+          "sha256": "d51df191db0f791b8638a76527c212ac57aea896434cc1c8b907e69b0fda4fed",
+          "size": 183296,
+          "staged_source": "component-review/bepinex/BepInEx/core/MonoMod.Utils.dll"
+        },
+        {
+          "destination": "BepInEx/core/MonoMod.Utils.xml",
+          "path": "BepInEx/core/MonoMod.Utils.xml",
+          "plugin_attributes": [],
+          "sha256": "bf5f3a30377d0ae24459f2e44c9cf6c97b99cd1397e669446861125ae8b4d4d0",
+          "size": 78799,
+          "staged_source": "component-review/bepinex/BepInEx/core/MonoMod.Utils.xml"
+        }
+      ],
+      "runtime_verification": "local-files-verified",
+      "historical_required": true
+    },
+    {
+      "id": "fps",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "MarC0/ManlyMarco"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; MISC\\FPS",
+      "license_evidence": [
+        "Upstream Apache-2.0; exact revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "orphan-config",
+      "required": false,
+      "readiness": "BLOCKED",
+      "dependencies": [],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "Not established"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; Unresolved",
+      "license_evidence": [
+        "Not established"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "full-save",
+      "required": false,
+      "readiness": "BLOCKED",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco credited by Plugin Readme"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; MISC\\FullSave",
+      "license_evidence": [
+        "Save-file redistribution permission not established"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "runtime-editor",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco and contributors; merged compiler dependencies separate"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly",
+        "1.0.0.0",
+        "2.4.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; MISC\\Trainer",
+      "license_evidence": [
+        "Packaged GPL-3.0 text; embedded dependencies require accounting"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "script-loader",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "denikson/Geoffrey Horsington"
+      ],
+      "versions": [
+        "1.0.0.0",
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; MISC\\ScriptLoader",
+      "license_evidence": [
+        "Upstream MIT; ILRepack compiler mcs separately requires provenance"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "uncensor-loader",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "resource-redirector"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "ManlyMarco"
+      ],
+      "versions": [
+        "1.0.0.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; XUnityResourceRedirector\\Selector",
+      "license_evidence": [
+        "Upstream GPL-3.0 text; exact revision pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release.",
+      "external_asset_requirements": "Optional loader only. Compatible assets must be obtained and installed separately by the user; no model/asset collection is bundled."
+    },
+    {
+      "id": "resource-redirector",
+      "required": false,
+      "readiness": "NEEDS VERIFICATION",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "Bepis/bbepis/gravydevsupreme and contributors"
+      ],
+      "versions": [
+        "1.0.3.0",
+        "Not encoded / not a managed assembly",
+        "1.1.3.0"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; XUnityResourceRedirector",
+      "license_evidence": [
+        "Upstream MIT; exact release and component scope pending"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "uncensor-pack",
+      "required": false,
+      "readiness": "BLOCKED",
+      "dependencies": [
+        "uncensor-loader"
+      ],
+      "conflicts": [],
+      "provenance": {
+        "status": "historical-artifact-only"
+      },
+      "redistribution": {
+        "status": "not-cleared"
+      },
+      "blockers": [
+        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
+      ],
+      "authors": [
+        "Unknown original model author; Cyberbeing; Marco/ManlyMarco; ayyy7392064; Anon11/DAnon and others, per package"
+      ],
+      "versions": [
+        "Not encoded / not a managed assembly"
+      ],
+      "initial_release_included": false,
+      "files": [],
+      "source": "Original HF Patch v1.1 extracted evidence; XUnityResourceRedirector\\Selector\\Pack (candidate)",
+      "license_evidence": [
+        "No complete asset redistribution grant found"
+      ],
+      "runtime_files": [],
+      "historical_required": false,
+      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+    },
+    {
+      "id": "vrkanojo-desktop",
+      "required": false,
+      "readiness": "READY",
+      "dependencies": [
+        "bepinex"
+      ],
+      "conflicts": [
+        "play-without-vr"
+      ],
+      "provenance": {
+        "asset_digest": "sha256:7542469db0c4e7fea5c44aab64aaa19b3453651ae2bcf53ccc076fbb6bde0e92",
+        "asset_url": "Private local evidence omitted; see source audit.",
+        "source_commit": "a4e49c3e01c2d98b68d9ecab36dba7e3246688dd",
+        "status": "verified-official-release"
+      },
+      "redistribution": {
+        "status": "permitted-with-obligations",
+        "scope": "Essential release source/license clearance; aggregate runtime gate remains BLOCKED."
+      },
+      "blockers": [],
+      "authors": [
+        "FeriousX/Ferious",
+        "ManlyMarco (original VRK_PlayWithoutVR)"
+      ],
+      "versions": [
+        "1.0.4"
+      ],
+      "initial_release_included": true,
+      "files": [],
+      "source": "Private local evidence omitted; see source audit.",
+      "license_evidence": [
+        "GPL-3.0; captured root LICENSE and corresponding source/credits"
+      ],
+      "runtime_files": [
+        {
+          "destination": "BepInEx/plugins/VRKanojoDesktop.dll",
+          "id": "desktop-1",
+          "plugin_attributes": [],
+          "sha256": "7542469db0c4e7fea5c44aab64aaa19b3453651ae2bcf53ccc076fbb6bde0e92",
+          "size": 56832,
+          "staged_source": "real-components/vrkanojo-desktop/BepInEx/plugins/VRKanojoDesktop.dll"
+        },
+        {
+          "destination": "HF_Patch_Notices/VRKanojoDesktop/LICENSE",
+          "id": "desktop-2",
+          "plugin_attributes": [],
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "size": 35149,
+          "staged_source": "real-components/vrkanojo-desktop/HF_Patch_Notices/VRKanojoDesktop/LICENSE"
+        },
+        {
+          "destination": "HF_Patch_Notices/VRKanojoDesktop/README.md",
+          "id": "desktop-3",
+          "plugin_attributes": [],
+          "sha256": "ccbcfedf31a0eff67211e90a90356977153a259458aa9ec27faa7bcf35949ab4",
+          "size": 11568,
+          "staged_source": "real-components/vrkanojo-desktop/HF_Patch_Notices/VRKanojoDesktop/README.md"
+        },
+        {
+          "destination": "HF_Patch_Notices/VRKanojoDesktop/CHANGELOG.md",
+          "id": "desktop-4",
+          "plugin_attributes": [],
+          "sha256": "6ec12478292bb3c8b59139967ae059cc1af315d54219548dd6e67477eb598643",
+          "size": 2211,
+          "staged_source": "real-components/vrkanojo-desktop/HF_Patch_Notices/VRKanojoDesktop/CHANGELOG.md"
+        },
+        {
+          "destination": "HF_Patch_Notices/VRKanojoDesktop/CorrespondingSource.zip",
+          "id": "desktop-5",
+          "plugin_attributes": [],
+          "sha256": "09bf8a4b303f4afdd75fcc10fd84ff8b01ae57bcb0390edc9c419c6e1cbcb239",
+          "size": 60060,
+          "staged_source": "real-components/vrkanojo-desktop/HF_Patch_Notices/VRKanojoDesktop/CorrespondingSource.zip"
+        }
+      ],
+      "runtime_verification": "local-files-verified",
+      "historical_required": false
+    }
+  ]
+}

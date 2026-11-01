@@ -1,0 +1,249 @@
+[
+  {
+    "id": "bepinex",
+    "repository": "BepInEx/BepInEx",
+    "ref": "v5.4.12",
+    "url": "https://api.github.com/repos/BepInEx/BepInEx/license?ref=v5.4.12",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "95d9ddeceb34ca0ec1cc794e13a3af0c18bd53f2",
+    "html_url": "https://github.com/BepInEx/BepInEx/blob/v5.4.12/LICENSE",
+    "path": "third_party/licenses/bepinex-LICENSE.txt",
+    "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933",
+    "bytes": 1062
+  },
+  {
+    "id": "utility",
+    "repository": "BepInEx/BepInEx.Utility",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/BepInEx/BepInEx.Utility/license",
+    "status": "captured",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+    "html_url": "https://github.com/BepInEx/BepInEx.Utility/blob/master/LICENSE",
+    "path": "third_party/licenses/utility-LICENSE.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149
+  },
+  {
+    "id": "vrk-plugins",
+    "repository": "ManlyMarco/VRKanojo_Plugins",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/ManlyMarco/VRKanojo_Plugins/license",
+    "status": "captured",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+    "html_url": "https://github.com/ManlyMarco/VRKanojo_Plugins/blob/master/LICENSE",
+    "path": "third_party/licenses/vrk-plugins-LICENSE.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149
+  },
+  {
+    "id": "script-loader",
+    "repository": "BepInEx/BepInEx.ScriptLoader",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/BepInEx/BepInEx.ScriptLoader/license",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "04e7d2c200398ed5c12d3550f89f830cf40c6896",
+    "html_url": "https://github.com/BepInEx/BepInEx.ScriptLoader/blob/master/LICENSE",
+    "path": "third_party/licenses/script-loader-LICENSE.txt",
+    "sha256": "c90dbdfa828f1f33f285ab08e80e83a023a9c729d337ba727f5f3925bdb05666",
+    "bytes": 1075
+  },
+  {
+    "id": "graphics",
+    "repository": "BepInEx/BepInEx.GraphicsSettings",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/BepInEx/BepInEx.GraphicsSettings/license",
+    "status": "captured",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+    "html_url": "https://github.com/BepInEx/BepInEx.GraphicsSettings/blob/master/LICENSE",
+    "path": "third_party/licenses/graphics-LICENSE.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149
+  },
+  {
+    "id": "fps",
+    "repository": "ManlyMarco/FPSCounter",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/ManlyMarco/FPSCounter/license",
+    "status": "captured",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "html_url": "https://github.com/ManlyMarco/FPSCounter/blob/master/LICENSE",
+    "path": "third_party/licenses/fps-LICENSE.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  {
+    "id": "runtime-editor",
+    "repository": "ManlyMarco/RuntimeUnityEditor",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/ManlyMarco/RuntimeUnityEditor/license",
+    "status": "captured",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+    "html_url": "https://github.com/ManlyMarco/RuntimeUnityEditor/blob/master/LICENSE",
+    "path": "third_party/licenses/runtime-editor-LICENSE.txt",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "bytes": 35149
+  },
+  {
+    "id": "xunity",
+    "repository": "bbepis/XUnity.AutoTranslator",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/bbepis/XUnity.AutoTranslator/license",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "95d9ddeceb34ca0ec1cc794e13a3af0c18bd53f2",
+    "html_url": "https://github.com/bbepis/XUnity.AutoTranslator/blob/master/LICENSE",
+    "path": "third_party/licenses/xunity-LICENSE.txt",
+    "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933",
+    "bytes": 1062
+  },
+  {
+    "id": "harmonyx",
+    "repository": "BepInEx/HarmonyX",
+    "ref": "v2.5.1",
+    "url": "https://api.github.com/repos/BepInEx/HarmonyX/license?ref=v2.5.1",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "39e6760a10e8a0db8ea6410c1d929c565cc20c35",
+    "html_url": "https://github.com/BepInEx/HarmonyX/blob/v2.5.1/LICENSE",
+    "path": "third_party/licenses/harmonyx-LICENSE.txt",
+    "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36",
+    "bytes": 1063
+  },
+  {
+    "id": "harmony",
+    "repository": "pardeike/Harmony",
+    "ref": "v2.0.0.8",
+    "url": "https://api.github.com/repos/pardeike/Harmony/license?ref=v2.0.0.8",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "655c71c589f7ca589c892e9e5556bee006a6c566",
+    "html_url": "https://github.com/pardeike/Harmony/blob/v2.0.0.8/LICENSE",
+    "path": "third_party/licenses/harmony-LICENSE.txt",
+    "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d",
+    "bytes": 1073
+  },
+  {
+    "id": "cecil",
+    "repository": "jbevain/cecil",
+    "ref": "0.10.4",
+    "url": "https://api.github.com/repos/jbevain/cecil/license?ref=0.10.4",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "afd0ae6818ed67ef4fef7edeb7e9580b9ef27bf8",
+    "html_url": "https://github.com/jbevain/cecil/blob/0.10.4/LICENSE.txt",
+    "path": "third_party/licenses/cecil-LICENSE.txt",
+    "sha256": "13d58ecbed676511c0c4c4009bff107025e50007ff5e7901dc562700ec62509e",
+    "bytes": 1098
+  },
+  {
+    "id": "monomod",
+    "repository": "MonoMod/MonoMod",
+    "ref": "v21.07.08.03",
+    "url": "https://api.github.com/repos/MonoMod/MonoMod/license?ref=v21.07.08.03",
+    "status": "captured",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "blob_sha": "c408559f06f29887251ff56b562424eabc6d9891",
+    "html_url": "https://github.com/MonoMod/MonoMod/blob/v21.07.08.03/LICENSE",
+    "path": "third_party/licenses/monomod-LICENSE.txt",
+    "sha256": "0b64833222e3c6a426ad29362d26334619fe02eaf2b89ea9c37805521896c920",
+    "bytes": 1080
+  },
+  {
+    "id": "doorstop",
+    "repository": "NeighTools/UnityDoorstop",
+    "ref": "default branch; NOT pinned to distributed binary",
+    "url": "https://api.github.com/repos/NeighTools/UnityDoorstop/license",
+    "status": "captured",
+    "license": {
+      "key": "lgpl-2.1",
+      "name": "GNU Lesser General Public License v2.1",
+      "spdx_id": "LGPL-2.1",
+      "url": "https://api.github.com/licenses/lgpl-2.1",
+      "node_id": "MDc6TGljZW5zZTEx"
+    },
+    "blob_sha": "8000a6faacf471c537530805ab29523c7732e11a",
+    "html_url": "https://github.com/NeighTools/UnityDoorstop/blob/master/LICENSE",
+    "path": "third_party/licenses/doorstop-LICENSE.txt",
+    "sha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+    "bytes": 26526
+  }
+]

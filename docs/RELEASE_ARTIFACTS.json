@@ -1,0 +1,11 @@
+{
+  "target_release": "1.0.0",
+  "status": "RC_RETAINED",
+  "exe_name": "VRK-Mod-Installer-v1.0.0-rc.8C3A-Private.exe",
+  "exe_sha256": "EAF655F8183941F957965ABE190E2012CB0634181F8B7CF849EB9512C42EB014",
+  "exe_bytes": 10921081,
+  "clean_windows_10": "NOT VERIFIED",
+  "clean_windows_11": "NOT VERIFIED",
+  "owner_manual_tests": "Confirmed for corrected Phase 8C.3A RC: license UI, installer navigation, fresh installation, reinstallation, game launch and Desktop controls",
+  "published": false
+}

@@ -1,0 +1,45 @@
+{
+  "description": "Initial public profile: BepInEx 5.4.12, loader settings and optional FeriousX Desktop 1.0.4 only. Native runtime clearance still blocked.",
+  "desktop_modes": [
+    "vrkanojo-desktop",
+    "neither"
+  ],
+  "excluded_components": [
+    "configuration-manager",
+    "credits",
+    "developer-runtime",
+    "doorstop-config",
+    "fps",
+    "full-save",
+    "game-repair",
+    "graphics",
+    "helper",
+    "launcher",
+    "message-center",
+    "mouse-config",
+    "mute",
+    "orphan-config",
+    "play-without-vr",
+    "resource-redirector",
+    "runtime-editor",
+    "script-loader",
+    "uncensor-loader",
+    "uncensor-pack"
+  ],
+  "external_assets": "Uncensor Loader is optional and includes no compatible model assets.",
+  "game_repair_necessity": "Repair payloads omitted. Owner-tested copies worked without bundled repairs; no general repair necessity claim.",
+  "historical_attribution": "Preserve all contributor credits and component licenses; historical full-patch readmes are references, not a claim of installed features.",
+  "id": "plugins-original-2018-initial-v1",
+  "included_components": [
+    "bepinex",
+    "loader-config",
+    "vrkanojo-desktop"
+  ],
+  "real_game_installation_enabled": false,
+  "required_components": [
+    "bepinex",
+    "loader-config"
+  ],
+  "schema_version": 1,
+  "target": "Original VR Kanojo (2018), general technical validation; exact game version unverified"
+}

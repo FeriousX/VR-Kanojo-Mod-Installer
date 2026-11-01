@@ -1,0 +1,26 @@
+[
+  {
+    "path": "src/installer/ui-prototype/preview.iss",
+    "change": "Inactive nonportable branch: remove private development paths; no development Python fallback shipped. Portable build branch unchanged."
+  },
+  {
+    "path": "src/hf_payload/runtime_paths.py",
+    "change": "Error-message example uses generic short path instead of maintainer home."
+  },
+  {
+    "path": "manifests/",
+    "change": "Historical game inventories/private target IDs removed; runtime hashes retained; source-only review digest generated without distribution approval."
+  },
+  {
+    "path": "Phase 8C.1 essential profile",
+    "change": "Restore existing runtime_verification metadata for retained inputs; exclude nine optional mappings/components; disable unavailable source-UI choices without changing engine; collect exact notices and authored config templates. No new installer compiled."
+  },
+  {
+    "path": "Phase 8C.3 runtime/packaging",
+    "change": "Official CPython 3.14.10 instead of development 3.12.14; explicit build interpreter and RC83 target; exact runtime notices and required Windows-only acknowledgement before backend startup; RC version metadata. No backend transaction logic, plugin bytes or seven-page layout changes."
+  },
+  {
+    "path": "Phase 8D documentation/source packaging",
+    "change": "Current user documentation replaces stale release-hold summaries; public export omits old private audit reports/obsolete runtime references; pyproject and documentary release-status updated for RC identity. Application/backend/wizard/build code unchanged from prepared RC source. No new mod-menu feature or promise."
+  }
+]

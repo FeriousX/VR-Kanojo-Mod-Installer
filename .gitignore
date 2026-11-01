@@ -1,0 +1,26 @@
+# Never add installers, game inputs, local state, credentials or build outputs.
+/payload/
+/cache/
+/build/
+/out/
+/references/
+/backups/
+/fixtures/
+/src/installer/legacy-reference/
+**/__pycache__/
+*.py[cod]
+*.dll
+*.exe
+*.pdb
+*.zip
+*.7z
+*.unity3d
+*.assets
+*.dat
+*.log
+*.dpapi
+*.pfx
+*.key
+*.pem
+.env*
+/secrets/

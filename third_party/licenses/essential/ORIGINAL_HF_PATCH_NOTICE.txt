@@ -1,0 +1,5 @@
+Original VR Kanojo HF Patch v1.1
+Copyright (C) 2020 ManlyMarco
+Original source: https://github.com/ManlyMarco/VRK-HF_Patch
+GNU GPL version 3 or (at your option) any later version; see project GPL text.
+Independently maintained modifications by FeriousX.
