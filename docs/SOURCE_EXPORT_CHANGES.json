@@ -22,5 +22,9 @@
   {
     "path": "Phase 8D documentation/source packaging",
     "change": "Current user documentation replaces stale release-hold summaries; public export omits old private audit reports/obsolete runtime references; pyproject and documentary release-status updated for RC identity. Application/backend/wizard/build code unchanged from prepared RC source. No new mod-menu feature or promise."
+  },
+  {
+    "path": "Public RC1 metadata/packaging",
+    "change": "AppVersion/ProductVersion 1.0.0-rc.1, numeric file version 1.0.0.1, public filename and wording; explicit RC1 build targets. All embedded resource bytes, backend code, protocol/state IDs, license text and UI design preserved."
   }
 ]

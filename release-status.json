@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "status": "RC_RETAINED_PENDING_CLEAN_WINDOWS",
-  "preview_version": "1.0.0-rc.8C3",
+  "status": "PUBLIC_RC_PREPARED",
+  "preview_version": "1.0.0-rc.1",
   "licensing_cleared": true,
   "runtime_provenance_qualified": true,
   "complete_corresponding_source": true,
   "clean_windows_10": "NOT VERIFIED",
   "clean_windows_11": "NOT VERIFIED",
   "release_candidate_built": true,
-  "milestone": "8D",
+  "milestone": "PUBLIC_RC1",
   "essential_framework_licenses_collected": true,
   "desktop_corresponding_source_present": true,
   "initial_release_components": [
@@ -21,7 +21,10 @@
   "public_release_approved": false,
   "license_dialog": "bounded scrollable native form; current desktop verified",
   "dpi_matrix": "geometry passed; interactive six-mode verification pending",
-  "target_release": "1.0.0",
+  "target_release": "1.0.0-rc.1",
   "owner_manual_functionality": "APPROVED for corrected 8C.3A RC",
-  "final_binary_built": false
+  "final_binary_built": false,
+  "tag": "v1.0.0-rc.1",
+  "eligible_for_public_prerelease": true,
+  "publication_performed": false
 }

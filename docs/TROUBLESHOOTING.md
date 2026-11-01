@@ -30,11 +30,11 @@ Local non-root paths are required. UNC/network paths, symlinks and junctions are
 
 The current pre-release EXE is **unsigned**, so Windows may display an unrecognized-app/unknown-publisher warning. That warning is not proof that a file is safe or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation).
 
-1. Verify that the download comes from [FeriousX/VR-Kanojo-Mod-Installer Releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), when the owner makes the pre-release available, rather than an advertisement, mirror or forwarded attachment. For a private test build, use the exact file supplied by the owner.
-2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. The privately prepared RC's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
+1. Verify that the download comes from [FeriousX/VR-Kanojo-Mod-Installer Releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), when the owner makes the pre-release available, rather than an advertisement, mirror or forwarded attachment. Before public availability, use only the exact candidate supplied by the owner.
+2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. This prepared RC's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0-rc.8C3A-Private.exe'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0-rc.1.exe'
    ```
 
 3. If the hash differs, the source is uncertain, or security software identifies a threat, do not run it; obtain the correct file or contact the maintainer. A matching hash verifies consistency with that reference, not universal safety.

@@ -1,18 +1,29 @@
-# VR Kanojo Mod Installer v1.0.0 â€” prepared release notes
+# VR Kanojo Mod Installer v1.0.0-rc.1
 
-**Draft; current artifact remains an RC. No GitHub release has been created.**
+**Pre-release** maintained by **FeriousX** for original VR Kanojo (2018), owner-tested with v1.31. VR-Kanojo (2025) is unsupported. Independent modernization based on ManlyMarco's GPL-licensed HF Patch installer; not an official game update or a full replacement for the historical HF Patch.
 
-Independent plugin-focused installer maintained by FeriousX, based on ManlyMarco's original GPL-licensed VR Kanojo HF Patch. For original VR Kanojo (2018); owner-tested with v1.31. VR-Kanojo (2025) is unsupported.
+## Included
 
-- Single EXE, with no separate Python or Backend-folder requirement.
-- BepInEx 5.4.12 x64 and required loader/dependencies.
-- Optional VR Kanojo Desktop v1.0.4 with 6-meter virtual-hand reach, or neither.
-- Technical target validation, reviewed file plan and explicit consent.
-- Checked ownership/hashes, compatible configuration preservation, verified backups and persistent transaction/recovery records.
-- Scrollable runtime conditions with visible Accept/Decline controls.
+- One self-contained Windows x64 EXE; no separately installed Python or user-managed Backend folder.
+- BepInEx 5.4.12 x64, required dependencies and game-specific loader settings.
+- Optional FeriousX VR Kanojo Desktop v1.0.4, with up to 6 meters of hand reach, or neither.
+- Reviewed file plans and explicit consent, hash/ownership checks, configuration preservation, verified backups and persistent recovery.
+- Complete scrollable runtime conditions requiring explicit acceptance before continuing.
 
-Does not bundle the historical repair/update payload, model collections, replacement saves, optional utilities/developer plugins, or original Play Without VR. See the [comparison](docs/ORIGINAL_HF_PATCH_COMPARISON.md) and [manual mod guide](docs/MANUAL_MOD_INSTALLATION.md).
+This RC updates version metadata and public release wording from the manually tested build. Backend, plugins, approved payload, license text, seven-page design and recovery behavior are unchanged.
 
-The owner confirmed corrected license UI, GUI navigation, fresh installation, reinstallation, game launch and Desktop controls. Clean Windows 10/11 remains NOT VERIFIED. Current RC is unsigned; full six-setting interactive DPI testing remains unverified. The Fist setting does not establish working visible finger animation. General upgrade/uninstall and power-loss guarantees are not claimed.
+## Compatibility and limits
 
-Credits: ManlyMarco and original contributors; FeriousX; BepInEx, Harmony/MonoMod/Cecil, Doorstop, Python/native-library, PyInstaller and Inno Setup contributors. See GPL LICENSE and THIRD_PARTY_NOTICES for individual obligations. Publish matching source and checksums with any owner-approved final binary.
+Owner-tested base build: **Windows X-Lite Optimum (modified Windows 11 Pro x64)**; fresh installation, reinstallation, game launch and Desktop controls passed with no separate Python installation required. Other Windows configurations and clean stock Windows 10/11 remain **NOT VERIFIED**. This is not a universal compatibility claim. The metadata-repackaged RC has packaging/safety checks; it has not been subjected to a new gameplay test.
+
+Unsigned pre-release. Full six-setting interactive display/DPI testing remains unverified. Visible finger clenching is not verified despite the Fist percentage setting. General upgrade/uninstall, guaranteed power-loss durability and hostile-file-race protection are not claimed.
+
+The nine excluded optional groups remain absent: original Play Without VR, Message Center, Mute In Background, Graphics Settings, FPS Counter, Runtime Unity Editor, Script Loader, Uncensor Loader and XUnity Resource Redirector/Common. No game repair/update assets, model collections, replacement saves or legacy configuration menu are bundled. No future menu or release date is promised.
+
+## Download and use
+
+Use `VRK-Mod-Installer-v1.0.0-rc.1.exe` with its matching `SHA256SUMS.txt`, plus `VRK-Mod-Installer-v1.0.0-rc.1-Source.zip` for source. Close the game, run the EXE, review the runtime terms, choose the original game's executable folder and review/authorize the exact file plan. The installer does not launch the game. Start with a disposable copy and retain `%LOCALAPPDATA%\FeriousX\VRKMI` for recovery.
+
+See README, installation/troubleshooting/recovery guides and original HF Patch comparison in the source package/repository. Never run original Play Without VR together with FeriousX Desktop. GPL source and separate component notices are supplied; preserve them when redistributing.
+
+Publication, tag `v1.0.0-rc.1` and GitHub release are performed exclusively by the project owner. This local packaging step does not publish anything.

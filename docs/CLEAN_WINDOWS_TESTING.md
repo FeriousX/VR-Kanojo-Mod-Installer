@@ -13,4 +13,4 @@ Use fresh Windows 10 x64 and Windows 11 x64 snapshots with a standard user, no P
 7. Verify missing/tampered runtime resources fail closed in an isolated test cache, restoring only verified bytes. Do not delete essential persistent state to bypass refusal.
 8. Launch the guest's game manually afterward and record BepInEx/plugin loading and the owner's required controls. Gameplay compatibility is a separate manual result, never an installer success inference.
 
-Keep redacted evidence and explicit PASS/FAIL/NOT VERIFIED per OS/profile. Public release remains blocked until licensing/runtime/source gates and the chosen qualification criteria are satisfied.
+Keep redacted evidence and explicit PASS/FAIL/NOT VERIFIED per OS/profile. The public RC retains the stated unverified-environment limitations. Stable-release qualification remains pending; do not claim clean-machine success until the recorded checks actually pass.

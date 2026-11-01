@@ -1,5 +1,5 @@
-; Newly written asset-free development shell. NOT the original HF Patch installer.
-; Authored synthetic .txt transactions only. No game detection or genuine payload.
+; VR Kanojo Mod Installer. Independent GPL installer modernization.
+; Production-capable builds retain validated paths, exact-plan consent and recovery.
 #ifndef DEBUG
   #error Asset-free prototype requires /DDEBUG
 #endif
@@ -14,15 +14,15 @@ AppName=VR Kanojo Mod Installer
 #else
 AppName=VR Kanojo Mod Installer
 #endif
-AppVersion=1.0.0-rc.8C3
+AppVersion=1.0.0-rc.1
 AppPublisher=FeriousX
 AppPublisherURL=https://github.com/FeriousX/VR-Kanojo-Mod-Installer
-VersionInfoDescription=VR Kanojo Mod Installer - Private Runtime RC 8C.3
+VersionInfoDescription=VR Kanojo Mod Installer v1.0.0-rc.1 (Pre-release)
 VersionInfoProductName=VR Kanojo Mod Installer
 VersionInfoCompany=FeriousX
-VersionInfoVersion=0.9.8.3
-OutputBaseFilename=HF_UI_PREVIEW_PHASE5E4_SYNTHETIC
-OutputDir=..\..\..\out\Preview
+VersionInfoVersion=1.0.0.1
+OutputBaseFilename=VRK-Mod-Installer-v1.0.0-rc.1
+OutputDir=..\..\..\out\PublicReleaseCandidate
 PrivilegesRequired=lowest
 CreateAppDir=no
 Uninstallable=no
@@ -47,14 +47,14 @@ WizardSizePercent=140,150
 Name: "en"; MessagesFile: "compiler:Default.isl"
 
 [Messages]
-WelcomeLabel1=NONFUNCTIONAL UI PROTOTYPE
-WelcomeLabel2=Synthetic text-file installation only. No game files are included or changed.
-ReadyLabel1=Preview stops here. Installation is disabled.
+WelcomeLabel1=VR Kanojo Mod Installer v1.0.0-rc.1
+WelcomeLabel2=Pre-release for original VR Kanojo (2018). Review the selected folder and file plan before installation.
+ReadyLabel1=Review the selected installation plan before giving consent.
 ButtonInstall=&Start
 ButtonNext=&Continue
 ButtonCancel=&Close
-FinishedHeadingLabel=Preview complete
-FinishedLabelNoIcons=See the verified synthetic transaction result. No game installation is supported.
+FinishedHeadingLabel=Installation result
+FinishedLabelNoIcons=Review the verified transaction result. The game is not launched automatically.
 ExitSetupMessage=Close VR Kanojo Mod Installer?
 
 #ifdef SINGLE_EXE
@@ -129,7 +129,7 @@ begin
   LabelAt(Result, 84, 38, 10, Subtitle);
   Notice := LabelAt(Result, 0, 24, 9,
 #ifdef PRIVATE_GAME
-    'PRE-RELEASE  /  Maintained by FeriousX');
+    'v1.0.0-rc.1  /  Maintained by FeriousX');
 #else
 #ifdef REAL_COMPONENTS
     'PRIVATE REAL-FILE TEST  /  NO GAME INSTALLATION');
@@ -356,8 +356,8 @@ begin
   Sequence := GetIniString('transaction', 'sequence', '', IniPath);
   if GetIniString('transaction', 'protocol', '', IniPath) <> '1' then begin FrameError := 'Unsupported response protocol; use the matching wizard and Backend.'; Exit; end;
 #ifdef PRIVATE_GAME
-  if GetIniString('transaction', 'profile', '', IniPath) <> 'private-disposable-game-v1' then begin FrameError := 'Unexpected private profile; restore the matching package.'; Exit; end;
-  if GetIniString('transaction', 'scope', '', IniPath) <> 'private-game-gui-v1' then begin FrameError := 'Unexpected private response scope; revalidate using the matching Backend.'; Exit; end;
+  if GetIniString('transaction', 'profile', '', IniPath) <> 'private-disposable-game-v1' then begin FrameError := 'Unexpected installation profile; restore the matching package.'; Exit; end;
+  if GetIniString('transaction', 'scope', '', IniPath) <> 'private-game-gui-v1' then begin FrameError := 'Unexpected installation response scope; revalidate using the matching Backend.'; Exit; end;
 #else
 #ifdef REAL_COMPONENTS
   if GetIniString('transaction', 'profile', '', IniPath) <> 'real-component-fixture-v1' then begin FrameError := 'Unexpected real-component profile; restore the matching package.'; Exit; end;
@@ -367,7 +367,7 @@ begin
   if GetIniString('transaction', 'job', '', IniPath) <> CurrentJob then begin FrameError := 'Response belongs to another job; revalidate selections.'; Exit; end;
   if GetIniString('transaction', 'binding', '', IniPath) <> SelectionBinding() then begin FrameError := 'Selections changed or response binding differs; revalidate before continuing.'; Exit; end;
 #ifdef PRIVATE_GAME
-  if GetIniString('transaction', 'real_installation_allowed', '', IniPath) <> '1' then begin FrameError := 'Private execution-scope flag is invalid; no execution authorized.'; Exit; end;
+  if GetIniString('transaction', 'real_installation_allowed', '', IniPath) <> '1' then begin FrameError := 'Installation execution-scope flag is invalid; no execution authorized.'; Exit; end;
 #else
   if GetIniString('transaction', 'real_installation_allowed', '', IniPath) <> '0' then begin FrameError := 'Synthetic execution-scope flag is invalid; no execution authorized.'; Exit; end;
 #endif

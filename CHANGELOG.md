@@ -1,12 +1,11 @@
 # Changelog
 
-## v1.0.0 — prepared, not published
+## v1.0.0-rc.1 — public pre-release candidate
 
-- Independent plugin-focused modernization and branding by FeriousX.
-- BepInEx 5.4.12 x64 with optional FeriousX Desktop 1.0.4 or neither.
-- Single-EXE runtime packaging, directory checks, consent and transactional recovery.
-- Qualified official Python 3.14.10 runtime inputs and preserved notices.
-- Bounded, scrollable runtime conditions dialog with explicit acceptance.
-- User documentation, historical comparison and version-cautious manual mod guidance.
+- Public product version, metadata and filename for VR Kanojo Mod Installer.
+- BepInEx 5.4.12 x64 and optional FeriousX Desktop 1.0.4, or neither.
+- Single-EXE packaging of the cleared official Python 3.14.10 runtime and exact approved reduced payload.
+- Bounded, scrollable license acceptance dialog; existing transactional consent, ownership, backups and recovery preserved.
+- Installation, troubleshooting, compatibility, source/license and historical comparison documentation.
 
-Current binary remains 1.0.0-rc.8C3 (8C3A hotfix filename). Final metadata/build and clean-Windows qualification are pending. Historical v1.1 HF Patch is an upstream project, not a prior release of this independent installer.
+Owner-approved functionality is inherited from the corrected working RC. This metadata/wording repack does not change backend or plugin behavior. Clean Windows and additional configurations remain unverified. Historical HF Patch v1.1 is an upstream project, not a prior version of this independently maintained installer. No final v1.0.0 stable release or GitHub publication is performed by source preparation.
