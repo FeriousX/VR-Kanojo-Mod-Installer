@@ -1,0 +1,4 @@
+[assembly: AssemblyTitle("FPSCounter")]
+[assembly: AssemblyCompany("ManlyMarco")]
+[assembly: AssemblyProduct("FPSCounter")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]

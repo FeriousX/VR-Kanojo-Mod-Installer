@@ -24,3 +24,8 @@
 *.pem
 .env*
 /secrets/
+
+# Reviewed corresponding-source archives required for redistribution.
+!/third_party/FPSCounter-v3.1/FPSCounter-dc2884a3778a4785e1ffa8e3b0b0940f3dde786c-Source.zip
+!/third_party/GraphicsSettings-v1.2.1/CorrespondingSource.zip
+!/third_party/Utility-r7/BepInEx.Utility-f1a40ffe37be96e6710df6029c26255d1a0a5393-Source.zip

@@ -1,13 +1,18 @@
-# Current distribution audit
+# v1.1.0 distribution scope
 
-The recorded essential payload and official Python/native runtime licensing/provenance gates are CLEARED for the documented release under their preserved notice/source obligations. This does not grant a license for omitted assets or approve a public release automatically.
+Candidate scope: BepInEx 5.4.12 x64/loader settings, optional FeriousX Desktop 1.0.4 or neither, and four independently optional/default-off utilities. Maximum is **56 mapped files**. The actual FINAL110 candidate input inventory has **107 resource inputs**, including 18 official native DLL/PYD dependencies. These counts were measured from the actual FINAL110 build resources; no independent extraction of the final Inno EXE is claimed.
 
-- BepInEx 5.4.12 official x64 archive and all 21 files match the audited upstream release. Authored loader settings and Desktop add six mapped files, for 27 maximum.
-- Exact historical framework/dependency notices, GPL project/Desktop source/build information and credits are supplied. Doorstop 3.4.0.0 uses its historical CC0 text.
-- Official PSF Python 3.14.10 archive, published hash, artifact-specific SBOM, signatures and all 18 shipped native files are documented. Runtime dependencies and Windows redistribution conditions are preserved individually. PyInstaller remains pinned at 6.22.3. No development-collected UCRT/API-set DLLs are bundled.
-- All 80 current embedded resource inputs rehash successfully. Nine optional groups have empty runtime mapping lists and zero physical files in the component payload. Legacy configuration UI, game repair/assets and saves are outside the profile.
-- No game, credential, private recovery state or binary payload is in the prepared GitHub source directory. The release is kept separately from normal source history.
+| Optional component | Version | License | Default |
+|---|---|---|---|
+| Message Center | 1.1.1 | GPL-3.0 | Off |
+| Mute In Background | 1.1 | GPL-3.0 | Off |
+| FPS Counter | 3.1 | Apache-2.0 AND zlib | Off |
+| Graphics Settings (official) | 1.2.1 | GPL-3.0 | Off |
 
-[Component table](license-audit.csv), [resource inventory](EMBEDDED_FILE_INVENTORY.json), [notices](../THIRD_PARTY_NOTICES.md), [source provenance](SOURCE_PROVENANCE.md) and [release readiness](RELEASE_READINESS.md) are the current references. Historical licensing investigations remain privately preserved; they are not current runtime approvals or source files required to execute the program.
+Exact DLL hashes/source commits and original notices are retained in the component catalog, optional component source/notice trees and license audit. Selected installation includes GPL/source obligations for Utility/Graphics and Apache-2.0/Gavin Pugh zlib materials for FPS. Project GPL does not replace these or Python/native/Microsoft terms. Preserve core MIT/Harmony/MonoMod/Cecil, historical Doorstop CC0, project/Desktop GPL, PSF/incorporated-library and PyInstaller notices separately.
 
-Clean Windows 10/11 is NOT VERIFIED. The final v1.0.0 EXE is unsigned and retains the same owner-tested implementation/resources. Final identity was explicitly requested by the owner; it is not universal compatibility or clean-machine approval. Further independent qualification remains recommended. The owner has published [v1.0.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0) as a full GitHub Release. Publication does not change these qualification limits.
+Excluded: Original Play Without VR, XUnity Common/Resource Redirector, Uncensor Loader, Runtime Unity Editor, Script Loader and Configuration Manager; repair/update payloads, uncensor collections, replacement saves and obsolete unrelated files. Actual catalog/runtime payload, not just GUI visibility, enforces scope. No conditional/blocked component is restored by documentation.
+
+Official CPython 3.14.10 x64 + PyInstaller 6.22.3 are unchanged. Native provenance still requires exactly 18 approved native files; no development-collected UCRT/API-set DLLs. The final build needs explicit qualified runtime archive, native provenance and notices. Phase9E3 ran these gates; see the external final verification record.
+
+The candidate is locally built and unpublished. EXE identity is recorded here; ZIP identity is recorded externally beside the archive. Public source uses explicit clean export rules; private recovery data and game/payload binaries are excluded. Owner-reported passes are separate from unverified recovery retest, additional DPI and stock Windows. Unsigned status remains. See RELEASE_ARTIFACTS.json, EMBEDDED_FILE_INVENTORY.json, SOURCE_PROVENANCE.md and RELEASE_READINESS.md.

@@ -1,8 +1,21 @@
 {
-  "artifact": "VRK-Mod-Installer-v1.0.0.exe",
-  "artifact_sha256": "4ECD964F3F9CCFC4DF5184E497223488B0F477AD764FC34E790B4FD6B127826F",
-  "resource_bundle": "81896c44bd1ee122",
-  "resource_count": 80,
+  "target_release_version": "1.1.0",
+  "status": "FINAL_BUILD_INPUTS_VERIFIED",
+  "artifact": "VRK-Mod-Installer-v1.1.0.exe",
+  "artifact_sha256": "0DE92037A58E3525478F33D87648FA44E028AC7B6E14E51CD71962B2943FE921",
+  "resource_bundle": "2343f5e3638b38c6",
+  "resource_count": 107,
+  "final_resource_count": 107,
+  "component_files": 56,
+  "native_files": 18,
+  "verification_scope": "Exact resources supplied to qualified compiler; no independent Inno EXE extraction or GUI launch",
+  "reference_development_artifact": {
+    "filename": "VRK-Mod-Installer-v1.1.0-dev.3.exe",
+    "sha256": "988492CB21121F2CF97B24F14189635442959C3DF464BEDD2017DF0C03689A29",
+    "bytes": 11133715,
+    "version": "1.1.0-dev.3",
+    "bundle": "95a892e2fcb0edda"
+  },
   "resources": [
     {
       "path": "Backend/_internal/_bz2.pyd",
@@ -56,7 +69,7 @@
     },
     {
       "path": "Backend/_internal/base_library.zip",
-      "sha256": "dc7aad0482127470f98574ebc32dd5200fc7002b7762c8aaa08896316fe32151",
+      "sha256": "0a859212dcdc1ded33020416ee81e213279f0096c495dd73c22142d38ab9de7b",
       "bytes": 1275866
     },
     {
@@ -101,8 +114,8 @@
     },
     {
       "path": "Backend/Components/catalog.json",
-      "sha256": "c36dc857feabd66bd364c8d84298a787d04ab41de54fd416f3d44ea021b528ab",
-      "bytes": 34078
+      "sha256": "f261f16153f48ad5bb5d094d34863d254277c5d175b1bce611adfe6714167c5a",
+      "bytes": 51653
     },
     {
       "path": "Backend/Components/component-review/bepinex/BepInEx/core/0Harmony.dll",
@@ -215,6 +228,151 @@
       "bytes": 87
     },
     {
+      "path": "Backend/Components/optional-110/fps/BepInEx/plugins/FPSCounter.dll",
+      "sha256": "333c467be5d3edc845a9a97d0d0a2c2269e796c63cf0ab6ff72d1ba74323a982",
+      "bytes": 32768
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/ATTRIBUTION_AND_REDISTRIBUTION.md",
+      "sha256": "34c555b06aba70aa40d498ef368ced7a46342073d51f9e3679d9560a5f25e2d4",
+      "bytes": 2842
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-5.4.12-LICENSE.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933",
+      "bytes": 1062
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-Harmony-928c8116-LICENSE.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+      "bytes": 1057
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/CorrespondingSource.zip",
+      "sha256": "aa4f99ecfb612bae35c740d8a1ebc2a6652b38d9a6d35ee38dc1d7a62b37eff4",
+      "bytes": 27738
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/Gavin-Pugh-Original-Source-Notices.txt",
+      "sha256": "e86216e64d952289bb7ece965daa0e136127467010a57df54deb9e8c0b39b5f5",
+      "bytes": 1361
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/HarmonyX-2.5.1-LICENSE.txt",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36",
+      "bytes": 1063
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/Original-Assembly-Notices.txt",
+      "sha256": "60639ef6e4a0e56d36bcec5f50bb4e96e6ccb16f7dcdb0e1fc67321ad34fee9e",
+      "bytes": 180
+    },
+    {
+      "path": "Backend/Components/optional-110/fps/HF_Patch_Notices/FPSCounter/Zlib-License-Reference.txt",
+      "sha256": "bfb1112d49db5b1daecdfef24bd7e2f3ea0bafb33aa67aa0ab51e2bf8407c03d",
+      "bytes": 838
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/BepInEx/plugins/GraphicsSettings.dll",
+      "sha256": "e6149270785b1f1c152a1a3fcb39b4d2e71c69a968d2ccfff89a20b1d10c23a2",
+      "bytes": 22528
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/ATTRIBUTION_AND_USAGE.md",
+      "sha256": "78771e4d93e4cb98a754a1ce51e0c3cd31c11ae83fb71d177e073d46a2e34c75",
+      "bytes": 1147
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-5.4.12-LICENSE.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933",
+      "bytes": 1062
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-Harmony-928c8116-LICENSE.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d",
+      "bytes": 1057
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/CorrespondingSource.zip",
+      "sha256": "4530aa871b87b4b37cc4bcf464e4ec95fabd0048ecad49ea182ee294acedf3f0",
+      "bytes": 23446
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/GraphicsSettings-GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/Harmony-upstream-MIT-notice.txt",
+      "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d",
+      "bytes": 1073
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/HarmonyX-2.5.1-LICENSE.txt",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36",
+      "bytes": 1063
+    },
+    {
+      "path": "Backend/Components/optional-110/graphics/HF_Patch_Notices/GraphicsSettings/SOURCE_INFORMATION.md",
+      "sha256": "db3529e898566f495fbb8fd88ebb7a33b4900bd7901944fb8718d820963bf2b6",
+      "bytes": 1162
+    },
+    {
+      "path": "Backend/Components/optional-110/message-center/BepInEx/plugins/BepInEx.MessageCenter.dll",
+      "sha256": "7e6d7bb280e90fb468f4f1e7809e0f88b6c2422695f28225371437e77a39cd4c",
+      "bytes": 10240
+    },
+    {
+      "path": "Backend/Components/optional-110/message-center/HF_Patch_Notices/MessageCenter/ATTRIBUTION_AND_OBLIGATIONS.md",
+      "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1",
+      "bytes": 2283
+    },
+    {
+      "path": "Backend/Components/optional-110/message-center/HF_Patch_Notices/MessageCenter/CorrespondingSource.zip",
+      "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5",
+      "bytes": 51716
+    },
+    {
+      "path": "Backend/Components/optional-110/message-center/HF_Patch_Notices/MessageCenter/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "Backend/Components/optional-110/message-center/HF_Patch_Notices/MessageCenter/SOURCE_INFORMATION.md",
+      "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b",
+      "bytes": 2625
+    },
+    {
+      "path": "Backend/Components/optional-110/mute/BepInEx/plugins/BepInEx.MuteInBackground.dll",
+      "sha256": "bd80cd69e6edecf6a25ddbf83ac800c7d4c4cb1484b9419794b6bdf333cdf76c",
+      "bytes": 5632
+    },
+    {
+      "path": "Backend/Components/optional-110/mute/HF_Patch_Notices/MuteInBackground/ATTRIBUTION_AND_OBLIGATIONS.md",
+      "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1",
+      "bytes": 2283
+    },
+    {
+      "path": "Backend/Components/optional-110/mute/HF_Patch_Notices/MuteInBackground/CorrespondingSource.zip",
+      "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5",
+      "bytes": 51716
+    },
+    {
+      "path": "Backend/Components/optional-110/mute/HF_Patch_Notices/MuteInBackground/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "Backend/Components/optional-110/mute/HF_Patch_Notices/MuteInBackground/SOURCE_INFORMATION.md",
+      "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b",
+      "bytes": 2625
+    },
+    {
       "path": "Backend/Components/real-components/vrkanojo-desktop/BepInEx/plugins/VRKanojoDesktop.dll",
       "sha256": "7542469db0c4e7fea5c44aab64aaa19b3453651ae2bcf53ccc076fbb6bde0e92",
       "bytes": 56832
@@ -241,8 +399,8 @@
     },
     {
       "path": "Backend/HFBackend.exe",
-      "sha256": "fcc9fb39aa2123dd92ce71ad825baba722379ef01beb93685f6fd6d4b1de6f8a",
-      "bytes": 2159083
+      "sha256": "dc08bf73a4480593aa8f0e9a1e407f5c38f53c90cf21ebe3315fd31a0dee7654",
+      "bytes": 2159158
     },
     {
       "path": "Backend/Notices/BepInEx-5.4.12-LICENSE.txt",
@@ -266,8 +424,8 @@
     },
     {
       "path": "Backend/Notices/ComponentReference/vrk-plugins/README.md",
-      "sha256": "fe5791f4c6af8c75d38b8bdd377aad2a73218b2c1311e8280d1d3d656228b635",
-      "bytes": 89
+      "sha256": "558d6598f2e4dabd4b3c8eadc92e448c914f9e258a82ea1441f5116439bf8360",
+      "bytes": 155
     },
     {
       "path": "Backend/Notices/CPython-LICENSE.txt",
@@ -281,8 +439,8 @@
     },
     {
       "path": "Backend/Notices/ESSENTIAL_COMPONENT_NOTICES.md",
-      "sha256": "af464d7ed34a9a1e7527fef3d4a41834a9f29e29b7cda2836ff6696ab2662c8c",
-      "bytes": 970
+      "sha256": "3a611b94a46554b27c55e2c242ecfa3c79957c6838f2cd0a9ecd878598fa8cf8",
+      "bytes": 1457
     },
     {
       "path": "Backend/Notices/Harmony-upstream-MIT-notice.txt",
@@ -393,16 +551,6 @@
       "path": "Backend/PrivateTarget.json",
       "sha256": "a92660ee96b0d9a65e13d3ab3ea75623723f126c9826932fa1451305238ca74a",
       "bytes": 98
-    },
-    {
-      "path": "Resources.json",
-      "sha256": "3422fdcd2c92cb57d115d58ba0eb527dbc09d33431fc9754e0f26852e03e2dff",
-      "bytes": 11072
-    },
-    {
-      "path": "Recover.ps1",
-      "sha256": "40a6d5a8674bc8eca5dd45a842d97dc45e41fe77cc5cac84433d267f1ef21d45",
-      "bytes": 1687
     }
   ]
 }

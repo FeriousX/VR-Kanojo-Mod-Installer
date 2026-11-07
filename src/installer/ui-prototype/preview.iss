@@ -7,6 +7,13 @@
   #error Asset-free prototype requires /DUI_PROTOTYPE
 #endif
 
+#ifndef ReleaseVersion
+  #define ReleaseVersion "1.1.0"
+#endif
+#ifndef ReleaseNumericVersion
+  #define ReleaseNumericVersion "1.1.0.0"
+#endif
+
 [Setup]
 AppId=FeriousX.VRKanojoModInstaller.Preview
 #ifdef PRIVATE_GAME
@@ -14,15 +21,15 @@ AppName=VR Kanojo Mod Installer
 #else
 AppName=VR Kanojo Mod Installer
 #endif
-AppVersion=1.0.0
+AppVersion={#ReleaseVersion}
 AppPublisher=FeriousX
 AppPublisherURL=https://github.com/FeriousX/VR-Kanojo-Mod-Installer
-VersionInfoDescription=VR Kanojo Mod Installer v1.0.0
+VersionInfoDescription=VR Kanojo Mod Installer v{#ReleaseVersion}
 VersionInfoProductName=VR Kanojo Mod Installer
 VersionInfoCompany=FeriousX
-VersionInfoVersion=1.0.0.0
-OutputBaseFilename=VRK-Mod-Installer-v1.0.0
-OutputDir=..\..\..\out\FinalRelease_v1.0.0
+VersionInfoVersion={#ReleaseNumericVersion}
+OutputBaseFilename=VRK-Mod-Installer-v{#ReleaseVersion}
+OutputDir=..\..\..\out\Development
 PrivilegesRequired=lowest
 CreateAppDir=no
 Uninstallable=no
@@ -47,8 +54,8 @@ WizardSizePercent=140,150
 Name: "en"; MessagesFile: "compiler:Default.isl"
 
 [Messages]
-WelcomeLabel1=VR Kanojo Mod Installer v1.0.0
-WelcomeLabel2=Pre-release for original VR Kanojo (2018). Review the selected folder and file plan before installation.
+WelcomeLabel1=VR Kanojo Mod Installer v{#ReleaseVersion}
+WelcomeLabel2=For original VR Kanojo (2018). Review the selected folder and file plan before installation.
 ReadyLabel1=Review the selected installation plan before giving consent.
 ButtonInstall=&Start
 ButtonNext=&Continue
@@ -73,7 +80,8 @@ var
   GameDirectory: TNewEdit;
   BrowseGame: TNewButton;
 #endif
-  FrameworkChoice, SettingsChoice, ToolsChoice: TNewCheckBox;
+  ComponentList: TNewCheckListBox;
+  FrameworkChoice, SettingsChoice, ToolsChoice, FPSChoice, GraphicsChoice: Integer;
   DesktopFerious, DesktopOriginal, DesktopNeither: TNewRadioButton;
   Summary: TNewMemo;
   PreparationProgress: TNewProgressBar;
@@ -129,7 +137,7 @@ begin
   LabelAt(Result, 84, 38, 10, Subtitle);
   Notice := LabelAt(Result, 0, 24, 9,
 #ifdef PRIVATE_GAME
-    'v1.0.0  /  Maintained by FeriousX');
+    'v{#ReleaseVersion}  /  Maintained by FeriousX');
 #else
 #ifdef REAL_COMPONENTS
     'PRIVATE REAL-FILE TEST  /  NO GAME INSTALLATION');
@@ -140,18 +148,12 @@ begin
   Notice.Top := Result.SurfaceHeight - ScaleY(24);
 end;
 
-function CheckAt(Page: TWizardPage; Y: Integer; Title, Detail: String; Selected: Boolean): TNewCheckBox;
-var Description: TNewStaticText;
+function AddComponentChoice(Title, Detail: String; Selected, Enabled: Boolean): Integer;
 begin
-  Result := TNewCheckBox.Create(WizardForm);
-  Result.Parent := Page.Surface;
-  Result.SetBounds(ScaleX(8), ScaleY(Y), Page.SurfaceWidth - ScaleX(16), ScaleY(26));
-  Result.Caption := Title;
-  Result.Font.Style := [fsBold];
-  Result.Checked := Selected;
-  Description := LabelAt(Page, Y + 29, 32, 10, Detail);
-  Description.Left := ScaleX(28);
-  Description.Width := Page.SurfaceWidth - ScaleX(36);
+  { Native checklist measures and wraps the complete caption; overflow scrolls
+    inside the viewport instead of painting over the page footer. }
+  Result := ComponentList.AddCheckBox(Title + #13#10 + Detail, '', 0,
+    Selected, Enabled, False, False, nil);
 end;
 
 function RadioAt(Y: Integer; Title, Detail: String): TNewRadioButton;
@@ -170,9 +172,16 @@ end;
 function SelectionMask(): Integer;
 begin
   Result := 0;
-  if FrameworkChoice.Checked then Result := Result + 1;
-  if SettingsChoice.Checked then Result := Result + 2;
-  if ToolsChoice.Checked then Result := Result + 4;
+  if ComponentList.Checked[FrameworkChoice] then Result := Result + 1;
+#ifdef REAL_COMPONENTS
+  if ComponentList.Checked[SettingsChoice] then Result := Result + 8;
+  if ComponentList.Checked[ToolsChoice] then Result := Result + 16;
+  if ComponentList.Checked[FPSChoice] then Result := Result + 32;
+  if ComponentList.Checked[GraphicsChoice] then Result := Result + 64;
+#else
+  if ComponentList.Checked[SettingsChoice] then Result := Result + 2;
+  if ComponentList.Checked[ToolsChoice] then Result := Result + 4;
+#endif
 end;
 
 function DesktopSelection(): String;
@@ -777,23 +786,38 @@ begin
 #else
     'Choose the component groups to include in your simulated setup.');
 #endif
+  ComponentList := TNewCheckListBox.Create(WizardForm);
+  ComponentList.Parent := ComponentsPage.Surface;
+  { Reserve 48 scaled pixels: 24 for the footer plus a 24-pixel clear gap. }
+  ComponentList.SetBounds(ScaleX(8), ScaleY(132),
+    ComponentsPage.SurfaceWidth - ScaleX(16), ComponentsPage.SurfaceHeight - ScaleY(180));
+  ComponentList.Anchors := [akLeft, akTop, akRight, akBottom];
+  ComponentList.Font.Name := 'Segoe UI';
+  ComponentList.Font.Size := 10;
+  ComponentList.MinItemHeight := ScaleY(64);
+  ComponentList.Offset := ScaleX(8);
+  ComponentList.BorderStyle := bsSingle;
+  ComponentList.ShowLines := False;
+  ComponentList.WantTabs := False;
+  ComponentList.TabStop := True;
 #ifdef REAL_COMPONENTS
-  FrameworkChoice := CheckAt(ComponentsPage, 132, 'BepInEx framework (required)',
-    'Verified framework and game-specific entry-point settings. Legacy F1 menu is excluded.', True);
-  FrameworkChoice.Enabled := False;
-  SettingsChoice := CheckAt(ComponentsPage, 200, 'Uncensor Loader + XUnity (optional)',
-    'Not included in this initial public profile.', False);
-  SettingsChoice.Enabled := False;
-  ToolsChoice := CheckAt(ComponentsPage, 268, 'Optional utilities and developer tools',
-    'Not included in this initial public profile.', False);
-  ToolsChoice.Enabled := False;
+  FrameworkChoice := AddComponentChoice('BepInEx framework (required)',
+    'Verified framework and game-specific entry-point settings. Legacy F1 menu is excluded.', True, False);
+  SettingsChoice := AddComponentChoice('Message Center 1.1.1 (optional)',
+    'Displays plugin messages and dependency errors in-game.', False, True);
+  ToolsChoice := AddComponentChoice('Mute In Background 1.1 (optional)',
+    'Enable its native configuration after installation to mute background audio.', False, True);
+  FPSChoice := AddComponentChoice('FPS Counter 3.1 (optional)',
+    'Displays frame-rate statistics; official reviewed v3.1 plugin.', False, True);
+  GraphicsChoice := AddComponentChoice('Graphics Settings 1.2.1 (optional)',
+    'Startup values via config file; no advanced configuration menu.', False, True);
 #else
-  FrameworkChoice := CheckAt(ComponentsPage, 132, 'Core framework',
-    'Runtime and compatibility foundation.', True);
-  SettingsChoice := CheckAt(ComponentsPage, 200, 'Configuration tools',
-    'F1 configuration menu and settings management.', True);
-  ToolsChoice := CheckAt(ComponentsPage, 268, 'Optional utilities',
-    'Additional convenience tools, optional by default.', False);
+  FrameworkChoice := AddComponentChoice('Core framework',
+    'Runtime and compatibility foundation.', True, True);
+  SettingsChoice := AddComponentChoice('Configuration tools',
+    'F1 configuration menu and settings management.', True, True);
+  ToolsChoice := AddComponentChoice('Optional utilities',
+    'Additional convenience tools, optional by default.', False, True);
 #endif
 
   DesktopPage := Chapter(ComponentsPage.ID, '04 / 07', 'Choose how you play.',
@@ -801,7 +825,7 @@ begin
   DesktopFerious := RadioAt(132, 'VR Kanojo Desktop  /  FeriousX',
     'Modern keyboard and mouse controls.');
   DesktopOriginal := RadioAt(200, 'Original Play Without VR  /  ManlyMarco',
-    'Not included in this initial public profile.');
+    'Not included in this release.');
   DesktopOriginal.Enabled := False;
   DesktopNeither := RadioAt(268, 'Neither',
     'Keep the standard VR experience without a desktop plugin.');

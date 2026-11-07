@@ -9,8 +9,10 @@ def presentation(meta,state,success=False):
     mask=int(parts[0]);mode=parts[1]
     components=[]
     if mask&1:components.append('BepInEx 5.4.12 x64 and loader settings')
-    if mask&2:components.append('Uncensor Loader and XUnity dependencies')
-    if mask&4:components.append('Message Center, Mute, Graphics Settings, FPS Counter, Runtime Editor and Script Loader')
+    if mask&8:components.append('Message Center 1.1.1')
+    if mask&16:components.append('Mute In Background 1.1 (enable its native configuration after installation)')
+    if mask&32:components.append('FPS Counter 3.1')
+    if mask&64:components.append('Graphics Settings 1.2.1 (startup config; no advanced menu)')
     components.append(DESKTOP[mode])
     counts=Counter(row['action'] for row in prepared.get('operations',[]))
     preserved=counts['preserve']+counts['protect'];changed=counts['create']+counts['replace']+counts['delete']

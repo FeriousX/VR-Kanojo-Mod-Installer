@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "mode": "explicit-source-only",
+  "target_release": "1.1.0",
+  "not_an_install_authorization": true,
+  "approved_source_archive_sha256": [
+    "09bf8a4b303f4afdd75fcc10fd84ff8b01ae57bcb0390edc9c419c6e1cbcb239",
+    "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5",
+    "4530aa871b87b4b37cc4bcf464e4ec95fabd0048ecad49ea182ee294acedf3f0",
+    "aa4f99ecfb612bae35c740d8a1ebc2a6652b38d9a6d35ee38dc1d7a62b37eff4"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "5a9c504402dbbea25e5e8f9cfeb8eb5e49acdf39be05de5c3a5a061c656b0b52"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4da544e2427f68f9638b531600b0aada6172b7600648f49c34af07783d26b76c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "44a1a40b3fad3d9bb629c8c85df718de10104e254b5083bacf671ca3990a0140"
+    },
+    {
+      "path": "CREDITS.md",
+      "sha256": "09c14abe15fe1a23fd20f2994e44dae7c67ee0c9c9c7e560cc0b529ed9399cec"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "README.md",
+      "sha256": "32ea29d8fcd61e50db8c0a1ea27ad27deb35ffdbb5da3afa428f6ff4e0ad8289"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "8e99c4d60540c7fabacf8240d4be28b909992aeafd6ef978a0c80d1f04ef3590"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "fdf6eaddf479050ee658ce0367d8fbf163c895ea3628e68a7881b15eed9f7a52"
+    },
+    {
+      "path": "build-requirements.txt",
+      "sha256": "0ac2daecf86d3c34921ddcb54b901bbac506a48a651b67384dc81b64dd59d7f1"
+    },
+    {
+      "path": "docs/BUILDING.md",
+      "sha256": "2e2937c5929cfa151d0b34de97bee2fe4aebfe91e471217018eaaca8007ca3b2"
+    },
+    {
+      "path": "docs/CLEAN_WINDOWS_TESTING.md",
+      "sha256": "b38d9fc91b5d5ba0a7ad1c4ae63511938e0f9e57eb9830e08bddef1b64bf90fc"
+    },
+    {
+      "path": "docs/DISTRIBUTION_AUDIT.md",
+      "sha256": "e636f1e515edb67800894a351a55fe1d7fc7b2487e9530f723df4e70bc2ad263"
+    },
+    {
+      "path": "docs/EMBEDDED_FILE_INVENTORY.json",
+      "sha256": "c0e4fd7f77a90bd9f9c6ffe2d965ef133c2f71947c8cf0822594c54d02a8480c"
+    },
+    {
+      "path": "docs/ESSENTIAL_PROVENANCE.json",
+      "sha256": "76d3975b4774d4548f04132905a0aca688e386b4a4833101b7cf87286732d1fd"
+    },
+    {
+      "path": "docs/FINAL_V1.1.0_PACKAGING.md",
+      "sha256": "c4cac9c580285ad3ae807eb2759a3e52c0d0433f24b97e9d958d61f4f9f138f3"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "sha256": "16cc904e63d7dd41217dc6d2d2bb51f170547d1477e276e57fca842e512d33d3"
+    },
+    {
+      "path": "docs/MANUAL_MOD_INSTALLATION.md",
+      "sha256": "871e27aa353bc174d03397c160c27b14bd31b23b5a42f0ebed041ca175a6a1b6"
+    },
+    {
+      "path": "docs/ORIGINAL_HF_PATCH_COMPARISON.md",
+      "sha256": "c10eb5e90ae9b85af04d12c68b771240bf96408148205369771154d800ce5f9e"
+    },
+    {
+      "path": "docs/RECOVERY.md",
+      "sha256": "3927ec3fb602c92182fa212fc4f9d86ebf5fe8508b3463f0dcf40be30d0f6af9"
+    },
+    {
+      "path": "docs/RELEASE_ARTIFACTS.json",
+      "sha256": "cce5aa739799284d1a6496e3c2fd7b72a474622b7c687c19a7ee58feca8d3e7b"
+    },
+    {
+      "path": "docs/RELEASE_READINESS.md",
+      "sha256": "2d98cc03c8f9d9a6992754c58dde1b6641031b9c3bf543e3ea56b47b88254510"
+    },
+    {
+      "path": "docs/RUNTIME_3_14_10_NOTICE_EVIDENCE.json",
+      "sha256": "9775b421516cc8cddfde1faa7d591fcfac98d95f3e943ce296957fe993e4ea51"
+    },
+    {
+      "path": "docs/RUNTIME_PROVENANCE_8C3.json",
+      "sha256": "a70e96153ef5f5785a4f5eee26c42e19e727793e89f804dd5bd536d109aa3e6a"
+    },
+    {
+      "path": "docs/RUNTIME_SIGNATURES_8C3.json",
+      "sha256": "26a48100984f2989a77f2592640872c1dcdb5c395da77a2e3d52675ba05eb977"
+    },
+    {
+      "path": "docs/SOURCE_PROVENANCE.md",
+      "sha256": "32cfb211231bc5778f2971e82429cfb0e71089104e83f8e9a74cd7b25830b001"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "bb622a5f1b9201dd96d2d1cf67ce81a4eb84e4767b599327410d35788e2f65c4"
+    },
+    {
+      "path": "docs/license-audit.csv",
+      "sha256": "0af14c8ef6fa6055fcbfbf3a2235476bb5f94f5be04d05f302c8bbad904b6cd9"
+    },
+    {
+      "path": "docs/license-audit.json",
+      "sha256": "516c2b286ca2226c4d45da1cba6e30509cc0ec8c904053fcd801b7f37e1ab049"
+    },
+    {
+      "path": "manifests/component-packages.lock.json",
+      "sha256": "6b1eb1c1edabaa824191cb09756e89436157bb3c9f0195d0d6128f933b5972b6"
+    },
+    {
+      "path": "manifests/final-v1.1.0.json",
+      "sha256": "65944f10a3bdc796dc171b7a3db24c0418b03622bc1652f495a756746035138e"
+    },
+    {
+      "path": "manifests/private-game-policy.json",
+      "sha256": "c21dd93e911de3140aa7fe79f577647891b4fc467b4cb93ffc3a4645cceab99b"
+    },
+    {
+      "path": "manifests/private-game-policy.review.json",
+      "sha256": "305ee675c68b7d40bd294e3d35aa9bce5f329d1c28abaa12fe2f933f3a1a2cab"
+    },
+    {
+      "path": "manifests/real-components.json",
+      "sha256": "0907c2d72721eef2eb70a4e27c551d86c835b53fac808b4a9ec91b2e426d2580"
+    },
+    {
+      "path": "manifests/real-components.review.json",
+      "sha256": "63d7d6c543baf127dd69f50a44a79801a6ae0c8bb7e2b26008f0b72b9c01f22d"
+    },
+    {
+      "path": "manifests/release-scope.json",
+      "sha256": "4a18e1a3bfda306eb6455410797c820bf4f276124b27dc05df137f3e9916dbb4"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "45320c9c7b72463afbc51634f34195badba811886f4a8161366368d74aa78eac"
+    },
+    {
+      "path": "release-status.json",
+      "sha256": "3796a99b73ac1296b3d1fe1e98195be5e0e5bf4e696b24b11ee8f7505e1417db"
+    },
+    {
+      "path": "src/hf_payload/__init__.py",
+      "sha256": "d4f877417587c511330709ee8e583c923e3e444916bdea4fe0f145ee1e5cf55b"
+    },
+    {
+      "path": "src/hf_payload/component_packages.py",
+      "sha256": "4bdd0913291ed5b147d03ad92fae2e052ffeffa4a128444cbf74371b0938570c"
+    },
+    {
+      "path": "src/hf_payload/controlled_game.py",
+      "sha256": "6f706629b57fae8120c794b90e3b29ef83da991f9c43918582d702470e2333fa"
+    },
+    {
+      "path": "src/hf_payload/coordinator.py",
+      "sha256": "10a0184b8574036e80fb4fe9b9f2aa667616a021bf86873d2acb61ec1daecb8b"
+    },
+    {
+      "path": "src/hf_payload/detection.py",
+      "sha256": "a5ad6015ca57f6c5d8218566522a457c84ee9244f6baa46560a25c711717c315"
+    },
+    {
+      "path": "src/hf_payload/external_root.py",
+      "sha256": "ca00c2f18689382703c8b3d90a796f6d188064f0e2caba04f6cb8690b70892b7"
+    },
+    {
+      "path": "src/hf_payload/game_compatibility.py",
+      "sha256": "c58be193a8981ef044d9b910e6c42f2e84edb924e3ae539d2f98ee907fc8d22f"
+    },
+    {
+      "path": "src/hf_payload/install_bridge.py",
+      "sha256": "c73c379195bffb007254bf132fd61fefe027afedd3faaa5a4a0703c707aeef62"
+    },
+    {
+      "path": "src/hf_payload/ownership.py",
+      "sha256": "0321866133157eeea4d8e89346f4197429cc245e2281cc98a2b8f07e43bdafc4"
+    },
+    {
+      "path": "src/hf_payload/planner.py",
+      "sha256": "c02a0b07a012adefaa34464d0fa83526e97f9841382d60162f53fb9b1c115ee9"
+    },
+    {
+      "path": "src/hf_payload/private_credentials.py",
+      "sha256": "54addbe11875481fba0f7e50842f86a887ba4dd075adca5f6ada88f32c5dbdd4"
+    },
+    {
+      "path": "src/hf_payload/private_game_bridge.py",
+      "sha256": "06a43fd8e97dc4cd73c797a718e054f7c423afdbc5e56dd4e4795f2ec0b98594"
+    },
+    {
+      "path": "src/hf_payload/private_target.py",
+      "sha256": "50a6729d6dc25f0afd2c04d75b9231e6c4409c8462898aafe659abdcef7e4101"
+    },
+    {
+      "path": "src/hf_payload/real_components.py",
+      "sha256": "6e8398ea387a1d6d2696934870693fcd1f93bdf3838b9db759e39140dbe1a7a5"
+    },
+    {
+      "path": "src/hf_payload/real_file_bridge.py",
+      "sha256": "451b0082ad23bc041118ab7d3f664ed28a6058362ff5378c6f93371e05a8ac8b"
+    },
+    {
+      "path": "src/hf_payload/recovery.py",
+      "sha256": "a758d17ac8b04a6625d2bba74ef5dc6f5f80563df8cc6229a3c4953b441fda7f"
+    },
+    {
+      "path": "src/hf_payload/registry.py",
+      "sha256": "2c23c103d1eaa352b239c0fde4694e572e0535490bc88f1fcf52d015ea472fdc"
+    },
+    {
+      "path": "src/hf_payload/release_scope.py",
+      "sha256": "71b0a88b9f3fc80dfa04ab07921f1a2e05b1eaaf169d9031964baf559db70f37"
+    },
+    {
+      "path": "src/hf_payload/runtime_paths.py",
+      "sha256": "49ec0752260620e884ef3aee6cc7bbfff83931fb8de7c1e7bfadbd7ccbbb0c16"
+    },
+    {
+      "path": "src/hf_payload/startup_errors.py",
+      "sha256": "ab63fe7c84311c9b11e0f8f8d6d09f65227fc4bd3d5919550114131a960f9c12"
+    },
+    {
+      "path": "src/hf_payload/ui_adapter.py",
+      "sha256": "033f87e84dfa4d5a6dbc2544b5f572751c83523543839e8aa7722d52ac031c6f"
+    },
+    {
+      "path": "src/hf_payload/validator.py",
+      "sha256": "a6736c643195afe85cf14a40752fcacef174782a10dc775f4c1a9116807e97b2"
+    },
+    {
+      "path": "src/installer/ui-prototype/build-preview.ps1",
+      "sha256": "7b80616bf4d5bf79514d6c45142b4caaf7f19616c8d85f309213c5e16878784a"
+    },
+    {
+      "path": "src/installer/ui-prototype/check_source.py",
+      "sha256": "a83aba0974367cc871525bb53f7ab16d2768c781e7ea0b1e9887e8e8403e18e7"
+    },
+    {
+      "path": "src/installer/ui-prototype/embedded_cache.iss",
+      "sha256": "660a543109ac87e5f25809220798bd7e07d2cffabd9883d9e949f1c6406cf54a"
+    },
+    {
+      "path": "src/installer/ui-prototype/preview.iss",
+      "sha256": "3cd4996848b9d54e2ec9c902179f006c87ebe015e49a3fcd002f42fb0068d8ee"
+    },
+    {
+      "path": "templates/BepInEx.cfg",
+      "sha256": "9b12b167d8a23b052e891688030232e93985201cf9653f8c588889ed45677ca2"
+    },
+    {
+      "path": "templates/doorstop_config.ini",
+      "sha256": "2255e7640434fdfccbfeb123a5f4fccb05032481b39c2ba822e905ccba58d20e"
+    },
+    {
+      "path": "tests/test_coordinator.py",
+      "sha256": "b413d95df11933f3c926c5961bda3b3d0a05a0572fc3e88d56a36b85f6d8195c"
+    },
+    {
+      "path": "tests/test_fps_9c2.py",
+      "sha256": "f46a0869db93357d5e6d2ca6407af96dd2406cf56d47b21cb5f20b4df698bdb9"
+    },
+    {
+      "path": "tests/test_graphics_9c3.py",
+      "sha256": "1a86e51f3782db534224c1736878edb08b2f3ab3f45cef51ae61098a3d3e156b"
+    },
+    {
+      "path": "tests/test_gui_install.py",
+      "sha256": "fdaf371f7925a7c0e0f8e9b72c667d6d6df363b4fd09fda5a3ce6cc298b296c8"
+    },
+    {
+      "path": "tests/test_gui_polish.py",
+      "sha256": "077f3bdaf690717f02ebf3746721dc89fc6d4cfdf5f767b0392d98f2f4fac237"
+    },
+    {
+      "path": "tests/test_layout_9d3a.py",
+      "sha256": "d027cdf65e46fdb4f00922c94a82e0405f7b353491fd1b8ae71fcbf65955ba51"
+    },
+    {
+      "path": "tests/test_optional_9c1.py",
+      "sha256": "81842005d33466de379e647ce4d5717d5bc49496ce1c122602b781ac2c27a1db"
+    },
+    {
+      "path": "tests/test_ownership.py",
+      "sha256": "6255516768eeb3f2dc7dbf1e84d266b6dc20213c07232c1d63c1e3a7f16ff2fe"
+    },
+    {
+      "path": "tests/test_planner.py",
+      "sha256": "7404188cbfc95f690228b35266b01e87bb267e295495cc0b867efbeb44ca8da3"
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "sha256": "9b4903105e8d066fbdf9e50ec59dee671488166cbd5ec72e442bb5a642159be9"
+    },
+    {
+      "path": "tests/test_registry.py",
+      "sha256": "00e6147651c0b5568426c0f4bb1fa53d7a2cdc25c160970edfe520ebc227c124"
+    },
+    {
+      "path": "tests/test_release_sync_9e2.py",
+      "sha256": "c60cc528f15910e95d2037ee6b6a6dc88b579d52c224841ddb21d66773196c2b"
+    },
+    {
+      "path": "tests/test_runtime_packaging_9d1a.py",
+      "sha256": "465e62daf077a3bfe146132a82adb48521684df46809eb7a5adaa21dde2ba440"
+    },
+    {
+      "path": "tests/test_single_packaging.py",
+      "sha256": "8d16a6fc9d7ab0065446b2e49f15be559b895056a239a295ae2548e1709e7e16"
+    },
+    {
+      "path": "tests/test_ui_adapter.py",
+      "sha256": "3dd8a3352723d1b2af3fb6c44f170a225987bb9a72dbd72dde571c795a241a30"
+    },
+    {
+      "path": "tests/test_validator.py",
+      "sha256": "860392d0ee5c45059eeef4d6656edca47cfe1558a43aeb14fbaf7725f971b5c9"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/FPSCounter-dc2884a3778a4785e1ffa8e3b0b0940f3dde786c-Source.zip",
+      "sha256": "aa4f99ecfb612bae35c740d8a1ebc2a6652b38d9a6d35ee38dc1d7a62b37eff4"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/ATTRIBUTION_AND_REDISTRIBUTION.md",
+      "sha256": "34c555b06aba70aa40d498ef368ced7a46342073d51f9e3679d9560a5f25e2d4"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/BepInEx-5.4.12-LICENSE.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/BepInEx-Harmony-928c8116-LICENSE.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/Gavin-Pugh-Original-Source-Notices.txt",
+      "sha256": "e86216e64d952289bb7ece965daa0e136127467010a57df54deb9e8c0b39b5f5"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/HarmonyX-2.5.1-LICENSE.txt",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/Original-Assembly-Notices.txt",
+      "sha256": "60639ef6e4a0e56d36bcec5f50bb4e96e6ccb16f7dcdb0e1fc67321ad34fee9e"
+    },
+    {
+      "path": "third_party/FPSCounter-v3.1/notices/Zlib-License-Reference.txt",
+      "sha256": "bfb1112d49db5b1daecdfef24bd7e2f3ea0bafb33aa67aa0ab51e2bf8407c03d"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/CorrespondingSource.zip",
+      "sha256": "4530aa871b87b4b37cc4bcf464e4ec95fabd0048ecad49ea182ee294acedf3f0"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/ATTRIBUTION_AND_USAGE.md",
+      "sha256": "78771e4d93e4cb98a754a1ce51e0c3cd31c11ae83fb71d177e073d46a2e34c75"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/BepInEx-5.4.12-LICENSE.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/BepInEx-Harmony-928c8116-LICENSE.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/GraphicsSettings-GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/Harmony-upstream-MIT-notice.txt",
+      "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/HarmonyX-2.5.1-LICENSE.txt",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+    },
+    {
+      "path": "third_party/GraphicsSettings-v1.2.1/notices/SOURCE_INFORMATION.md",
+      "sha256": "db3529e898566f495fbb8fd88ebb7a33b4900bd7901944fb8718d820963bf2b6"
+    },
+    {
+      "path": "third_party/Utility-r7/BepInEx.Utility-f1a40ffe37be96e6710df6029c26255d1a0a5393-Source.zip",
+      "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5"
+    },
+    {
+      "path": "third_party/Utility-r7/SOURCE_INFORMATION.md",
+      "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b"
+    },
+    {
+      "path": "third_party/Utility-r7/notices/ATTRIBUTION_AND_OBLIGATIONS.md",
+      "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1"
+    },
+    {
+      "path": "third_party/Utility-r7/notices/BepInEx-5.4.12-MIT.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+    },
+    {
+      "path": "third_party/Utility-r7/notices/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/licenses/CPython-LICENSE.txt",
+      "sha256": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68"
+    },
+    {
+      "path": "third_party/licenses/Inno-Setup-LICENSE.txt",
+      "sha256": "2e5346868c2a18434489824e11d65c3031620f792fefc415d05f19cd441abf5c"
+    },
+    {
+      "path": "third_party/licenses/PyInstaller-COPYING.txt",
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64"
+    },
+    {
+      "path": "third_party/licenses/essential/BepInEx-5.4.12-LICENSE.txt",
+      "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+    },
+    {
+      "path": "third_party/licenses/essential/BepInEx-Harmony-928c8116-LICENSE.txt",
+      "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+    },
+    {
+      "path": "third_party/licenses/essential/Cecil-0.10.4-LICENSE.txt",
+      "sha256": "13d58ecbed676511c0c4c4009bff107025e50007ff5e7901dc562700ec62509e"
+    },
+    {
+      "path": "third_party/licenses/essential/Doorstop-3.4.0.0-LICENSE.txt",
+      "sha256": "5537d4d10b76b81b6e8dfd8b644480a4b1efa332fbb0cdb61126c5be781ef7b4"
+    },
+    {
+      "path": "third_party/licenses/essential/ESSENTIAL_COMPONENT_NOTICES.md",
+      "sha256": "3a611b94a46554b27c55e2c242ecfa3c79957c6838f2cd0a9ecd878598fa8cf8"
+    },
+    {
+      "path": "third_party/licenses/essential/Harmony-upstream-MIT-notice.txt",
+      "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d"
+    },
+    {
+      "path": "third_party/licenses/essential/HarmonyX-2.5.1-LICENSE.txt",
+      "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+    },
+    {
+      "path": "third_party/licenses/essential/MonoMod-21.7.8.3-LICENSE.txt",
+      "sha256": "0b64833222e3c6a426ad29362d26334619fe02eaf2b89ea9c37805521896c920"
+    },
+    {
+      "path": "third_party/licenses/essential/ORIGINAL_HF_PATCH_NOTICE.txt",
+      "sha256": "6ae36cb95a8e8039bc095d2bacc6e1907405471ed86827b13c05742373f6d5f0"
+    },
+    {
+      "path": "third_party/licenses/essential/Project-GPL-3.0.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/essential/PyInstaller-6.22.3-COPYING.txt",
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/HACL-star-LICENSE",
+      "sha256": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/Microsoft-Windows-redistribution-conditions.txt",
+      "sha256": "e629eecf602eefe8467ea28cda22796fa6c26d5b7238d0cb4c4eb7df995b653d"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/OpenSSL-3.5.9-AUTHORS.md",
+      "sha256": "b9f638dfc06b59c2d3b808186c3b30f713805a5db390f5b77b1703ac58acb83e"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/OpenSSL-3.5.9-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/Python-3.14.10.spdx.json",
+      "sha256": "d448c78f5fae170303d3b022d61507155e4d30e541c32bff3a4edd2b1e8dbf47"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/Python-Windows-LICENSE.txt",
+      "sha256": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/Python-Windows-build-inputs.bat.txt",
+      "sha256": "4e2a2946a943de2c26825901c4f7aad60f59cce82b400b9baf4f78ef758b6313"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/Python-incorporated-license.rst",
+      "sha256": "8a7329b25131f64b2bea284155f0824876b1af9f4a2f970e6335751d97dfa6dd"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/bzip2-1.0.8-LICENSE",
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/libffi-3.4.4-LICENSE",
+      "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/liblzma-5.2.5-COPYING",
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/mpdecimal-4.0.0-COPYRIGHT.txt",
+      "sha256": "2713324211652ce4a60e6e21e54f9dc3004299e591b0933a352f1a89c5fb53c2"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/zlib-ng-2.2.4-LICENSE.md",
+      "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee"
+    },
+    {
+      "path": "third_party/licenses/runtime-3.14.10/zstd-1.5.7-LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "third_party/licenses/vrk-plugins-LICENSE.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/.gitattributes",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/.gitignore",
+      "sha256": "35380548f78778b24e0929967d09b3dfc42a1eb507dacecc7d9134fc812429a0"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/CHANGELOG.md",
+      "sha256": "6ec12478292bb3c8b59139967ae059cc1af315d54219548dd6e67477eb598643"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/README.md",
+      "sha256": "ccbcfedf31a0eff67211e90a90356977153a259458aa9ec27faa7bcf35949ab4"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop.sln",
+      "sha256": "54365d1af803d0c3e0a6f2f9e1135f9bdc1f34ad99b3d637bcd131d02a005147"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/GlobalSuppressions.cs",
+      "sha256": "2e46cfa05094e7cf50163c58c498c7ff2cffb1c74d37f63bd250ccb2bb93a25b"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/Properties/AssemblyInfo.cs",
+      "sha256": "9d30f41eaa109d09d221122265d06d9d07526fdf5ff3d11a91ead776dbba358e"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/ResourceUtils.cs",
+      "sha256": "1a8644ca5ee0fbe4d0d82c47f7dbd0f62084e71cd43360041ed4aa7da18369b0"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/VRKanojoDesktop.csproj",
+      "sha256": "90543ac6f6ac9b82fb113a050760178684da2cfcfd9896a44421129d93e8719c"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/VRKanojoDesktopPlugin.cs",
+      "sha256": "29fae20911369fd37b16b446900849a4b796ac508045f4941d9985884399b138"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/crosshair.png",
+      "sha256": "27e21de4e12d74f7ed68a383f64868c8fc77a5dab28dbfa833fbac2c04091387"
+    },
+    {
+      "path": "third_party/source/VRKanojoDesktop-v1.0.4/VRKanojoDesktop/crosshair.xcf",
+      "sha256": "17f073cb11c70e5ecdac4f738acb0aa7aee7b7edb033a115fdc5d281aa83a84b"
+    },
+    {
+      "path": "tools/build_single_exe.py",
+      "sha256": "4ce9f10c25c3af8d4719d5b8ef859bac93d08d8eea7b7f571806f2b8943d8cba"
+    },
+    {
+      "path": "tools/compile_single_exe.ps1",
+      "sha256": "941afb38edb8386a12914dcdfa2583712646845ab6dadb0553a669fd16c95f1b"
+    },
+    {
+      "path": "tools/gui_install.py",
+      "sha256": "8d0855e851595b41dfd521f42d7e0f09dbe01dc8638f404f1b3f15e30149d6ad"
+    },
+    {
+      "path": "tools/gui_presentation.py",
+      "sha256": "8135e2a8e6d1e2b6156dcdc55193749d577cdb568f2fdb97a025daa3e21bf5af"
+    },
+    {
+      "path": "tools/package_source110.py",
+      "sha256": "3b7ded537186834622ac971261f924f4210db870a99ad95e0870637beae33be4"
+    },
+    {
+      "path": "tools/portable_backend.py",
+      "sha256": "2992cf4ac04cc3ff342c9f348c31df9ff277ea3cde3cceb13bc9c438a25f4b36"
+    },
+    {
+      "path": "tools/prepare_final110_notices.py",
+      "sha256": "4b89f76059db9c1cca9eae992daf71f14bafb518db95f89348377f172786df3d"
+    },
+    {
+      "path": "tools/prepare_notice_inputs.py",
+      "sha256": "a73ad7c4ab2070926389b615ddbc275d6c2cd2c52518fb9fe1dcf22881ab199e"
+    },
+    {
+      "path": "tools/prepare_official_runtime.py",
+      "sha256": "ce3d831ddc940f360bc58f484ae0a868c62c1231117dc33113ff92a1140ef825"
+    },
+    {
+      "path": "tools/private_gui_install.py",
+      "sha256": "7b446da6ede4369456be06e5e9b77da4f81c9e04602b7f0c1e6427c8e46903f3"
+    },
+    {
+      "path": "tools/qualification_backend8a.py",
+      "sha256": "017d01d5865fa8bb30185094ffd4ae1028f02169d18bf2cd349708c60be6849f"
+    },
+    {
+      "path": "tools/qualify_dev110_packaged.py",
+      "sha256": "ad35c6d8504433c467bac609575ffe0bada4896019331861f74003d808da7436"
+    },
+    {
+      "path": "tools/qualify_native_runtime.py",
+      "sha256": "e325257b4fb0a1a6b61af8f09bdc0ad6ec978be5cbec40327eb937c4f69a41fc"
+    },
+    {
+      "path": "tools/real_gui_install.py",
+      "sha256": "fb6ac426decb1d3dead9e51b2a1ae134a83b5a442d47263857c86b2a75825eab"
+    },
+    {
+      "path": "tools/release_config.py",
+      "sha256": "a4103726f8f7af9a80e1bfca6fb0be59c931b0bb11ebbd8b0f3e5668ac61be0f"
+    },
+    {
+      "path": "tools/run_source_tests.py",
+      "sha256": "a20d26132bfb1f66df575a79eece1825d867f5e519272173ce413716ce32b38b"
+    },
+    {
+      "path": "tools/runtime_build_env.py",
+      "sha256": "ebbed1ab07f29e6ee9fe6f8aa5f302682643d266decbf2315326b751dad5d53a"
+    },
+    {
+      "path": "tools/source_export_plan.py",
+      "sha256": "9be344cce4639416b79571bc33a7039e9a5172d41d6d31dfe07c20fbd9adb8bf"
+    },
+    {
+      "path": "tools/synthetic_install.py",
+      "sha256": "da56d9e22c9e6210e0d4f33b4f1995331259755ec3ba61042a174c5d63cd4c55"
+    },
+    {
+      "path": "tools/validate_ui_selection.py",
+      "sha256": "005f5d54081d7e6a08bbb4e97dd374b91ee05ca769fe3db0fa3cd0fa5841527b"
+    },
+    {
+      "path": "tools/wizard_validate.py",
+      "sha256": "7ad893e01f32f10394eeb3fb0f0c0f90dd1978e345ded04d33067787b1bdbc30"
+    },
+    {
+      "path": "docs/V1.1.0_PACKAGE_ARTIFACTS.json",
+      "sha256": "03a9ca12e29c9472c58b730e889676d3805eb5ccfe4d1339a31e50ed93bd1f4c"
+    },
+    {
+      "path": "docs/V1.1.0_PACKAGE_VERIFICATION.md",
+      "sha256": "3255e1d3c81a9fef146c4e8cfccd0e8121415d727d8a765d03df23916e06176e"
+    },
+    {
+      "path": "docs/V1.1.0_RELEASE_LIMITATIONS.md",
+      "sha256": "dc5c0c8e1b89c3cf0e325babdb3edb66c8b5892a56db9f1d52977a7c4e48ed50"
+    },
+    {
+      "path": "docs/history/v1.0.0/RELEASE_ARTIFACTS.json",
+      "sha256": "fe07f9bfbbd05a52762d700a9f7b1758ce3bac3ede83c46a0186585884203d6c"
+    },
+    {
+      "path": "docs/history/v1.0.0/RELEASE_NOTES.md",
+      "sha256": "ee92798690ea89c1342c38a895a0241e799a7d9121511e18084cd646ead40e98"
+    },
+    {
+      "path": "docs/history/v1.0.0/RELEASE_READINESS.md",
+      "sha256": "29ec888cb1c44a78fa9a5d2ea8c53f9d01f13dab460c089a67daad763b53d21e"
+    },
+    {
+      "path": "docs/history/v1.0.0/release-status.json",
+      "sha256": "94c81b3b158efc12b500c9cad6d9b7cd921c68ea52a5d11383176ca5f11d8333"
+    }
+  ],
+  "generated_after_export": [
+    "SOURCE_SHA256SUMS.txt"
+  ],
+  "private_roots_excluded": [
+    "out",
+    "build",
+    "cache",
+    "payload",
+    ".git",
+    "journals",
+    "backups",
+    "receipts",
+    "credentials",
+    "state"
+  ],
+  "refresh_policy": "Any listed source change invalidates validation. Re-review and regenerate explicitly; do not silently relax the allowlist. This policy is an export integrity control, not authenticated ownership."
+}

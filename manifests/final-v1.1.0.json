@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "version": "1.1.0",
+  "numeric_version": "1.1.0.0",
+  "tag": "v1.1.0",
+  "title": "VR Kanojo Mod Installer v1.1.0",
+  "maintainer": "FeriousX",
+  "exe_name": "VRK-Mod-Installer-v1.1.0.exe",
+  "source_name": "VRK-Mod-Installer-v1.1.0-Source.zip",
+  "build_kind": "FINAL110",
+  "bundle_dir": "out/FINAL110",
+  "build_dir": "build/FINAL110",
+  "report_dir": "out/final-v1.1.0",
+  "distribution_dir": "out/FinalRelease_v1.1.0",
+  "catalog_digest": "80ebc51881061bcfe99fe05f0f7bc06f5afb0bcc925b0de5bc38facfc63466e6",
+  "approved_components": [
+    "bepinex",
+    "loader-config",
+    "vrkanojo-desktop",
+    "message-center",
+    "mute",
+    "fps",
+    "graphics"
+  ],
+  "maximum_component_files": 56,
+  "reference_resource_count": 107,
+  "resource_count_policy": "Derived from final Resources.json; reference is dev.3, not an asserted final inventory",
+  "runtime_archive_sha256": "90905e64a840557d8c1bc4f5b74db3d7ee85e3ffb217611cac1c7813acea4159",
+  "native_file_count": 18,
+  "default_off": [
+    "message-center",
+    "mute",
+    "fps",
+    "graphics"
+  ],
+  "published": false,
+  "runtime_provenance_sha256": "a70e96153ef5f5785a4f5eee26c42e19e727793e89f804dd5bd536d109aa3e6a"
+}

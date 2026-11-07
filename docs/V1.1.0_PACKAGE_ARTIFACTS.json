@@ -1,0 +1,50 @@
+{
+  "version": "1.1.0",
+  "tag": "v1.1.0",
+  "title": "VR Kanojo Mod Installer v1.1.0",
+  "maintainer": "FeriousX",
+  "status": "VERIFIED_UNPUBLISHED_CANDIDATE",
+  "published": false,
+  "release_url": null,
+  "planned_release_page": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0",
+  "exe_name": "VRK-Mod-Installer-v1.1.0.exe",
+  "exe_sha256": "0DE92037A58E3525478F33D87648FA44E028AC7B6E14E51CD71962B2943FE921",
+  "exe_bytes": 11133966,
+  "source_name": "VRK-Mod-Installer-v1.1.0-Source.zip",
+  "source_sha256": "51E4CF9EEAC88739415B190EB0888973E3B3BD9035597844994B0B9786BB7BA4",
+  "source_bytes": 555335,
+  "unsigned": true,
+  "independent_windows_compatibility": "INCOMPLETE",
+  "owner_reported_testing": {
+    "source": "Owner Phase9E1 report, recorded 2026-11-07; not independently repeated",
+    "core_installation_and_gameplay": "PASS_OWNER_REPORTED",
+    "four_optional_mods": "WORKING_OWNER_REPORTED",
+    "footer_fix": "PASS_OWNER_VISUALLY_VERIFIED",
+    "recovery_retest": "NOT_VERIFIED",
+    "additional_dpi": "NOT_VERIFIED",
+    "clean_windows": "NOT_VERIFIED"
+  },
+  "latest_development_reference": {
+    "filename": "VRK-Mod-Installer-v1.1.0-dev.3.exe",
+    "sha256": "988492CB21121F2CF97B24F14189635442959C3DF464BEDD2017DF0C03689A29",
+    "bytes": 11133715,
+    "version": "1.1.0-dev.3",
+    "bundle": "95a892e2fcb0edda"
+  },
+  "source_hash_record": "THIS_EXTERNAL_RECORD_AND_SHA256SUMS",
+  "source_hash_explanation": "The corresponding-source ZIP records its own identity externally to avoid circular hashing.",
+  "resource_bundle": "2343f5e3638b38c6",
+  "resource_count": 107,
+  "source_zip_status": "IDENTITY_RECORDED_EXTERNALLY",
+  "source_zip_created": true,
+  "automated_verification": {
+    "source_regression_tests": 304,
+    "post_metadata_tests": 14,
+    "frozen_backend_checks": 161,
+    "source_zip_members": 168,
+    "runtime_native_matches": 18
+  },
+  "final_gui_test": "NOT_PERFORMED",
+  "independent_gameplay_test": false,
+  "publication_approval": "NOT_GRANTED"
+}

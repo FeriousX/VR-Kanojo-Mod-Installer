@@ -1,5 +1,5 @@
 {
-  "description": "Initial public profile: BepInEx 5.4.12, loader settings and optional FeriousX Desktop 1.0.4 only. Native runtime clearance still blocked.",
+  "description": "Prepared v1.1.0 plugin-focused release: BepInEx/loader settings, optional Desktop and independent default-off Message Center 1.1.1, Mute In Background 1.1, FPS Counter 3.1 and official Graphics Settings 1.2.1. Owner-reported testing is separate from unverified recovery/DPI/stock-Windows qualification.",
   "desktop_modes": [
     "vrkanojo-desktop",
     "neither"
@@ -9,15 +9,11 @@
     "credits",
     "developer-runtime",
     "doorstop-config",
-    "fps",
     "full-save",
     "game-repair",
-    "graphics",
     "helper",
     "launcher",
-    "message-center",
     "mouse-config",
-    "mute",
     "orphan-config",
     "play-without-vr",
     "resource-redirector",
@@ -33,7 +29,11 @@
   "included_components": [
     "bepinex",
     "loader-config",
-    "vrkanojo-desktop"
+    "vrkanojo-desktop",
+    "message-center",
+    "mute",
+    "fps",
+    "graphics"
   ],
   "real_game_installation_enabled": false,
   "required_components": [

@@ -6,7 +6,7 @@
     "loader-config"
   ],
   "release_scope": {
-    "description": "Initial public profile: BepInEx 5.4.12, loader settings and optional FeriousX Desktop 1.0.4 only. Native runtime clearance still blocked.",
+    "description": "Prepared v1.1.0 plugin-focused release: BepInEx/loader settings, optional Desktop and independent default-off Message Center 1.1.1, Mute In Background 1.1, FPS Counter 3.1 and official Graphics Settings 1.2.1. Owner-reported testing is separate from unverified recovery/DPI/stock-Windows qualification.",
     "desktop_modes": [
       "vrkanojo-desktop",
       "neither"
@@ -16,15 +16,11 @@
       "credits",
       "developer-runtime",
       "doorstop-config",
-      "fps",
       "full-save",
       "game-repair",
-      "graphics",
       "helper",
       "launcher",
-      "message-center",
       "mouse-config",
-      "mute",
       "orphan-config",
       "play-without-vr",
       "resource-redirector",
@@ -40,7 +36,11 @@
     "included_components": [
       "bepinex",
       "loader-config",
-      "vrkanojo-desktop"
+      "vrkanojo-desktop",
+      "message-center",
+      "mute",
+      "fps",
+      "graphics"
     ],
     "real_game_installation_enabled": false,
     "required_components": [
@@ -296,35 +296,111 @@
     {
       "id": "message-center",
       "required": false,
-      "readiness": "NEEDS VERIFICATION",
+      "readiness": "READY",
       "dependencies": [
         "bepinex"
       ],
       "conflicts": [],
       "provenance": {
-        "status": "historical-artifact-only"
+        "status": "verified-official-release",
+        "asset_url": "https://github.com/BepInEx/BepInEx.Utility/releases/tag/r7",
+        "archive_sha256": "3096c76c35ba680c6835db87a9c4029b3ee427384f877435d53d10ceae42da5d",
+        "source_commit": "f1a40ffe37be96e6710df6029c26255d1a0a5393",
+        "evidence": "third_party/Utility-r7/CLEARANCE_STATUS.json"
       },
       "redistribution": {
-        "status": "not-cleared"
+        "status": "permitted-with-obligations",
+        "license": "GPL-3.0",
+        "obligations": "Preserve notices and full corresponding source with exact reviewed binaries."
       },
-      "blockers": [
-        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
-      ],
+      "blockers": [],
       "authors": [
         "BepInEx contributors"
       ],
       "versions": [
-        "1.0.0.0"
+        "1.1.1"
       ],
-      "initial_release_included": false,
-      "files": [],
-      "source": "Original HF Patch v1.1 extracted evidence; BepInEx\\MessageCenter",
+      "initial_release_included": true,
+      "files": [
+        {
+          "id": "message-center-1",
+          "destination": "BepInEx/plugins/BepInEx.MessageCenter.dll",
+          "staged_source": "optional-110/message-center/BepInEx/plugins/BepInEx.MessageCenter.dll",
+          "size": 10240,
+          "sha256": "7e6d7bb280e90fb468f4f1e7809e0f88b6c2422695f28225371437e77a39cd4c"
+        },
+        {
+          "id": "message-center-2",
+          "destination": "HF_Patch_Notices/MessageCenter/LICENSE",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/LICENSE",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "message-center-3",
+          "destination": "HF_Patch_Notices/MessageCenter/CorrespondingSource.zip",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/CorrespondingSource.zip",
+          "size": 51716,
+          "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5"
+        },
+        {
+          "id": "message-center-4",
+          "destination": "HF_Patch_Notices/MessageCenter/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "size": 2283,
+          "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1"
+        },
+        {
+          "id": "message-center-5",
+          "destination": "HF_Patch_Notices/MessageCenter/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/SOURCE_INFORMATION.md",
+          "size": 2625,
+          "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b"
+        }
+      ],
+      "source": "https://github.com/BepInEx/BepInEx.Utility/releases/tag/r7",
       "license_evidence": [
-        "Utility upstream GPL-3.0 text; exact revision pending"
+        "third_party/Utility-r7/notices/GPL-3.0.txt"
       ],
-      "runtime_files": [],
+      "runtime_files": [
+        {
+          "id": "message-center-1",
+          "destination": "BepInEx/plugins/BepInEx.MessageCenter.dll",
+          "staged_source": "optional-110/message-center/BepInEx/plugins/BepInEx.MessageCenter.dll",
+          "size": 10240,
+          "sha256": "7e6d7bb280e90fb468f4f1e7809e0f88b6c2422695f28225371437e77a39cd4c"
+        },
+        {
+          "id": "message-center-2",
+          "destination": "HF_Patch_Notices/MessageCenter/LICENSE",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/LICENSE",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "message-center-3",
+          "destination": "HF_Patch_Notices/MessageCenter/CorrespondingSource.zip",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/CorrespondingSource.zip",
+          "size": 51716,
+          "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5"
+        },
+        {
+          "id": "message-center-4",
+          "destination": "HF_Patch_Notices/MessageCenter/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "size": 2283,
+          "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1"
+        },
+        {
+          "id": "message-center-5",
+          "destination": "HF_Patch_Notices/MessageCenter/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/message-center/HF_Patch_Notices/MessageCenter/SOURCE_INFORMATION.md",
+          "size": 2625,
+          "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b"
+        }
+      ],
       "historical_required": false,
-      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+      "runtime_verification": "local-files-verified"
     },
     {
       "id": "developer-runtime",
@@ -362,68 +438,275 @@
     {
       "id": "mute",
       "required": false,
-      "readiness": "NEEDS VERIFICATION",
+      "readiness": "READY",
       "dependencies": [
         "bepinex"
       ],
       "conflicts": [],
       "provenance": {
-        "status": "historical-artifact-only"
+        "status": "verified-official-release",
+        "asset_url": "https://github.com/BepInEx/BepInEx.Utility/releases/tag/r7",
+        "archive_sha256": "31fbb659a9cb758a6c685194ce55e3556b99b75bb974db25fe8ad305fcfab58c",
+        "source_commit": "f1a40ffe37be96e6710df6029c26255d1a0a5393",
+        "evidence": "third_party/Utility-r7/CLEARANCE_STATUS.json"
       },
       "redistribution": {
-        "status": "not-cleared"
+        "status": "permitted-with-obligations",
+        "license": "GPL-3.0",
+        "obligations": "Preserve notices and full corresponding source with exact reviewed binaries."
       },
-      "blockers": [
-        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
-      ],
+      "blockers": [],
       "authors": [
         "BepInEx contributors"
       ],
       "versions": [
-        "1.1.0.0"
+        "1.1"
       ],
-      "initial_release_included": false,
-      "files": [],
-      "source": "Original HF Patch v1.1 extracted evidence; Feature\\MuteInBackground",
+      "initial_release_included": true,
+      "files": [
+        {
+          "id": "mute-1",
+          "destination": "BepInEx/plugins/BepInEx.MuteInBackground.dll",
+          "staged_source": "optional-110/mute/BepInEx/plugins/BepInEx.MuteInBackground.dll",
+          "size": 5632,
+          "sha256": "bd80cd69e6edecf6a25ddbf83ac800c7d4c4cb1484b9419794b6bdf333cdf76c"
+        },
+        {
+          "id": "mute-2",
+          "destination": "HF_Patch_Notices/MuteInBackground/LICENSE",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/LICENSE",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "mute-3",
+          "destination": "HF_Patch_Notices/MuteInBackground/CorrespondingSource.zip",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/CorrespondingSource.zip",
+          "size": 51716,
+          "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5"
+        },
+        {
+          "id": "mute-4",
+          "destination": "HF_Patch_Notices/MuteInBackground/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "size": 2283,
+          "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1"
+        },
+        {
+          "id": "mute-5",
+          "destination": "HF_Patch_Notices/MuteInBackground/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/SOURCE_INFORMATION.md",
+          "size": 2625,
+          "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b"
+        }
+      ],
+      "source": "https://github.com/BepInEx/BepInEx.Utility/releases/tag/r7",
       "license_evidence": [
-        "Utility upstream GPL-3.0 text; exact revision pending"
+        "third_party/Utility-r7/notices/GPL-3.0.txt"
       ],
-      "runtime_files": [],
+      "runtime_files": [
+        {
+          "id": "mute-1",
+          "destination": "BepInEx/plugins/BepInEx.MuteInBackground.dll",
+          "staged_source": "optional-110/mute/BepInEx/plugins/BepInEx.MuteInBackground.dll",
+          "size": 5632,
+          "sha256": "bd80cd69e6edecf6a25ddbf83ac800c7d4c4cb1484b9419794b6bdf333cdf76c"
+        },
+        {
+          "id": "mute-2",
+          "destination": "HF_Patch_Notices/MuteInBackground/LICENSE",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/LICENSE",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "mute-3",
+          "destination": "HF_Patch_Notices/MuteInBackground/CorrespondingSource.zip",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/CorrespondingSource.zip",
+          "size": 51716,
+          "sha256": "0bc7931efefc7233983635cb9f584618e292b090deec11d04cb69bded83393a5"
+        },
+        {
+          "id": "mute-4",
+          "destination": "HF_Patch_Notices/MuteInBackground/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/ATTRIBUTION_AND_OBLIGATIONS.md",
+          "size": 2283,
+          "sha256": "ece1084bb822001c8339dfcfbcdd79da66dfd5943605fcf43cd5b6682fadaed1"
+        },
+        {
+          "id": "mute-5",
+          "destination": "HF_Patch_Notices/MuteInBackground/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/mute/HF_Patch_Notices/MuteInBackground/SOURCE_INFORMATION.md",
+          "size": 2625,
+          "sha256": "1ecaba8f7d26ded42d857e1a23b2b4379da97e6fecf8916cd94d4d8163dac04b"
+        }
+      ],
       "historical_required": false,
-      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+      "runtime_verification": "local-files-verified"
     },
     {
       "id": "graphics",
       "required": false,
-      "readiness": "NEEDS VERIFICATION",
+      "readiness": "READY",
       "dependencies": [
         "bepinex"
       ],
       "conflicts": [],
       "provenance": {
-        "status": "historical-artifact-only"
+        "status": "verified-official-release",
+        "asset_url": "https://github.com/BepInEx/BepInEx.GraphicsSettings/releases/download/v1.2.1/GraphicsSettings.dll",
+        "source_commit": "b161594317cae4caa83eb82a59076e961c0ab004",
+        "evidence": "third_party/GraphicsSettings-v1.2.1/OFFICIAL_EVIDENCE.json"
       },
       "redistribution": {
-        "status": "not-cleared"
+        "status": "permitted-with-obligations",
+        "license": "GPL-3.0",
+        "obligations": "Retain GPL license, corresponding preferred source, attribution and framework/Harmony notices."
       },
-      "blockers": [
-        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
-      ],
+      "blockers": [],
       "authors": [
-        "BepInEx/keelhauled"
+        "Keelhauled / BepInEx contributors"
       ],
       "versions": [
-        "1.0.0.0"
+        "1.2.1"
       ],
-      "initial_release_included": false,
-      "files": [],
-      "source": "Original HF Patch v1.1 extracted evidence; Feature\\GraphicsSettings",
-      "license_evidence": [
-        "Upstream GPL-3.0 text; exact revision pending"
+      "initial_release_included": true,
+      "files": [
+        {
+          "id": "graphics-3",
+          "destination": "BepInEx/plugins/GraphicsSettings.dll",
+          "staged_source": "optional-110/graphics/BepInEx/plugins/GraphicsSettings.dll",
+          "size": 22528,
+          "sha256": "e6149270785b1f1c152a1a3fcb39b4d2e71c69a968d2ccfff89a20b1d10c23a2"
+        },
+        {
+          "id": "graphics-6",
+          "destination": "HF_Patch_Notices/GraphicsSettings/ATTRIBUTION_AND_USAGE.md",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/ATTRIBUTION_AND_USAGE.md",
+          "size": 1147,
+          "sha256": "78771e4d93e4cb98a754a1ce51e0c3cd31c11ae83fb71d177e073d46a2e34c75"
+        },
+        {
+          "id": "graphics-7",
+          "destination": "HF_Patch_Notices/GraphicsSettings/BepInEx-5.4.12-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-5.4.12-LICENSE.txt",
+          "size": 1062,
+          "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+        },
+        {
+          "id": "graphics-8",
+          "destination": "HF_Patch_Notices/GraphicsSettings/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "size": 1057,
+          "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+        },
+        {
+          "id": "graphics-9",
+          "destination": "HF_Patch_Notices/GraphicsSettings/CorrespondingSource.zip",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/CorrespondingSource.zip",
+          "size": 23446,
+          "sha256": "4530aa871b87b4b37cc4bcf464e4ec95fabd0048ecad49ea182ee294acedf3f0"
+        },
+        {
+          "id": "graphics-10",
+          "destination": "HF_Patch_Notices/GraphicsSettings/GraphicsSettings-GPL-3.0.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/GraphicsSettings-GPL-3.0.txt",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "graphics-11",
+          "destination": "HF_Patch_Notices/GraphicsSettings/Harmony-upstream-MIT-notice.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/Harmony-upstream-MIT-notice.txt",
+          "size": 1073,
+          "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d"
+        },
+        {
+          "id": "graphics-12",
+          "destination": "HF_Patch_Notices/GraphicsSettings/HarmonyX-2.5.1-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/HarmonyX-2.5.1-LICENSE.txt",
+          "size": 1063,
+          "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+        },
+        {
+          "id": "graphics-13",
+          "destination": "HF_Patch_Notices/GraphicsSettings/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/SOURCE_INFORMATION.md",
+          "size": 1162,
+          "sha256": "db3529e898566f495fbb8fd88ebb7a33b4900bd7901944fb8718d820963bf2b6"
+        }
       ],
-      "runtime_files": [],
+      "runtime_files": [
+        {
+          "id": "graphics-3",
+          "destination": "BepInEx/plugins/GraphicsSettings.dll",
+          "staged_source": "optional-110/graphics/BepInEx/plugins/GraphicsSettings.dll",
+          "size": 22528,
+          "sha256": "e6149270785b1f1c152a1a3fcb39b4d2e71c69a968d2ccfff89a20b1d10c23a2"
+        },
+        {
+          "id": "graphics-6",
+          "destination": "HF_Patch_Notices/GraphicsSettings/ATTRIBUTION_AND_USAGE.md",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/ATTRIBUTION_AND_USAGE.md",
+          "size": 1147,
+          "sha256": "78771e4d93e4cb98a754a1ce51e0c3cd31c11ae83fb71d177e073d46a2e34c75"
+        },
+        {
+          "id": "graphics-7",
+          "destination": "HF_Patch_Notices/GraphicsSettings/BepInEx-5.4.12-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-5.4.12-LICENSE.txt",
+          "size": 1062,
+          "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+        },
+        {
+          "id": "graphics-8",
+          "destination": "HF_Patch_Notices/GraphicsSettings/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "size": 1057,
+          "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+        },
+        {
+          "id": "graphics-9",
+          "destination": "HF_Patch_Notices/GraphicsSettings/CorrespondingSource.zip",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/CorrespondingSource.zip",
+          "size": 23446,
+          "sha256": "4530aa871b87b4b37cc4bcf464e4ec95fabd0048ecad49ea182ee294acedf3f0"
+        },
+        {
+          "id": "graphics-10",
+          "destination": "HF_Patch_Notices/GraphicsSettings/GraphicsSettings-GPL-3.0.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/GraphicsSettings-GPL-3.0.txt",
+          "size": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "id": "graphics-11",
+          "destination": "HF_Patch_Notices/GraphicsSettings/Harmony-upstream-MIT-notice.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/Harmony-upstream-MIT-notice.txt",
+          "size": 1073,
+          "sha256": "a5883d0c45eb7e176d3d1631220e7f96e958e37064773d40245ae6db560bbd6d"
+        },
+        {
+          "id": "graphics-12",
+          "destination": "HF_Patch_Notices/GraphicsSettings/HarmonyX-2.5.1-LICENSE.txt",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/HarmonyX-2.5.1-LICENSE.txt",
+          "size": 1063,
+          "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+        },
+        {
+          "id": "graphics-13",
+          "destination": "HF_Patch_Notices/GraphicsSettings/SOURCE_INFORMATION.md",
+          "staged_source": "optional-110/graphics/HF_Patch_Notices/GraphicsSettings/SOURCE_INFORMATION.md",
+          "size": 1162,
+          "sha256": "db3529e898566f495fbb8fd88ebb7a33b4900bd7901944fb8718d820963bf2b6"
+        }
+      ],
       "historical_required": false,
-      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+      "runtime_verification": "local-files-verified",
+      "source": "https://github.com/BepInEx/BepInEx.GraphicsSettings/releases/tag/v1.2.1",
+      "license_evidence": [
+        "third_party/GraphicsSettings-v1.2.1/notices/GraphicsSettings-GPL-3.0.txt"
+      ]
     },
     {
       "id": "mouse-config",
@@ -1054,35 +1337,183 @@
     {
       "id": "fps",
       "required": false,
-      "readiness": "NEEDS VERIFICATION",
+      "readiness": "READY",
       "dependencies": [
         "bepinex"
       ],
       "conflicts": [],
       "provenance": {
-        "status": "historical-artifact-only"
+        "status": "verified-official-release",
+        "asset_url": "https://github.com/ManlyMarco/FPSCounter/releases/download/v3.1/FPSCounter_v3.1.zip",
+        "archive_sha256": "7a0e49033dc6db25cb196ab45db33c9c46d0598f1ef55cc0d7b1ebf2aa931bff",
+        "source_commit": "dc2884a3778a4785e1ffa8e3b0b0940f3dde786c",
+        "evidence": "third_party/FPSCounter-v3.1/CLEARANCE_STATUS.json"
       },
       "redistribution": {
-        "status": "not-cleared"
+        "status": "permitted-with-obligations",
+        "license": "Apache-2.0 AND zlib",
+        "obligations": "Preserve Apache-2.0, Gavin Pugh zlib helper headers/terms, assembly attribution and existing dependency notices."
       },
-      "blockers": [
-        "Exact artifact/source/notice and redistribution review unresolved; see per-file evidence."
-      ],
+      "blockers": [],
       "authors": [
         "MarC0/ManlyMarco"
       ],
       "versions": [
-        "1.0.0.0"
+        "3.1"
       ],
-      "initial_release_included": false,
-      "files": [],
-      "source": "Original HF Patch v1.1 extracted evidence; MISC\\FPS",
+      "initial_release_included": true,
+      "files": [
+        {
+          "id": "fps-1",
+          "destination": "BepInEx/plugins/FPSCounter.dll",
+          "staged_source": "optional-110/fps/BepInEx/plugins/FPSCounter.dll",
+          "size": 32768,
+          "sha256": "333c467be5d3edc845a9a97d0d0a2c2269e796c63cf0ab6ff72d1ba74323a982"
+        },
+        {
+          "id": "fps-2",
+          "destination": "HF_Patch_Notices/FPSCounter/Apache-2.0.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Apache-2.0.txt",
+          "size": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "id": "fps-3",
+          "destination": "HF_Patch_Notices/FPSCounter/ATTRIBUTION_AND_REDISTRIBUTION.md",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/ATTRIBUTION_AND_REDISTRIBUTION.md",
+          "size": 2842,
+          "sha256": "34c555b06aba70aa40d498ef368ced7a46342073d51f9e3679d9560a5f25e2d4"
+        },
+        {
+          "id": "fps-4",
+          "destination": "HF_Patch_Notices/FPSCounter/BepInEx-5.4.12-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-5.4.12-LICENSE.txt",
+          "size": 1062,
+          "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+        },
+        {
+          "id": "fps-5",
+          "destination": "HF_Patch_Notices/FPSCounter/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "size": 1057,
+          "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+        },
+        {
+          "id": "fps-6",
+          "destination": "HF_Patch_Notices/FPSCounter/Gavin-Pugh-Original-Source-Notices.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Gavin-Pugh-Original-Source-Notices.txt",
+          "size": 1361,
+          "sha256": "e86216e64d952289bb7ece965daa0e136127467010a57df54deb9e8c0b39b5f5"
+        },
+        {
+          "id": "fps-7",
+          "destination": "HF_Patch_Notices/FPSCounter/HarmonyX-2.5.1-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/HarmonyX-2.5.1-LICENSE.txt",
+          "size": 1063,
+          "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+        },
+        {
+          "id": "fps-8",
+          "destination": "HF_Patch_Notices/FPSCounter/Original-Assembly-Notices.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Original-Assembly-Notices.txt",
+          "size": 180,
+          "sha256": "60639ef6e4a0e56d36bcec5f50bb4e96e6ccb16f7dcdb0e1fc67321ad34fee9e"
+        },
+        {
+          "id": "fps-9",
+          "destination": "HF_Patch_Notices/FPSCounter/Zlib-License-Reference.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Zlib-License-Reference.txt",
+          "size": 838,
+          "sha256": "bfb1112d49db5b1daecdfef24bd7e2f3ea0bafb33aa67aa0ab51e2bf8407c03d"
+        },
+        {
+          "id": "fps-10",
+          "destination": "HF_Patch_Notices/FPSCounter/CorrespondingSource.zip",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/CorrespondingSource.zip",
+          "size": 27738,
+          "sha256": "aa4f99ecfb612bae35c740d8a1ebc2a6652b38d9a6d35ee38dc1d7a62b37eff4"
+        }
+      ],
+      "source": "https://github.com/ManlyMarco/FPSCounter/releases/tag/v3.1",
       "license_evidence": [
-        "Upstream Apache-2.0; exact revision pending"
+        "third_party/FPSCounter-v3.1/notices/Apache-2.0.txt",
+        "third_party/FPSCounter-v3.1/notices/Gavin-Pugh-Original-Source-Notices.txt",
+        "third_party/FPSCounter-v3.1/notices/Zlib-License-Reference.txt"
       ],
-      "runtime_files": [],
+      "runtime_files": [
+        {
+          "id": "fps-1",
+          "destination": "BepInEx/plugins/FPSCounter.dll",
+          "staged_source": "optional-110/fps/BepInEx/plugins/FPSCounter.dll",
+          "size": 32768,
+          "sha256": "333c467be5d3edc845a9a97d0d0a2c2269e796c63cf0ab6ff72d1ba74323a982"
+        },
+        {
+          "id": "fps-2",
+          "destination": "HF_Patch_Notices/FPSCounter/Apache-2.0.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Apache-2.0.txt",
+          "size": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "id": "fps-3",
+          "destination": "HF_Patch_Notices/FPSCounter/ATTRIBUTION_AND_REDISTRIBUTION.md",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/ATTRIBUTION_AND_REDISTRIBUTION.md",
+          "size": 2842,
+          "sha256": "34c555b06aba70aa40d498ef368ced7a46342073d51f9e3679d9560a5f25e2d4"
+        },
+        {
+          "id": "fps-4",
+          "destination": "HF_Patch_Notices/FPSCounter/BepInEx-5.4.12-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-5.4.12-LICENSE.txt",
+          "size": 1062,
+          "sha256": "e6e534ef6f4347b6449407ee046a3d09cb0174c6f688c996ad0bed94b74b3933"
+        },
+        {
+          "id": "fps-5",
+          "destination": "HF_Patch_Notices/FPSCounter/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/BepInEx-Harmony-928c8116-LICENSE.txt",
+          "size": 1057,
+          "sha256": "feb87a2e0c305de3464cc44077da5393c52d8ca6362d37427157d04ec6f4510d"
+        },
+        {
+          "id": "fps-6",
+          "destination": "HF_Patch_Notices/FPSCounter/Gavin-Pugh-Original-Source-Notices.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Gavin-Pugh-Original-Source-Notices.txt",
+          "size": 1361,
+          "sha256": "e86216e64d952289bb7ece965daa0e136127467010a57df54deb9e8c0b39b5f5"
+        },
+        {
+          "id": "fps-7",
+          "destination": "HF_Patch_Notices/FPSCounter/HarmonyX-2.5.1-LICENSE.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/HarmonyX-2.5.1-LICENSE.txt",
+          "size": 1063,
+          "sha256": "7e54ab4766ef78637a05fb3454663a66de6bb960dbd4c7088890ed76b0844f36"
+        },
+        {
+          "id": "fps-8",
+          "destination": "HF_Patch_Notices/FPSCounter/Original-Assembly-Notices.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Original-Assembly-Notices.txt",
+          "size": 180,
+          "sha256": "60639ef6e4a0e56d36bcec5f50bb4e96e6ccb16f7dcdb0e1fc67321ad34fee9e"
+        },
+        {
+          "id": "fps-9",
+          "destination": "HF_Patch_Notices/FPSCounter/Zlib-License-Reference.txt",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/Zlib-License-Reference.txt",
+          "size": 838,
+          "sha256": "bfb1112d49db5b1daecdfef24bd7e2f3ea0bafb33aa67aa0ab51e2bf8407c03d"
+        },
+        {
+          "id": "fps-10",
+          "destination": "HF_Patch_Notices/FPSCounter/CorrespondingSource.zip",
+          "staged_source": "optional-110/fps/HF_Patch_Notices/FPSCounter/CorrespondingSource.zip",
+          "size": 27738,
+          "sha256": "aa4f99ecfb612bae35c740d8a1ebc2a6652b38d9a6d35ee38dc1d7a62b37eff4"
+        }
+      ],
       "historical_required": false,
-      "initial_release_disposition": "Excluded by owner scope; retain historical evidence; do not investigate asset rights for this release."
+      "runtime_verification": "local-files-verified"
     },
     {
       "id": "orphan-config",

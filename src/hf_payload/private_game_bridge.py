@@ -32,8 +32,10 @@ def prepare(request,clock=time.time):
                           compatibility=policy['scope']=='compatible-original-game-v1')
     permit.check(p,full=True)
     selected=['bepinex','loader-config']
-    if request['mask']&2:selected+=['resource-redirector','uncensor-loader']
-    if request['mask']&4:selected+=['message-center','mute','graphics','fps','runtime-editor','script-loader']
+    if request['mask']&8:selected+=['message-center']
+    if request['mask']&16:selected+=['mute']
+    if request['mask']&32:selected+=['fps']
+    if request['mask']&64:selected+=['graphics']
     keys=[secrets.token_bytes(32) for _ in range(4)]
     area=ExternalArea.enroll_private(p,digest(p),keys[0],permit)
     AUTHORITY.mkdir(exist_ok=True);no_links(AUTHORITY)

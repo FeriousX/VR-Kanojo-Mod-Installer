@@ -2,15 +2,15 @@
 
 This independent FeriousX project modernizes the original installer lineage; it does not claim all historical HF Patch features. The comparison uses previously inspected v1.1 source/component rules, extracted payload mappings and original plugin credits. It does not infer behavior by executing the old installer.
 
-| Component or operation | Historical v1.1 evidence | Current v1.0.0 profile |
+| Component or operation | Historical v1.1 evidence | Current v1.1.0 profile |
 | --- | --- | --- |
 | BepInEx | 5.4.12 framework; developer variant option | 5.4.12 x64 release framework and exact required dependencies included; developer variant excluded |
 | Entry-point configuration | Game-specific BepInEx settings | Checked settings: UnityEngine.dll / MonoBehaviour / .cctor; preserve compatible user settings, refuse unsafe conflicts |
 | Desktop controls | Play Without VR 1.0; optional mouse configuration | FeriousX Desktop 1.0.4 serves the desktop-control role, or choose neither. No legacy mouse-config overwrite. Original plugin not bundled |
-| Message Center 1.1.1 | On-screen plugin message output | Excluded from initial payload |
-| Mute In Background 1.1 | Background audio option | Excluded |
-| Graphics Settings 1.2.1 | Additional graphics settings | Excluded |
-| FPS Counter 3.1 | Performance overlay/statistics | Excluded |
+| Message Center 1.1.1 | On-screen plugin message output | Optional, default off; exact cleared historical variant |
+| Mute In Background 1.1 | Background audio option | Optional, default off; exact cleared historical variant |
+| Graphics Settings 1.2.1 | Additional graphics settings | Optional, default off; exact cleared historical variant |
+| FPS Counter 3.1 | Performance overlay/statistics | Optional, default off; exact cleared historical variant |
 | Runtime Unity Editor 2.4 / Script Loader 1.2.4 | Runtime inspection and C# scripting | Excluded |
 | Historical configuration UI 16.3 | Included in the original plugin selection | Outside this release scope; no manual-install recommendation |
 | Uncensor Loader 1.0 + Resource Redirector 1.1.3 | Loader/selector and resource-redirection support | Both excluded; neither a model package nor a replacement for one |
@@ -22,11 +22,11 @@ This independent FeriousX project modernizes the original installer lineage; it 
 
 The original preset rules did not select every plugin identically; the table lists available historical components, not a claim that every original installation included them. Original source inspection also identified inactive/no-op routines, so advertised historical intentions are not presented as newly verified capabilities.
 
-Nine optional groups were excluded because their exact distributed-binary/source/license closure was not completed for this initial release: Message Center, Mute In Background, Graphics Settings, FPS Counter, Runtime Unity Editor, Script Loader, original Play Without VR, Uncensor Loader and XUnity Resource Redirector/Common. Exclusion is a packaging decision, not a claim that personal use is prohibited or that every upstream release is incompatible. A user installing separate mods must follow their licenses and version requirements.
+Four previously excluded utility groups are now included as optional/default-off components after exact-version clearance. Original Play Without VR, XUnity Common/Resource Redirector, Uncensor Loader, Runtime Unity Editor and Script Loader remain excluded; legacy Configuration Manager and omitted asset/repair/save content remain outside scope. Exclusion is not a ban on personal use or permission to redistribute unrelated files.
 
 No automatic translation feature is qualified in the current profile. An original project's broad description is not proof that a particular translator asset was in the examined v1.1 payload. No existing external plugin is automatically deleted merely because this installer does not bundle it.
 
-No future feature or schedule is part of the v1.0.0 compatibility promise. Instructions for other optional plugins, where supported by upstream documentation, are in [Manual mod installation](MANUAL_MOD_INSTALLATION.md).
+No future feature or schedule is part of the v1.1.0 compatibility scope. Instructions for other optional plugins, where supported by upstream documentation, are in [Manual mod installation](MANUAL_MOD_INSTALLATION.md).
 
 ## Evidence
 

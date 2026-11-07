@@ -1,15 +1,17 @@
-# Persistent recovery
+# Persistent recovery — v1.1.0 guidance
 
-State resides at `%LOCALAPPDATA%\FeriousX\VRKMI\state`; retained verified runtime versions reside under `%LOCALAPPDATA%\FeriousX\VRKMI\packages`. Journals, backups, ownership/consent replay records and Windows CurrentUser DPAPI-protected authorization data are outside setup's temporary extraction directory. Do not delete them as temporary files or copy credentials between accounts.
+State: `%LOCALAPPDATA%\FeriousX\VRKMI\state`. Verified retained runtime packages: `%LOCALAPPDATA%\FeriousX\VRKMI\packages`. Journals, backups, ownership/consent replay records and Windows CurrentUser DPAPI authorization data remain outside temporary extraction. Keep them; do not copy credentials to another account.
 
-Closing the wizard does not intentionally terminate an active worker. Keep the displayed job ID and allow that worker to finish. After it has exited, use the **matching retained runtime for that transaction** from the same Windows account. Do not choose a bundle by guessing which is newest.
+Closing the wizard does not intentionally terminate a worker. Retain its displayed job ID, let the worker finish, then recover with the **exact verified runtime retained for that transaction**, under the same Windows account. Determine the matching package from its recorded job/runtime information; do not guess the newest bundle or use a fixed historical ID.
 
 ```powershell
-& "$env:LOCALAPPDATA\FeriousX\VRKMI\packages\<matching-bundle>\Recover.ps1" -Job '<64-character-job-ID>'
+& "$env:LOCALAPPDATA\FeriousX\VRKMI\packages\<matching-transaction-bundle>\Recover.ps1" -Job '<64-character-job-ID>'
 ```
 
-The release's runtime bundle is `81896c44bd1ee122`. Its helper verifies its pinned resource manifest and hashes before invoking recovery. Earlier transactions may need an earlier retained bundle. Respect local script policy. A verified matching cached `Backend/HFBackend.exe private-gui recover --job <job-ID>` is the existing native alternative if scripts are disallowed; obtain maintainer guidance if uncertain. Never weaken checks or delete journals to make a refusal disappear.
+The helper verifies its pinned resources before recovery. A verified matching `Backend/HFBackend.exe private-gui recover --job <job-ID>` remains the alternative if local script policy disallows the helper; seek maintainer guidance rather than weakening policy/checks. Do not terminate unrelated processes, force transitions or delete records to clear a refusal.
 
-Recovery may report reconciled completion, rollback, conflict or uncertainty. A recovered failure is not a successful installation, and spent consent does not authorize another execution. Preserve user-modified files and error details; do not manually restore unrelated files or terminate unrelated processes.
+Recovery may reconcile completion, roll back, or report conflict/uncertainty. Recovered failure is not installation success; spent consent cannot authorize another execution. Preserve user-modified/unrelated files and error details. Transaction-specific data and the matching retained package remain authoritative even after a newer installer is downloaded or moved.
 
-Power-loss durability, hostile administrators/races, key compromise, old-state migration, general upgrades/uninstall and cache retirement remain unqualified. Recovery records are private user data and must never be included in a public source package.
+The candidate's actual bundle is recorded in EMBEDDED_FILE_INVENTORY.json. That is not a universal recovery default: older transactions may require a different retained package. Never change older transaction mappings after building a new installer.
+
+Owner recovery retest remains NOT VERIFIED. Synthetic recovery tests passed in Phase9E1; power-loss durability, hostile races/admins/key compromise, old-state migration, general upgrades/uninstall and cache retirement remain unqualified. Never include private recovery records in a public source archive.

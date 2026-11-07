@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.0 — prepared, not released
+
+- Four cleared default-off optional utilities: Message Center 1.1.1, Mute In Background 1.1, FPS Counter 3.1 and official Graphics Settings 1.2.1.
+- Bounded native scrolling Components layout and current release documentation/configuration.
+- Existing installation engine and safety behavior preserved; owner-reported passes recorded separately from outstanding qualification.
+- Final build and publication pending.
+
 ## v1.0.0 — released
 
 - Public product version, metadata and filename for VR Kanojo Mod Installer.

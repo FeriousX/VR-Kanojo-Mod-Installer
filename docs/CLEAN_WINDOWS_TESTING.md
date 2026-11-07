@@ -1,4 +1,4 @@
-# Clean Windows qualification — NOT VERIFIED
+# Clean Windows qualification â€” NOT VERIFIED
 
 No clean Windows 10 or Windows 11 guest was used for this milestone. Host/source/packaged fixture tests and the owner's gameplay approval do not establish a clean-machine pass.
 
@@ -6,8 +6,8 @@ Use fresh Windows 10 x64 and Windows 11 x64 snapshots with a standard user, no P
 
 1. Copy only a verified, qualified installer EXE. Check the recorded size/SHA-256. Try ordinary Downloads, a path with spaces and reasonable nesting. Record OS build, user/elevation state and any security dialog without bypassing operating-system protections.
 2. Manually supply an authorized disposable compatible game copy inside the guest; never point the test at the owner's original/host Steam installation. Keep it closed during installation.
-3. Verify Browse/manual folder validation, missing/wrong-layout/architecture evidence and safe errors. For the essential-only profile, test FeriousX Desktop and neither; confirm excluded optional/original-desktop choices cannot be requested. Use separate disposable roots.
-4. Observe preparation feedback. Review component/count/hash details. Test Cancel with no file changes, then approve the exact plan. Confirm genuine stages and committed completion. The current fresh core + FeriousX profile has 27 mapped files; other choices differ. Do not treat a no-op reinstall as a new commit.
+3. Verify Browse/manual folder validation, missing/wrong-layout/architecture evidence and safe errors. For v1.1.0, test Desktop and neither plus the four default-off optional mods independently and in combinations; confirm conditional/blocked choices remain unavailable. Use separate disposable roots.
+4. Observe preparation feedback. Review component/count/hash details. Test Cancel with no file changes, then approve the exact plan. Confirm genuine stages and committed completion. Core + Desktop has 27 mapped files; the maximum profile with all four optional mods has 56. Review the actual selected plan; other choices differ. Do not treat a no-op reinstall as a new commit.
 5. Test matching reinstallation, user configuration preservation, unrelated files and conflicting desktop plugins. Unknown replacements must block rather than silently overwrite.
 6. Close/relaunch the wizard during a dedicated disposable transaction without terminating unrelated processes; let its worker finish. After it exits, exercise matching-cache recovery and repeated reconciliation. Move/remove only the test EXE and confirm state/cache survives setup temp cleanup. Preserve uncertain records. Hard-kill/power-loss durability is not automatically qualified by this test.
 7. Verify missing/tampered runtime resources fail closed in an isolated test cache, restoring only verified bytes. Do not delete essential persistent state to bypass refusal.

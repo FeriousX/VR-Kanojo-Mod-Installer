@@ -1,36 +1,47 @@
 # VR Kanojo Mod Installer
 
-Maintained by **FeriousX** · [Repository](https://github.com/FeriousX/VR-Kanojo-Mod-Installer)
+Maintained by **FeriousX** Â· [Repository](https://github.com/FeriousX/VR-Kanojo-Mod-Installer)
 
 A self-contained Windows installer for the plugin framework and optional desktop controls in **original VR Kanojo (2018)**. Independently maintained and based on ManlyMarco's GPL-licensed VR Kanojo HF Patch installer. This is not an official game update or a complete replacement for every feature in the historical HF Patch.
 
-**VR Kanojo Mod Installer v1.0.0**, maintained by **FeriousX**. The owner confirmed fresh installation, reinstallation, game launch and Desktop controls on **Windows X-Lite Optimum (modified Windows 11 Pro x64)**, with **no separate Python installation required**, using the unchanged working implementation on which this final packaging is based. Other Windows configurations have not been independently verified. Clean stock Windows 10/11 testing remains **NOT VERIFIED**, and the EXE is **unsigned**. Final naming does not imply universal compatibility. See [release readiness](docs/RELEASE_READINESS.md).
+**v1.1.0 is built and verified locally; it has not been published by this work.** See [artifact metadata](docs/RELEASE_ARTIFACTS.json) and the [measured package identities](docs/V1.1.0_PACKAGE_ARTIFACTS.json). Owner-reported gameplay testing used dev.3; final GUI testing remains pending.
+
+The owner reports core installation/gameplay, all four optional mods and the Components-page footer correction working. Recovery retest, additional DPI settings and clean stock Windows are **NOT VERIFIED**. Earlier confirmed testing used Windows X-Lite Optimum (modified Windows 11 Pro x64); other Windows configurations are not independently qualified. The installer is **unsigned** and uses a bundled runtime, with no separately installed Python required. See [release readiness](docs/RELEASE_READINESS.md).
 
 ## What it installs
 
 - **BepInEx 5.4.12 x64**, including its required loader and managed dependencies.
 - Game-specific loader entry-point settings, with existing-file/configuration safeguards.
 - Optional **VR Kanojo Desktop v1.0.4 by FeriousX**, or **neither** to keep a VR-oriented setup. Desktop provides mouse/keyboard controls, reliable mouse capture and up to 6 meters of virtual-hand reach. See its [control documentation](third_party/source/VRKanojoDesktop-v1.0.4/README.md).
-- Required component notices and Desktop corresponding source.
+- Four independently selectable optional utilities, all **off by default**:
+
+| Optional component | Version | License | Default |
+|---|---|---|---|
+| Message Center | 1.1.1 | GPL-3.0 | Off |
+| Mute In Background | 1.1 | GPL-3.0 | Off |
+| FPS Counter | 3.1 | Apache-2.0 AND zlib | Off |
+| Graphics Settings (official) | 1.2.1 | GPL-3.0 | Off |
+
+Selected components include their license notices and preserved corresponding source. Mute remains disabled by its native default until enabled in its generated configuration. Graphics Settings offers supported startup values through its config file; no advanced configuration menu or complete text-only resolution/display workflow is promised.
 
 The installer checks the selected directory, presents an exact file plan, asks for installation consent, preserves matching files and keeps backups/journals for recovery. Users need no separate Python installation or Backend folder.
 
 ## Compatibility
 
 - Original **VR Kanojo (2018)**; owner-tested with **v1.31**.
-- **Confirmed test environment:** Windows X-Lite Optimum, a modified Windows 11 Pro x64 configuration. Fresh installation, reinstallation, game launch and Desktop controls passed owner testing; a separate Python installation was not required.
+- **Confirmed test environment:** Windows X-Lite Optimum, a modified Windows 11 Pro x64 configuration. Prior baseline owner testing included fresh installation/reinstallation, game launch and Desktop controls without separate Python. Current v1.1.0 reports cover installation/gameplay, all four optional mods and the footer fix; no new reinstall matrix is claimed.
 - Other Windows configurations, including stock Windows 10/11, have **not been independently verified**. These results do not establish universal Windows compatibility. Windows 11 ARM, older Windows and other game builds are not qualified.
 - Recognized layouts: `VRKanojo.exe` + `VRKanojo_Data`, or `VR_Kanojo.exe` + `VR_Kanojo_Data`. Required Unity/Mono/managed evidence is validated; names or a renamed folder alone do not prove compatibility.
 - **VR-Kanojo (2025) is unsupported.** The installer supplies no game files or game-version upgrade.
 
 ## Download and install
 
-Download **VRK-Mod-Installer-v1.0.0.exe** and `SHA256SUMS.txt` from [published v1.0.0 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0). No separate ZIP extraction, Python or Backend folder is needed to run the EXE. The corresponding source is supplied separately as `VRK-Mod-Installer-v1.0.0-Source.zip`. Verify the hash for that exact build; [artifact information](docs/RELEASE_ARTIFACTS.json) records this release.
+After the owner publishes v1.1.0, obtain `VRK-Mod-Installer-v1.1.0.exe`, its matching `SHA256SUMS.txt` and `VRK-Mod-Installer-v1.1.0-Source.zip` from the [official releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases). Phase9E3 prepares local candidate assets only; they are not published by this work. Use each exact artifact's measured checksum, never dev.3's hash for the final-named build. No separate Python or Backend folder is needed to run the single EXE.
 
 1. Close the game and back up your game folder and user data. Use a separate writable copy for initial testing.
 2. Run the single EXE normally. Review the scrollable runtime conditions; Accept continues and Decline exits. Administrator privileges are not normally required.
 3. Browse to the directory containing the game executable and matching Data folder.
-4. Choose VR Kanojo Desktop or neither. Review the target and file plan; use **Technical details** for paths and hashes.
+4. Choose any optional utilities and VR Kanojo Desktop or neither. All four utilities start unchecked. Review the target and file plan; use **Technical details** for paths and hashes.
 5. Confirm installation explicitly and wait for verified completion. A matching reinstall may correctly report that no changes are required.
 6. Launch the game yourself. The installer never launches it automatically.
 
@@ -45,11 +56,11 @@ See [installation](docs/INSTALLATION.md), [troubleshooting](docs/TROUBLESHOOTING
 
 ## Differences from the original HF Patch
 
-| Area | Historical HF Patch v1.1 | This v1.0.0 profile |
+| Area | Historical HF Patch v1.1 | This v1.1.0 profile |
 | --- | --- | --- |
 | Framework | BepInEx and a broad plugin selection | BepInEx 5.4.12 and required dependencies |
 | Desktop controls | Original Play Without VR | Optional FeriousX VR Kanojo Desktop 1.0.4 |
-| Extra utilities and development tools | Optional/default selections varied by preset | Not bundled |
+| Extra utilities and development tools | Optional/default selections varied by preset | Optional Message Center, Mute In Background, FPS Counter and Graphics Settings; developer tools excluded |
 | Uncensor support | Loader, redirector and model collection | Not bundled |
 | Repair/update files and replacement save | Historical installer options/rules | Not bundled or performed |
 | File operations | Legacy installer backup/cleanup flow | Checked plan, consent, ownership, verified backups and persistent recovery |
@@ -70,4 +81,4 @@ Read the [detailed comparison](docs/ORIGINAL_HF_PATCH_COMPARISON.md) and [manual
 
 Project source is GPL-3.0; inherited files retain their original notices, including GPL-3.0-or-later where stated. Bundled components have separate licenses. [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES.md) and the [component audit](docs/license-audit.csv) explain those obligations. Runtime Windows conditions apply to Microsoft Distributable Code, not to the GPL application as a whole.
 
-[Build instructions](docs/BUILDING.md) document the official Python 3.14.10 runtime, pinned PyInstaller 6.22.3 and Inno Setup 7.1.1 toolchain. This source tree contains no compiled installer, plugin DLLs, game assets, credentials or recovery state. The published binary and corresponding source ZIP are separate release assets. No future features or dates are promised by this release scope.
+[Build instructions](docs/BUILDING.md) document the official Python 3.14.10 runtime, pinned PyInstaller 6.22.3 and Inno Setup 7.1.1 toolchain. The clean corresponding-source export excludes compiled installers, plugin DLLs, game assets, credentials and recovery state. Build workspaces separately stage the verified payload for building. The built binary and matching source ZIP are separate assets; their local candidate identities are recorded in the external Phase9E3 package. No future features or dates are promised by this release scope.

@@ -1,11 +1,15 @@
 {
   "schema_version": 1,
-  "catalog_digest": "dda357cc231c6368a2d617e710fd0ecff37d5dd1eb0051e37ebef3f2f1394dcc",
+  "catalog_digest": "80ebc51881061bcfe99fe05f0f7bc06f5afb0bcc925b0de5bc38facfc63466e6",
   "approved_components": [
     "bepinex",
     "loader-config",
-    "vrkanojo-desktop"
+    "vrkanojo-desktop",
+    "message-center",
+    "mute",
+    "fps",
+    "graphics"
   ],
-  "scope": "Essential component documentary license/provenance review only. Not authenticated ownership, runtime clearance or installation consent.",
+  "scope": "Phase9B1/9B2/9B5 exact-binary documentary clearance for the prepared v1.1.0 scope; not installation consent, authenticated ownership or independent game compatibility verification.",
   "staging_root": "payload"
 }

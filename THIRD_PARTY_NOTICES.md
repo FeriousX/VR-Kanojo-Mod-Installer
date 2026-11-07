@@ -1,3 +1,14 @@
+# v1.1.0 optional component notices
+
+| Optional component | Version | License | Default |
+|---|---|---|---|
+| Message Center | 1.1.1 | GPL-3.0 | Off |
+| Mute In Background | 1.1 | GPL-3.0 | Off |
+| FPS Counter | 3.1 | Apache-2.0 AND zlib | Off |
+| Graphics Settings (official) | 1.2.1 | GPL-3.0 | Off |
+
+Utility r7 Message Center/Mute: preserve exact GPLv3, original attribution and complete corresponding source under third_party/Utility-r7. FPS: preserve Apache-2.0 and Gavin Pugh 2010 zlib helper notices/terms, source and attribution under third_party/FPSCounter-v3.1. Official Graphics: preserve GPLv3 and the preferred tagged source/build materials, attribution and source information under third_party/GraphicsSettings-v1.2.1. Selected installation carries these under HF_Patch_Notices. All four DLLs are unmodified; other historical variants are not covered by these approvals. All four are off by default.
+
 # Third-party notices
 
 This project is independently maintained by FeriousX from ManlyMarco's GPL-licensed installer lineage. Project GPL terms do not replace individual bundled-component licenses.
@@ -15,6 +26,6 @@ This project is independently maintained by FeriousX from ManlyMarco's GPL-licen
 
 Exact notice texts remain unmodified. Current embedded resources are listed in [inventory](docs/EMBEDDED_FILE_INVENTORY.json); [license audit](docs/license-audit.csv) separates CLEARED from EXCLUDED groups. A repository or credit link is not automatic redistribution permission. Some historical author attributions remain for lineage even though their plugin binaries are excluded.
 
-No Configuration Manager, nine excluded optional component groups, game assets, repair files or replacement saves are embedded. Preserved historical VRKanojo plugin license text is a reference/attribution, not a claim that all of those plugins are bundled.
+No Configuration Manager, conditional/blocked optional groups, game assets, repair files or replacement saves are embedded. Preserved historical VRKanojo plugin license text is a reference/attribution, not a claim that all of those plugins are bundled.
 
 Publish equivalent access to the exact corresponding project/Desktop source and build instructions alongside any binary release. Preserve upstream copyrights, GPL and individual notices. No public release is created by this preparation.

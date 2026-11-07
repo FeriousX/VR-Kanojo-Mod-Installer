@@ -114,6 +114,66 @@
         }
       ],
       "component": "bepinex"
+    },
+    {
+      "name": "BepInEx.MessageCenter.v1.1.1.zip",
+      "component": "message-center",
+      "size": 4681,
+      "sha256": "3096c76c35ba680c6835db87a9c4029b3ee427384f877435d53d10ceae42da5d",
+      "files": [
+        {
+          "path": "BepInEx/plugins/BepInEx.MessageCenter.dll",
+          "size": 10240,
+          "sha256": "7e6d7bb280e90fb468f4f1e7809e0f88b6c2422695f28225371437e77a39cd4c"
+        }
+      ],
+      "source_commit": "f1a40ffe37be96e6710df6029c26255d1a0a5393",
+      "evidence": "third_party/Utility-r7/CLEARANCE_STATUS.json"
+    },
+    {
+      "name": "BepInEx.MuteInBackground.v1.1.zip",
+      "component": "mute",
+      "size": 2316,
+      "sha256": "31fbb659a9cb758a6c685194ce55e3556b99b75bb974db25fe8ad305fcfab58c",
+      "files": [
+        {
+          "path": "BepInEx/plugins/BepInEx.MuteInBackground.dll",
+          "size": 5632,
+          "sha256": "bd80cd69e6edecf6a25ddbf83ac800c7d4c4cb1484b9419794b6bdf333cdf76c"
+        }
+      ],
+      "source_commit": "f1a40ffe37be96e6710df6029c26255d1a0a5393",
+      "evidence": "third_party/Utility-r7/CLEARANCE_STATUS.json"
+    },
+    {
+      "name": "FPSCounter_v3.1.zip",
+      "component": "fps",
+      "size": 18461,
+      "sha256": "7a0e49033dc6db25cb196ab45db33c9c46d0598f1ef55cc0d7b1ebf2aa931bff",
+      "files": [
+        {
+          "path": "BepInEx/plugins/FPSCounter.dll",
+          "size": 32768,
+          "sha256": "333c467be5d3edc845a9a97d0d0a2c2269e796c63cf0ab6ff72d1ba74323a982"
+        }
+      ],
+      "source_commit": "dc2884a3778a4785e1ffa8e3b0b0940f3dde786c",
+      "evidence": "third_party/FPSCounter-v3.1/CLEARANCE_STATUS.json"
+    },
+    {
+      "name": "GraphicsSettings.dll",
+      "component": "graphics",
+      "size": 22528,
+      "sha256": "e6149270785b1f1c152a1a3fcb39b4d2e71c69a968d2ccfff89a20b1d10c23a2",
+      "files": [
+        {
+          "path": "BepInEx/plugins/GraphicsSettings.dll",
+          "size": 22528,
+          "sha256": "e6149270785b1f1c152a1a3fcb39b4d2e71c69a968d2ccfff89a20b1d10c23a2"
+        }
+      ],
+      "source_commit": "b161594317cae4caa83eb82a59076e961c0ab004",
+      "evidence": "third_party/GraphicsSettings-v1.2.1/OFFICIAL_EVIDENCE.json"
     }
   ]
 }

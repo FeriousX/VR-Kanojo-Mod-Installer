@@ -23,7 +23,7 @@ def load_catalog():
  return catalog,root
 
 def request_for(mask,desktop,library):
- if type(mask) is not int or mask<0 or mask>7 or not mask&1:raise SafetyError('framework/settings are mandatory; invalid mask')
+ if type(mask) is not int or mask<0 or mask & ~121 or not mask&1:raise SafetyError('framework/settings are mandatory; invalid mask')
  if library not in ('demo-a','demo-b'):raise SafetyError('only disposable fixture labels are allowed')
  if desktop not in ('neither','vrkanojo-desktop','play-without-vr'):raise SafetyError('invalid desktop mode')
  return dict(schema_version=1,action=PROFILE,mask=mask,desktop_mode=desktop,demo_library=library)
@@ -32,8 +32,10 @@ def prepare(request,clock=time.time):
  if type(request) is not dict or set(request)!=set(('schema_version','action','mask','desktop_mode','demo_library')) or request['schema_version']!=1 or request['action']!=PROFILE:raise SafetyError('invalid real-fixture request')
  request_for(request['mask'],request['desktop_mode'],request['demo_library'])
  catalog,source=load_catalog();selected=['bepinex','loader-config']
- if request['mask']&2:selected+=['resource-redirector','uncensor-loader']
- if request['mask']&4:selected+=['message-center','mute','graphics','fps','runtime-editor','script-loader']
+ if request['mask']&8:selected+=['message-center']
+ if request['mask']&16:selected+=['mute']
+ if request['mask']&32:selected+=['fps']
+ if request['mask']&64:selected+=['graphics']
  rows=select_runtime(catalog,selected,request['desktop_mode'])
  # Validate every selected file before creating the fixture. No UI destination input exists.
  for f in rows:

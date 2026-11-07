@@ -1,3 +1,5 @@
+> v1.1.0 is an unpublished local candidate. Use the external hash for the exact candidate you obtain; dev.3 is only a development reference.
+
 # Troubleshooting
 
 ## Confirmed Windows environment
@@ -30,11 +32,11 @@ Local non-root paths are required. UNC/network paths, symlinks and junctions are
 
 The current release EXE is **unsigned**, so Windows may display an unrecognized-app/unknown-publisher warning. That warning is not proof that a file is safe or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation).
 
-1. Verify that the download comes from [published v1.0.0 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0), rather than an advertisement, mirror or forwarded attachment.
+1. Verify that the download comes from [official releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases), rather than an advertisement, mirror or forwarded attachment.
 2. Compare the exact filename and SHA-256 with the checksum published alongside that same build. The published release's identity is in [artifact information](RELEASE_ARTIFACTS.json). In PowerShell, for example:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.0.0.exe'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\VRK-Mod-Installer-v1.1.0.exe'
    ```
 
 3. If the hash differs, the source is uncertain, or security software identifies a threat, do not run it; obtain the correct file or contact the maintainer. A matching hash verifies consistency with that reference, not universal safety.

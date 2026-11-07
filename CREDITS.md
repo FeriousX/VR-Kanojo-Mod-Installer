@@ -11,4 +11,4 @@
 
 This independent project is not an endorsement by the original authors, game publisher, Microsoft or these upstream projects. Attribution does not itself grant redistribution permission. Consult the component audit and preserved license texts.
 
-Phase 8C.1 retains historical contributor credits even where their optional plugins are excluded from the initial public payload. Historical credit is not a claim that those components are installed.
+Historical contributor credits are retained even where components remain excluded from v1.1.0. Historical credit is not a claim that those components are installed.

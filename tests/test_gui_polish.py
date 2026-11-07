@@ -9,10 +9,10 @@ import gui_install as gui
 
 class PresentationTests(unittest.TestCase):
  def meta(self):
-  return dict(binding='7|vrkanojo-desktop|C:/Test Game',prepared=dict(synthetic_root='C:/Test Game',operations=[dict(action=a) for a in ('create','create','replace','preserve')]))
+  return dict(binding='25|vrkanojo-desktop|C:/Test Game',prepared=dict(synthetic_root='C:/Test Game',operations=[dict(action=a) for a in ('create','create','replace','preserve')]))
  def test_readable_plan_counts_and_selections(self):
   p=presentation(self.meta(),'Prepared');self.assertEqual((p['files_create'],p['files_replace'],p['files_preserve'],p['files_total']),('2','1','1','4'))
-  self.assertEqual(p['display_target'],'C:/Test Game');self.assertIn('FeriousX',p['display_components']);self.assertIn('XUnity',p['display_components']);self.assertIn('Message Center',p['display_components'])
+  self.assertEqual(p['display_target'],'C:/Test Game');self.assertIn('FeriousX',p['display_components']);self.assertIn('Mute In Background',p['display_components']);self.assertIn('Message Center',p['display_components'])
  def test_all_three_modes(self):
   for mode,name in [('neither','Standard VR'),('vrkanojo-desktop','FeriousX'),('play-without-vr','ManlyMarco')]:
    m=self.meta();m['binding']='1|'+mode+'|C:/Game';self.assertIn(name,presentation(m,'Prepared')['display_components'])
@@ -42,7 +42,7 @@ class PresentationTests(unittest.TestCase):
   self.assertIn('Result := Form.ShowModal = mrOk',source);self.assertIn('--approve-plan ',source)
   self.assertIn('ValidatedBinding = SelectionBinding()',source);self.assertIn('ReadPresentation(IniPath, State)',source)
   self.assertIn('TechnicalBody := PlanDetails',source);self.assertIn('Files applied:',source)
-  self.assertNotIn('Review your preview.',source);self.assertIn('AppVersion=1.0.0-preview.8B1',source)
+  self.assertNotIn('Review your preview.',source);self.assertIn('AppVersion={#ReleaseVersion}',source)
 
 class FramePresentationTests(unittest.TestCase):
  setUp=existing.GUIInstallTests.setUp
@@ -63,3 +63,4 @@ class FramePresentationTests(unittest.TestCase):
   gui.run_job(m['job'],m['plan_digest'],extra_fault=fail);p=self.frame(m)
   self.assertEqual(p['success'],'0');self.assertNotIn('successfully',p['display_title'])
   self.assertTrue(any('Recovery:' in value for value in p.values()))
+

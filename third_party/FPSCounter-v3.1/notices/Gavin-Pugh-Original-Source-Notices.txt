@@ -1,0 +1,23 @@
+FPSCounter/Extensions/StringBuilderFormat.cs
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// File:	StringBuilderExtFormat.cs
+// Date:	11th March 2010
+// Author:	Gavin Pugh
+// Details:	Extension methods for the 'StringBuilder' standard .NET class, to allow garbage-free concatenation of
+//			formatted strings with a variable set of arguments.
+//
+// Copyright (c) Gavin Pugh 2010 - Released under the zlib license: http://www.opensource.org/licenses/zlib-license.php
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+FPSCounter/Extensions/StringBuilderNumerics.cs
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// File:	StringBuilderExtNumeric.cs
+// Date:	9th March 2010
+// Author:	Gavin Pugh
+// Details:	Extension methods for the 'StringBuilder' standard .NET class, to allow garbage-free concatenation of
+//			a selection of simple numeric types.  
+//
+// Copyright (c) Gavin Pugh 2010 - Released under the zlib license: http://www.opensource.org/licenses/zlib-license.php
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

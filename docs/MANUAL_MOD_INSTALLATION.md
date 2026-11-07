@@ -1,6 +1,6 @@
 # Optional mods installed separately
 
-These mods are **not bundled** in this installer. Their exclusion reflects the initial payload's scope/licensing-source qualification, not an automatic ban on personal installation. The repositories below are verified upstream references; the installer does not endorse arbitrary current downloads as compatible with original VR Kanojo v1.31.
+The four cleared utilities below are available through this v1.1.0 installer; other groups remain **not bundled**. Their exclusion reflects the current scope/licensing-source qualification, not an automatic ban on personal installation. The repositories below are verified upstream references; the installer does not endorse arbitrary current downloads as compatible with original VR Kanojo v1.31.
 
 ## Before adding a mod
 
@@ -12,17 +12,11 @@ These mods are **not bundled** in this installer. Their exclusion reflects the i
 
 ## Message Center and Mute In Background
 
-[Official BepInEx Utility repository](https://github.com/BepInEx/BepInEx.Utility) · [Releases](https://github.com/BepInEx/BepInEx.Utility/releases)
-
-Message Center displays plugin Message-level log entries on-screen; it is not required for a plugin to log. Mute In Background provides an audio option for an unfocused game. Both were excluded from the installer payload.
-
-Upstream documents BepInEx 5 Mono and DLL placement under `BepInEx/plugins`. For a separately qualified compatible build, place only the chosen plugin there, without replacing BepInEx core. After a manual first launch, edit its generated `.cfg` under `BepInEx/config` while the game is closed if configuration is needed. Use the exact version's keys and documented options; this guide does not invent them. Historical versions were Message Center 1.1.1 and Mute In Background 1.1; current versions have not been gameplay-qualified here.
+Both are included as independent, default-off options. Prefer the installer's exact cleared versions rather than an unrelated current release. Mute In Background 1.1 still requires enabling its native setting in its generated configuration; installation does not turn it on. Original upstream: https://github.com/BepInEx/BepInEx.Utility .
 
 ## FPS Counter
 
-[Official FPSCounter repository](https://github.com/ManlyMarco/FPSCounter) · [Releases](https://github.com/ManlyMarco/FPSCounter/releases)
-
-Provides frame/performance statistics. It was excluded with the optional utilities. Choose a BepInEx 5 Mono-compatible release; stage the archive, preserve its `BepInEx/plugins/FPSCounter` layout where supplied, and merge only the reviewed plugin files. The historical 3.1 package used a flatter DLL path, so do not duplicate the same plugin in both locations. Use the exact release's hotkey and generated `.cfg` instructions. Do not replace the framework with a newer major version. Placement is upstream-documented; current-release compatibility with v1.31 remains unverified.
+FPS Counter 3.1 is included as an independent, default-off option using the exact official cleared DLL. Preserve its Apache-2.0/Gavin Pugh zlib notices if redistributed. Upstream: https://github.com/ManlyMarco/FPSCounter .
 
 ## Runtime Unity Editor
 
@@ -48,9 +42,7 @@ The historical mapped layout was `BepInEx/plugins/VRK_UncensorLoader.dll`, redir
 
 ## Graphics Settings
 
-[Official GraphicsSettings repository](https://github.com/BepInEx/BepInEx.GraphicsSettings)
-
-Exposes additional graphics settings; excluded from this payload. Upstream documents a separate configuration UI as part of its normal workflow. This project provides **no validated independent setup procedure** for that workflow, and does not recommend installing the historical menu. An upstream repository link is supplied for reference, not as a claim of supported installation in this profile.
+Official Graphics Settings 1.2.1 is included, optional and off by default. No Configuration Manager or advanced menu is supplied. After first-run native config creation, close the game before editing supported startup values and restart. Do not assume resolution/display/monitor options work equivalently through text edits. Upstream: https://github.com/BepInEx/BepInEx.GraphicsSettings .
 
 ## C# Script Loader
 
