@@ -1,11 +1,11 @@
 [project]
 name = "vr-kanojo-mod-installer"
-version = "1.1.0"
-description = "VR Kanojo Mod Installer v1.1.0 release source preparation"
+version = "1.1.1"
+description = "VR Kanojo Mod Installer v1.1.1 maintenance source"
 requires-python = ">=3.11,<3.15"
 dependencies = []
 
 [tool.vrk-mod-installer]
-application-version = "1.1.0"
+application-version = "1.1.1"
 release-qualified = false
-notes = "v1.1.0 preparation only; no final artifact built. Owner-reported passes are distinct from unverified recovery/DPI/stock-Windows checks."
+notes = "v1.0.0 and v1.1.0 are published; maintenance source is prepared for v1.1.1. Phase10E installation/gameplay passed by owner report; v1.1.1 metadata has not been built. Owner-reported passes are distinct from unverified recovery/DPI/stock-Windows checks."

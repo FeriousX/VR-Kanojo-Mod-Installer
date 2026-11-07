@@ -41,7 +41,7 @@ class PreviewSourceTests(unittest.TestCase):
 
     def test_no_helper_or_mutator(self):
         imports=re.findall(r"external '([^']+)'",SOURCE)
-        self.assertEqual(imports,['SetTimer@user32.dll stdcall','KillTimer@user32.dll stdcall'])
+        self.assertEqual(imports,['SetTimer@user32.dll stdcall','KillTimer@user32.dll stdcall','SystemParametersInfoW@user32.dll stdcall'])
         self.assertIn('#include "embedded_cache.iss"',SOURCE)
         self.assertNotRegex(SOURCE.lower(), r'\bshellexec\s*\(|\bdeletefile\s*\(|\bdeltree\s*\(|\bsavestringtofile\s*\(|\bregwrite\w*\s*\(|\b(?:direxists|findfirst|forcedirectories|filecopy|sleep)\s*\(')
         self.assertEqual(len(re.findall(r'\bExec\(', SOURCE)), 2)
@@ -148,10 +148,17 @@ class PreviewSourceTests(unittest.TestCase):
     def test_runtime_defenses(self):
         for text in ('PrivilegesRequired=lowest', 'CreateAppDir=no', 'Uninstallable=no',
                      'CreateUninstallRegKey=no', 'CloseApplications=no', 'RestartApplications=no',
-                     'Result := not WizardSilent;', 'Result := CurPageID <> wpReady;',
+                     'Result := CurPageID <> wpReady;',
                      'WizardForm.NextButton.Enabled := False;',
                      "Result := 'NONFUNCTIONAL PROTOTYPE: installation is disabled.';"):
             self.assertIn(text, SOURCE)
+        # The bounded full-text license dialog replaced the old silent-mode expression.
+        # Silent mode must still refuse and only explicit acceptance may continue.
+        init=SOURCE.split('function InitializeSetup(): Boolean;',1)[1].split('procedure CurPageChanged',1)[0]
+        self.assertRegex(init,r'begin\s+Result := False;\s+if not WizardSilent then\s+Result := AcceptRuntimeConditions\(\);\s+end;')
+        terms=SOURCE.split('function AcceptRuntimeConditions(): Boolean;',1)[1].split('function InitializeSetup',1)[0]
+        for text in ('TermsMemo.ScrollBars := ssVertical;', 'DeclineButton.Default := True;', 'DeclineButton.Cancel := True;', 'Form.ShowModal = mrOk'):
+            self.assertIn(text,terms)
 
 
 if __name__ == '__main__':

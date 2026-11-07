@@ -1,12 +1,12 @@
 """Package only the reviewed corresponding-source allowlist. Never installs files."""
 from pathlib import Path
-import hashlib,json,shutil,sys,zipfile
+import argparse,hashlib,json,shutil,sys,zipfile
 W=Path(__file__).resolve().parents[1];sys.path[:0]=[str(W/'src'),str(W/'tools')]
 from release_config import load_final_config,source_export_plan
 from hf_payload.validator import no_links
 
-def package(root=W):
- root=Path(root);cfg=load_final_config(root);rows=source_export_plan(root)
+def package(root=W, version='1.1.1'):
+ root=Path(root);cfg=load_final_config(root,version);rows=source_export_plan(root)
  distribution=root/cfg['distribution_dir'];no_links(distribution)
  stage=distribution/'Source/VR-Kanojo-Mod-Installer';archive=distribution/cfg['source_name']
  if stage.exists() or archive.exists():raise FileExistsError('Refusing source export/archive overwrite')
@@ -29,4 +29,6 @@ def package(root=W):
   for p in files:
    if z.read('VR-Kanojo-Mod-Installer/'+p.relative_to(stage).as_posix())!=p.read_bytes():raise ValueError('source archive member changed')
  return {'source_archive':str(archive),'source_root':str(stage),'source_files':len(files),'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest().upper()}
-if __name__=='__main__':print(json.dumps(package(),indent=2))
+if __name__=='__main__':
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--release-version',choices=('1.1.0','1.1.1'),default='1.1.1');args=p.parse_args()
+ print(json.dumps(package(version=args.release_version),indent=2))

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "explicit-source-only",
-  "target_release": "1.1.0",
+  "target_release": "1.1.1",
   "not_an_install_authorization": true,
   "approved_source_archive_sha256": [
     "09bf8a4b303f4afdd75fcc10fd84ff8b01ae57bcb0390edc9c419c6e1cbcb239",
@@ -20,7 +20,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "44a1a40b3fad3d9bb629c8c85df718de10104e254b5083bacf671ca3990a0140"
+      "sha256": "95c04ff522ba10edfd0fb13b83626928af79b5fe4e344d56a27ecffa7933a927"
     },
     {
       "path": "CREDITS.md",
@@ -32,11 +32,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "32ea29d8fcd61e50db8c0a1ea27ad27deb35ffdbb5da3afa428f6ff4e0ad8289"
+      "sha256": "d371f63c6a5626164c7c726a7de1c6465d209b61fc05f04578b1b88b4be55be8"
     },
     {
       "path": "RELEASE_NOTES.md",
-      "sha256": "8e99c4d60540c7fabacf8240d4be28b909992aeafd6ef978a0c80d1f04ef3590"
+      "sha256": "9a70d7269edf3c0591d982c3524c5e880cd6f41f7d1da96cbd32306dc1eeae92"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -48,7 +48,7 @@
     },
     {
       "path": "docs/BUILDING.md",
-      "sha256": "2e2937c5929cfa151d0b34de97bee2fe4aebfe91e471217018eaaca8007ca3b2"
+      "sha256": "0ecaa89291cdd8f9d702f4f7bb478d1be83c6e064f9f5d1c9398d18120105db7"
     },
     {
       "path": "docs/CLEAN_WINDOWS_TESTING.md",
@@ -56,7 +56,7 @@
     },
     {
       "path": "docs/DISTRIBUTION_AUDIT.md",
-      "sha256": "e636f1e515edb67800894a351a55fe1d7fc7b2487e9530f723df4e70bc2ad263"
+      "sha256": "162ab8a290778252d78fc1c18b3ff952b536c8ff44e091f2993fc2c522f02a50"
     },
     {
       "path": "docs/EMBEDDED_FILE_INVENTORY.json",
@@ -88,11 +88,11 @@
     },
     {
       "path": "docs/RELEASE_ARTIFACTS.json",
-      "sha256": "cce5aa739799284d1a6496e3c2fd7b72a474622b7c687c19a7ee58feca8d3e7b"
+      "sha256": "6f30bda53a22be320195f7aec6507f90d9704910564a3c9be210ddc603d97270"
     },
     {
       "path": "docs/RELEASE_READINESS.md",
-      "sha256": "2d98cc03c8f9d9a6992754c58dde1b6641031b9c3bf543e3ea56b47b88254510"
+      "sha256": "db665e7f07da91077b6157c5eeac2f105a1fb48d0ad8ac24cf2a8e2f0d60203b"
     },
     {
       "path": "docs/RUNTIME_3_14_10_NOTICE_EVIDENCE.json",
@@ -108,7 +108,7 @@
     },
     {
       "path": "docs/SOURCE_PROVENANCE.md",
-      "sha256": "32cfb211231bc5778f2971e82429cfb0e71089104e83f8e9a74cd7b25830b001"
+      "sha256": "9a0ec3a1879d560a9eb5950f7572541f03b36071089985eb01663306d29550d4"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -152,11 +152,11 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "45320c9c7b72463afbc51634f34195badba811886f4a8161366368d74aa78eac"
+      "sha256": "5086871e7abc17da3565cf430307c0ff6267e14ebe40e4895baed05e78c8a577"
     },
     {
       "path": "release-status.json",
-      "sha256": "3796a99b73ac1296b3d1fe1e98195be5e0e5bf4e696b24b11ee8f7505e1417db"
+      "sha256": "77c4a4ce13bc9cf6b25de89ab5d7af3f9fb80c630ff15c0488e4712b74c0ab5d"
     },
     {
       "path": "src/hf_payload/__init__.py",
@@ -252,7 +252,7 @@
     },
     {
       "path": "src/installer/ui-prototype/check_source.py",
-      "sha256": "a83aba0974367cc871525bb53f7ab16d2768c781e7ea0b1e9887e8e8403e18e7"
+      "sha256": "17544cb82285dd1c99358205d6961a6dade8d2f425125799fafd2950ba190545"
     },
     {
       "path": "src/installer/ui-prototype/embedded_cache.iss",
@@ -260,7 +260,7 @@
     },
     {
       "path": "src/installer/ui-prototype/preview.iss",
-      "sha256": "3cd4996848b9d54e2ec9c902179f006c87ebe015e49a3fcd002f42fb0068d8ee"
+      "sha256": "1408bb8d424107577e0b982d8bfda36f9a862c33259437858ec4836e4b0690a2"
     },
     {
       "path": "templates/BepInEx.cfg",
@@ -288,7 +288,7 @@
     },
     {
       "path": "tests/test_gui_polish.py",
-      "sha256": "077f3bdaf690717f02ebf3746721dc89fc6d4cfdf5f767b0392d98f2f4fac237"
+      "sha256": "a2f66afd9915044a40394add0056ea9bb6ac3c109e1f869c83d167d34d22be8a"
     },
     {
       "path": "tests/test_layout_9d3a.py",
@@ -316,7 +316,7 @@
     },
     {
       "path": "tests/test_release_sync_9e2.py",
-      "sha256": "c60cc528f15910e95d2037ee6b6a6dc88b579d52c224841ddb21d66773196c2b"
+      "sha256": "051c8ad2c45ec90bb79729aa946d8a3ed1395b139b002099b84c41300f839fe1"
     },
     {
       "path": "tests/test_runtime_packaging_9d1a.py",
@@ -592,27 +592,27 @@
     },
     {
       "path": "tools/build_single_exe.py",
-      "sha256": "4ce9f10c25c3af8d4719d5b8ef859bac93d08d8eea7b7f571806f2b8943d8cba"
+      "sha256": "781331d25218fb3c6acc28e413e32ac98b63f5e2a68b4c8b27e73a811aa877a6"
     },
     {
       "path": "tools/compile_single_exe.ps1",
-      "sha256": "941afb38edb8386a12914dcdfa2583712646845ab6dadb0553a669fd16c95f1b"
+      "sha256": "6e34d30c80ec93bf39eeb6473ee13d8e405823da43f5dba50f9749fed9fb16df"
     },
     {
       "path": "tools/gui_install.py",
-      "sha256": "8d0855e851595b41dfd521f42d7e0f09dbe01dc8638f404f1b3f15e30149d6ad"
+      "sha256": "5d7cdb919cef116fefc33dfc6c19a3e168e14241b5684e8302b484add0a42c9e"
     },
     {
       "path": "tools/gui_presentation.py",
-      "sha256": "8135e2a8e6d1e2b6156dcdc55193749d577cdb568f2fdb97a025daa3e21bf5af"
+      "sha256": "5d682f47100fed698524480c8f3efb0e74e88f421dfd74624c09cb26305aa60a"
     },
     {
       "path": "tools/package_source110.py",
-      "sha256": "3b7ded537186834622ac971261f924f4210db870a99ad95e0870637beae33be4"
+      "sha256": "f312ecf5ab770adb704c6fa1a86eef6609eb4e61e4fe3eac0cdcbb3639f813aa"
     },
     {
       "path": "tools/portable_backend.py",
-      "sha256": "2992cf4ac04cc3ff342c9f348c31df9ff277ea3cde3cceb13bc9c438a25f4b36"
+      "sha256": "d0490083cfcfbfd188151d77ea1959767e50f7daa9a9d8d80c88d7f8146d6a5e"
     },
     {
       "path": "tools/prepare_final110_notices.py",
@@ -648,7 +648,7 @@
     },
     {
       "path": "tools/release_config.py",
-      "sha256": "a4103726f8f7af9a80e1bfca6fb0be59c931b0bb11ebbd8b0f3e5668ac61be0f"
+      "sha256": "ca9a4e33cd09995b452606c86391ec8d18bd6d941c33c44dcd3ee1a85eb76cc1"
     },
     {
       "path": "tools/run_source_tests.py",
@@ -668,7 +668,7 @@
     },
     {
       "path": "tools/validate_ui_selection.py",
-      "sha256": "005f5d54081d7e6a08bbb4e97dd374b91ee05ca769fe3db0fa3cd0fa5841527b"
+      "sha256": "52081e87aba21483f2c25d420809347f039b4744ed60225799fc4abcb3886210"
     },
     {
       "path": "tools/wizard_validate.py",
@@ -701,6 +701,50 @@
     {
       "path": "docs/history/v1.0.0/release-status.json",
       "sha256": "94c81b3b158efc12b500c9cad6d9b7cd921c68ea52a5d11383176ca5f11d8333"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "e09d4be96c9460d10113f1a63f9d08ece78616ee28dee9fccc8def00c446f145"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "c60d3858a55d1575588764cb52b4c57b3e66159d6738b388f6cf28b3625fe5f2"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "1a7d5730c01227b8242e67f8d9f5a0f561b4ec104b8428d865013d65241d87fb"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "sha256": "4b3b160f614af894357733fb1137456f5429d83e336b8b166ce780e209244fee"
+    },
+    {
+      "path": "src/hf_payload/transport/__init__.py",
+      "sha256": "893c53c8ee077cabd100a0152efddf125f15ae2fc06132ae6ea99cf22e04b6eb"
+    },
+    {
+      "path": "src/hf_payload/transport/presentation.py",
+      "sha256": "8135e2a8e6d1e2b6156dcdc55193749d577cdb568f2fdb97a025daa3e21bf5af"
+    },
+    {
+      "path": "tests/test_transport_relocation.py",
+      "sha256": "c67ac90815e1b2f57b8938287864b199fce7839d0ea707831205c331d0a81d97"
+    },
+    {
+      "path": "src/hf_payload/transport/selection_cli.py",
+      "sha256": "36b49daf9748381601359ca0054f9ab086823ef6dd6a56b90824c64a5e6ded7c"
+    },
+    {
+      "path": "tests/test_selection_relocation.py",
+      "sha256": "f84a69864107983a582f9f288bec77a3787b71a26c1b02a66ec8f5e98948403c"
+    },
+    {
+      "path": "manifests/final-v1.1.1.json",
+      "sha256": "13448c8794d7616c73955e99ee352f06f8142c78934e6e070eb6a873e2ffd3d1"
+    },
+    {
+      "path": "docs/RELEASE_PREPARATION.json",
+      "sha256": "fe2f8a82ce349e072d9930fe9ebf9b470f48c9ca0fc34a52307910f834f04ca1"
     }
   ],
   "generated_after_export": [
@@ -718,5 +762,8 @@
     "credentials",
     "state"
   ],
-  "refresh_policy": "Any listed source change invalidates validation. Re-review and regenerate explicitly; do not silently relax the allowlist. This policy is an export integrity control, not authenticated ownership."
+  "refresh_policy": "Any listed source change invalidates validation. Re-review and regenerate explicitly; do not silently relax the allowlist. This policy is an export integrity control, not authenticated ownership.",
+  "source_revision_scope": "MAINTENANCE_1.1.1_SOURCE_PREPARATION_NOT_RELEASE_ARTIFACT",
+  "published_source_archive_sha256": "51e4cf9eeac88739415b190eb0888973e3b3bd9035597844994b0b9786bb7ba4",
+  "published_source_archive_version": "1.1.0"
 }

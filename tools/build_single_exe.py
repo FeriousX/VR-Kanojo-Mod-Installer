@@ -5,13 +5,13 @@ W=Path(__file__).resolve().parents[1];sys.path.insert(0,str(W/'src'));sys.path.i
 from hf_payload.recovery import digest
 from hf_payload.validator import stable_hash
 from hf_payload.real_components import validate_catalog
-p=argparse.ArgumentParser();p.add_argument('--qualification',action='store_true');p.add_argument('--milestone',choices=('B81','B82','RC83','RC1','FINAL100','FINAL110','DEV110'),default='FINAL110');p.add_argument('--python',required=True,help='Explicit qualified Python executable');p.add_argument('--notices',help='Explicit previously qualified complete runtime/component notice directory');p.add_argument('--resources-only',action='store_true',help='Regenerate wrappers/notices only; require identical existing frozen catalog/policy pins');p.add_argument('--runtime-archive',help='Explicit official runtime ZIP for FINAL110');p.add_argument('--runtime-provenance',help='Explicit qualified native provenance JSON for FINAL110');p.add_argument('--attempt',choices=('9D1','9D1A','9D2','9D3A'),default='9D1',help='Separate private development packaging attempt');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--qualification',action='store_true');p.add_argument('--milestone',choices=('B81','B82','RC83','RC1','FINAL100','FINAL110','FINAL111','DEV110'),default='FINAL111');p.add_argument('--python',required=True,help='Explicit qualified Python executable');p.add_argument('--notices',help='Explicit previously qualified complete runtime/component notice directory');p.add_argument('--resources-only',action='store_true',help='Regenerate wrappers/notices only; require identical existing frozen catalog/policy pins');p.add_argument('--runtime-archive',help='Explicit official runtime ZIP for FINAL110');p.add_argument('--runtime-provenance',help='Explicit qualified native provenance JSON for FINAL110');p.add_argument('--attempt',choices=('9D1','9D1A','9D2','9D3A'),default='9D1',help='Separate private development packaging attempt');a=p.parse_args()
 kind='Q8' if a.qualification else a.milestone;OUT=W/'out'/kind;REPORT=W/'out'/('phase9d1' if kind=='DEV110' else 'final-v1.0.0' if kind=='FINAL100' else 'public-rc1' if kind=='RC1' else ('phase8c3' if kind=='RC83' else ('phase8b2' if kind=='B82' else 'phase8b1')));BUILD=W/'build'/kind
-if kind=='FINAL110':
- if a.qualification or a.resources_only or a.attempt!='9D1':raise ValueError('FINAL110 requires its own fresh final build')
+if kind in ('FINAL110','FINAL111'):
+ if a.qualification or a.resources_only or a.attempt!='9D1':raise ValueError(kind+' requires its own fresh final build')
  from release_config import load_final_config
- final_config=load_final_config(W)
- if not a.notices or not a.runtime_archive or not a.runtime_provenance:raise ValueError('FINAL110 requires explicit qualified runtime archive, provenance and notices')
+ final_config=load_final_config(W,'1.1.1' if kind=='FINAL111' else '1.1.0')
+ if not a.notices or not a.runtime_archive or not a.runtime_provenance:raise ValueError(kind+' requires explicit qualified runtime archive, provenance and notices')
  if hashlib.sha256(Path(a.runtime_archive).read_bytes()).hexdigest()!=final_config['runtime_archive_sha256']:raise ValueError('Final runtime archive changed')
  if hashlib.sha256(Path(a.runtime_provenance).read_bytes()).hexdigest()!=final_config['runtime_provenance_sha256']:raise ValueError('Final native provenance changed')
  OUT=W/final_config['bundle_dir'];REPORT=W/final_config['report_dir'];BUILD=W/final_config['build_dir']
@@ -56,14 +56,14 @@ assert digest(catalog)==json.loads((W/'manifests/real-components.review.json').r
 backend=OUT/'Backend'
 if not a.resources_only:
  entry=W/'tools'/('qualification_backend8a.py' if a.qualification else 'portable_backend.py')
- cmd=[str(Path(a.python).resolve(strict=True)),'-I','-m','PyInstaller','--clean','--onedir','--console','--noupx','--name','HFBackend','--paths',str(BUILD),'--paths',str(W/'src'),'--paths',str(W/'tools'),'--exclude-module','tkinter','--exclude-module','unittest','--exclude-module','pip','--exclude-module','setuptools','--distpath',str(OUT),'--workpath',str(BUILD),'--specpath',str(BUILD),str(entry)]
+ cmd=[str(Path(a.python).resolve(strict=True)),'-I','-m','PyInstaller','--clean','--onedir','--console','--noupx','--name','HFBackend','--paths',str(BUILD),'--paths',str(W/'src'),'--paths',str(W/'tools'),'--hidden-import','gui_presentation','--hidden-import','validate_ui_selection','--exclude-module','tkinter','--exclude-module','unittest','--exclude-module','pip','--exclude-module','setuptools','--distpath',str(OUT),'--workpath',str(BUILD),'--specpath',str(BUILD),str(entry)]
  from runtime_build_env import isolated_build_environment
  build_env=isolated_build_environment(a.python,BUILD/'pyinstaller-cache')
  (REPORT/'isolated-build-environment.json').write_text(json.dumps({'PATH':build_env['PATH'],'PYINSTALLER_CONFIG_DIR':build_env['PYINSTALLER_CONFIG_DIR'],'python_environment_removed':True},indent=2))
  with (REPORT/(kind+'-backend-build.log')).open('w') as log:subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT,check=True,cwd=W,env=build_env)
- if kind in ('DEV110','FINAL110'):
+ if kind in ('DEV110','FINAL110','FINAL111'):
   from qualify_native_runtime import qualify
-  qualify(OUT/'HFBackend',Path(a.runtime_archive) if kind=='FINAL110' else Path(a.python).resolve().parent.parent/'python-3.14.10-embed-amd64.zip',Path(a.runtime_provenance) if kind=='FINAL110' else W.parents[1]/'out/phase8c3/runtime-provenance.json',REPORT/'native-runtime-verification.json')
+  qualify(OUT/'HFBackend',Path(a.runtime_archive) if kind in ('FINAL110','FINAL111') else Path(a.python).resolve().parent.parent/'python-3.14.10-embed-amd64.zip',Path(a.runtime_provenance) if kind in ('FINAL110','FINAL111') else W.parents[1]/'out/phase8c3/runtime-provenance.json',REPORT/'native-runtime-verification.json')
  backend=OUT/'Backend';(OUT/'HFBackend').rename(backend);(backend/'PrivateTarget.json').write_text(json.dumps(policy))
  components=backend/'Components';components.mkdir();(components/'catalog.json').write_text(json.dumps(catalog))
  for c in catalog['components']:
@@ -77,7 +77,7 @@ if not a.resources_only:
    if not (notices/required).is_file():raise ValueError('Required qualified notice missing: '+required)
   shutil.copytree(notices,backend/'Notices')
  else:
-  if kind in ('DEV110','FINAL110'):raise ValueError('Qualified build requires the explicit cleared runtime notices')
+  if kind in ('DEV110','FINAL110','FINAL111'):raise ValueError('Qualified build requires the explicit cleared runtime notices')
   shutil.copytree(W/'out/Portable Backend/HFBackend/Notices',backend/'Notices');shutil.copytree(W/'payload/component-review/_notices_reference',backend/'Notices/ComponentReference')
 if kind=='DEV110' and not a.resources_only:
  note=backend/'Notices/ESSENTIAL_COMPONENT_NOTICES.md'
@@ -126,7 +126,7 @@ for i,r in enumerate(resources):
  name=quote(r['path'].replace('/',chr(92)))
  lines+=[f"  ResourceNames[{i}] := '{name}';",f"  ResourceHashes[{i}] := '{r['sha256']}';"]
 lines+=['end;'];(BUILD/'resources.iss').write_text('\n'.join(lines))
-release_defs = ('#define ReleaseVersion "1.1.0"' + chr(10) + '#define ReleaseNumericVersion "1.1.0.0"' + chr(10)) if kind=='FINAL110' else ''
+release_defs = ('#define ReleaseVersion "1.1.1"' + chr(10) + '#define ReleaseNumericVersion "1.1.1.0"' + chr(10)) if kind=='FINAL111' else ('#define ReleaseVersion "1.1.0"' + chr(10) + '#define ReleaseNumericVersion "1.1.0.0"' + chr(10)) if kind in ('FINAL110','DEV110') else ''
 (BUILD/'single.iss').write_text(release_defs+'#define SINGLE_EXE\n#define EmbeddedFiles "'+str(BUILD/'files.iss')+'"\n#define EmbeddedResources "'+str(BUILD/'resources.iss')+'"\n#include "'+str(W/'src/installer/ui-prototype/preview.iss')+'"\n')
 result=dict(kind=kind,scope=scope,bundle=bundle,resources=resources,build=str(BUILD),output=str(OUT),qualification=a.qualification)
 (REPORT/(kind+'-bundle.json')).write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='resources'},indent=2))

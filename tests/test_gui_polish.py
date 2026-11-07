@@ -2,8 +2,8 @@
 import copy,json,sys,unittest
 from pathlib import Path
 from unittest import mock
-w=Path(__file__).resolve().parents[1];sys.path.insert(0,str(w/'tools'))
-from gui_presentation import presentation
+w=Path(__file__).resolve().parents[1];sys.path[:0]=[str(w/'src'),str(w/'tools')]
+from hf_payload.transport.presentation import presentation
 import test_gui_install as existing
 import gui_install as gui
 

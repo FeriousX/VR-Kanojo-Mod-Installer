@@ -1,26 +1,24 @@
-# v1.1.0 build configuration — candidate recipe
+# Build instructions
 
-Use the dedicated **FINAL110** target in manifests/final-v1.1.0.json. Do not use FINAL100 for this release. Phase9E2 prepared this route; Phase9E3 executes it for the local candidate. AppVersion is 1.1.0 and numeric version 1.1.0.0; previous dev.3 remains unchanged.
+Current maintenance source: **v1.1.1**, target **FINAL111**, numeric version **1.1.1.0**. Configuration: [final-v1.1.1.json](../manifests/final-v1.1.1.json). [v1.0.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.0.0) and [v1.1.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0) are published; their assets and historical recipes are preserved. Current artifact identities remain in [RELEASE_ARTIFACTS.json](RELEASE_ARTIFACTS.json); next-source status is [RELEASE_PREPARATION.json](RELEASE_PREPARATION.json).
 
-Qualified inputs: official CPython 3.14.10 Windows x64 archive (SHA-256 90905E64A840557D8C1BC4F5B74DB3D7EE85E3FFB217611CAC1C7813ACEA4159), pinned build-requirements.txt wheels including PyInstaller 6.22.3, signed Inno Setup 7.1.1 x64, exact reviewed payload and preserved notices. No runtime/plugin upgrades. The native gate must match all 18 official DLL/PYD files with no extras. Build environment isolation remains in runtime_build_env.py; no development PATH/native DLL fallback.
+Use the previously qualified official CPython 3.14.10 x64 archive (SHA-256 90905E64A840557D8C1BC4F5B74DB3D7EE85E3FFB217611CAC1C7813ACEA4159), hash-pinned build-requirements wheels including PyInstaller 6.22.3, signed Inno Setup 7.1.1, and exact verified component/notice inputs. No dependency upgrades. Native gate requires exactly 18 approved DLL/PYD files with no extras; isolated build search paths remain enforced.
 
-The maximum component profile is **56 files**, seven approved groups: framework, loader settings, Desktop and four default-off utilities. Restore verified payload bytes separately under payload/<staged_source>; none is taken from the game by the build. Current reference has **107 resource inputs**; final resources/count/bundle must be derived from the actual FINAL110 output, not assumed identical.
+Source checkout intentionally excludes runtime/plugin binaries and toolchain caches. Stage the exact reviewed payload under payload/<staged_source> in a separate build workspace. Maximum profile remains 56 files and four independent default-off utilities. Phase10E measured 109 embedded inputs (107 backend files plus resource manifest/recovery helper); derive actual counts/bundle from a new build, do not assume them.
 
-Rebuild commands, only in an authorized build phase (replace input paths with separately verified local inputs):
+In a separately authorized build phase, with verified explicit local inputs:
 
 ```powershell
-& $ExistingPython -B tools/prepare_official_runtime.py --archive $OfficialPythonZip --wheels $PinnedWheels --destination cache/qualified-python
-$PythonExe = (Resolve-Path cache/qualified-python/python.exe).Path
 & $PythonExe -I -B tools/source_export_plan.py
-& $PythonExe -I -B tools/prepare_final110_notices.py --destination out/final110-notice-inputs
-& $PythonExe -I -B tools/build_single_exe.py --milestone FINAL110 --python $PythonExe --runtime-archive $OfficialPythonZip --runtime-provenance docs/RUNTIME_PROVENANCE_8C3.json --notices out/final110-notice-inputs
-& tools/compile_single_exe.ps1 -Kind FINAL110 -CompilerPath $QualifiedISCC
+& $PythonExe -I -B tools/prepare_final110_notices.py --destination out/final111-notices
+& $PythonExe -I -B tools/build_single_exe.py --milestone FINAL111 --python $PythonExe --runtime-archive $OfficialPythonZip --runtime-provenance docs/RUNTIME_PROVENANCE_8C3.json --notices out/final111-notices
+& tools/compile_single_exe.ps1 -Kind FINAL111 -CompilerPath $QualifiedISCC
 ```
 
-Notice staging refuses an existing destination. Source-plan validation is read-only and does not create a ZIP. FINAL110 requires explicit qualified runtime/notices inputs and a fresh isolated output. Compiler wrapper checks its pinned hash, version and signature, prepared configuration and output overwrite protection. Preserve old artifacts; do not use a final label for dev.3 bytes.
+Notice helper's historical filename is retained; its exact cleared notice behavior is unchanged. Outputs: out/FINAL111, build/FINAL111, out/final-v1.1.1 and out/FinalRelease_v1.1.1/VRK-Mod-Installer-v1.1.1.exe. Compiler hash/signature/version, explicit runtime/notices/catalog pins and artifact overwrite refusals remain required.
 
-Outputs: intermediate bundle out/FINAL110, generated script build/FINAL110/single.iss, logs out/final-v1.1.0, intended EXE out/FinalRelease_v1.1.0/VRK-Mod-Installer-v1.1.0.exe. Matching source ZIP is VRK-Mod-Installer-v1.1.0-Source.zip. After recording/reviewing actual EXE metadata and any intentionally changed source pins, tools/package_source110.py creates the source-only archive and refuses existing output. Its own identity belongs in the external release record, not inside itself. Validate the final resource manifest, source correspondence, licenses, artifact hashes and metadata before publication. No bit-identical rebuild or clean-Windows guarantee is claimed.
+After an actual verified build and intentional source-pin review, the existing source packager supports `python -B tools/package_source110.py --release-version 1.1.1`, producing VRK-Mod-Installer-v1.1.1-Source.zip in the separate version directory. Its historical filename is retained to avoid unrelated relocation. This command creates an archive; it is not run in commit preparation. No EXE/ZIP was generated in Phase10F.1.
 
-The clean export rules are manifests/source-export-rules.json: explicit file list/hashes, no runtime binaries/private state, only reviewed corresponding-source archives. Include a newly generated SOURCE_SHA256SUMS.txt for the actual exported tree. Developer payloads/toolchains remain separate inputs. Never zip the whole workspace.
+The v1.1.0 recipe remains in final-v1.1.0.json. Explicit `--milestone FINAL110`, `-Kind FINAL110`, and `--release-version 1.1.0` retain separate output paths and macro definitions. Existing released outputs must never be overwritten. Read-only `load_final_config(root, '1.1.0')` validates that historical recipe; default selection is 1.1.1. Source-export validation checks the current development tree, not the immutable published v1.1.0 source ZIP.
 
-Application identifiers, plugin GUIDs, protocol/transaction formats, persistent storage and recovery behavior remain unchanged. See SOURCE_PROVENANCE.md, DISTRIBUTION_AUDIT.md and RELEASE_READINESS.md for evidence/limits. Historical build reports are records, not current commands.
+All moved modules and legacy aliases must be present in a future frozen build. Use [testing](TESTING.md) and [source provenance](SOURCE_PROVENANCE.md). A source-validated recipe is not a proven v1.1.1 executable; verify runtime/native/payload/resource/license integrity and version metadata in the next authorized build. No bit-identical, clean-Windows or universal DPI guarantee is claimed. Persistent runtime/transaction paths and formats remain unchanged.

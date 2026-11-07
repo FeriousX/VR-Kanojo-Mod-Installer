@@ -17,7 +17,7 @@ from hf_payload import install_bridge as bridge
 from hf_payload.recovery import canonical, exclusive_bytes, read_json, SafetyError
 from hf_payload.validator import no_links
 from wizard_validate import request_for
-from gui_presentation import presentation
+from hf_payload.transport.presentation import presentation
 from hf_payload.runtime_paths import workspace
 
 WORKSPACE=workspace()

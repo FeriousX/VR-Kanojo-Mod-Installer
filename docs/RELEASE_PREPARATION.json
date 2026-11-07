@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "version": "1.1.1",
+  "status": "SOURCE_PREPARED",
+  "published": false,
+  "artifact_built": false,
+  "build_kind": "FINAL111",
+  "exe_name": "VRK-Mod-Installer-v1.1.1.exe",
+  "source_name": "VRK-Mod-Installer-v1.1.1-Source.zip",
+  "exe_sha256": null,
+  "source_sha256": null,
+  "release_page": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases",
+  "published_artifact_record": "RELEASE_ARTIFACTS.json",
+  "tested_reference": {
+    "version": "1.1.0-Phase10E-LOCAL-TEST",
+    "filename": "VRK-Mod-Installer-v1.1.0-Phase10E-LOCAL-TEST.exe",
+    "bytes": 11135199,
+    "sha256": "9409B0299E0F75A7A9952B456A47ED0B8BE0C8ACD2A53E92F9613ACEF86F0620",
+    "owner_installation_and_gameplay": "PASS_OWNER_REPORTED",
+    "evidence": "Owner Phase10F.1 statement: installation and gameplay confirmed working in original VR Kanojo v1.31; not independently repeated.",
+    "automated_reference": {
+      "regression": 324,
+      "focused": 43,
+      "wizard_static": 17,
+      "differential_cases": 932,
+      "packaged_checks": 161
+    }
+  },
+  "qualification": {
+    "recovery_retest": "NOT_VERIFIED",
+    "additional_dpi": "NOT_VERIFIED",
+    "stock_windows": "NOT_VERIFIED",
+    "unsigned": true
+  },
+  "build_requirement": "v1.1.1 metadata/build routing is source-validated only; actual v1.1.1 build/packaging must be verified separately.",
+  "no_installer_behavior_change": true
+}

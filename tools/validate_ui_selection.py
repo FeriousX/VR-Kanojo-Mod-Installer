@@ -1,30 +1,16 @@
-"""Independent stdin/stdout adapter. No game path, payload path or execution options."""
-import json
-from pathlib import Path
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from hf_payload.ui_adapter import new_fixture, validate_selection, response_template
-from hf_payload.validator import unique_pairs
+"""Compatibility entry point for the relocated stdin/stdout selection adapter."""
+import sys as _sys
+from pathlib import Path as _Path
 
+if not getattr(_sys, 'frozen', False):
+    _source = str(_Path(__file__).resolve().parents[1] / 'src')
+    if _source not in _sys.path:
+        _sys.path.insert(0, _source)
 
-def main():
-    raw = sys.stdin.buffer.read(16385)
-    try:
-        if len(raw) > 16384: raise ValueError('request exceeds 16 KiB')
-        request = json.loads(raw, object_pairs_hook=unique_pairs,
-                             parse_constant=lambda _: (_ for _ in ()).throw(ValueError('nonfinite JSON')))
-    except (ValueError, RecursionError) as exc:
-        result = response_template()
-        result.update(summary='Invalid request: ' + str(exc), conflicts=[{'code':'INVALID_JSON','message':str(exc)}])
-        print(json.dumps(result))
-        return 2
-    # These declarations cover only the newly authored fixture text, never HF/game assets.
-    area = new_fixture()
-    result = validate_selection(request, area, dict(profile='synthetic', compatibility=True,
-                                licensing=True, provenance=True, mapping=True))
-    result['fixture_id'] = area.path.name
-    print(json.dumps(result, indent=2))
-    return 0 if result['status'] == 'valid' else 2
+import hf_payload.transport.selection_cli as _implementation
 
-
-if __name__ == '__main__': sys.exit(main())
+if __name__ == '__main__':
+    _sys.exit(_implementation.main())
+else:
+    # One module object preserves original exported names and patched globals.
+    _sys.modules[__name__] = _implementation

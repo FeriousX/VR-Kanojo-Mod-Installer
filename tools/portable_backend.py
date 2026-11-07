@@ -8,7 +8,7 @@ import private_gui_install
 import real_gui_install
 import gui_install
 import synthetic_install
-import validate_ui_selection
+from hf_payload.transport import selection_cli as validate_ui_selection
 
 
 def main():
