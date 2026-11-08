@@ -1,11 +1,11 @@
 # Changelog
 
-## v1.1.1 — maintenance source changes
+## [v1.1.1](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.1) — released 2026-11-07
 
 - Improved repository/documentation navigation and clarified actual architecture and published-version records.
 - Separated presentation and selection CLI transport implementations into the runtime package, preserving compatibility entry points and existing behavior.
 - Aligned import, source-export and packaging checks; retained component hashes, licenses, consent, backups and recovery formats.
-- Phase10E local installer installation/gameplay passed by owner report on VR Kanojo v1.31. Other qualification gaps remain; see [preparation metadata](docs/RELEASE_PREPARATION.json).
+- FINAL111 built and locally verified, then manually tested by the owner and published as a full release. Unsigned; manual recovery retesting, extra DPI and stock Windows remain unverified. See [release metadata](docs/RELEASE_PREPARATION.json).
 
 ## [v1.1.0](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0) — released 2026-11-07
 

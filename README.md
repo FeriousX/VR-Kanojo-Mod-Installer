@@ -4,7 +4,7 @@ Maintained by **FeriousX** | [Repository](https://github.com/FeriousX/VR-Kanojo-
 
 A self-contained Windows installer for the plugin framework and optional desktop controls in **original VR Kanojo (2018)**. Independently maintained and based on ManlyMarco's GPL-licensed VR Kanojo HF Patch installer. This is not an official game update or a complete replacement for every feature in the historical HF Patch.
 
-Download the current installer and matching source from the **[official releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases)**. [Publication records](docs/RELEASE_ARTIFACTS.json) preserve verified artifact identities; publication and testing qualification are separate.
+Download the current installer and matching source from the **[published v1.1.1 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.1)**. [Publication records](docs/RELEASE_ARTIFACTS.json) preserve verified artifact identities; publication and testing qualification are separate.
 
 The owner reports core installation/gameplay, all four optional mods and the Components-page footer correction working. Recovery retest, additional DPI settings and clean stock Windows are **NOT VERIFIED**. Earlier confirmed testing used Windows X-Lite Optimum (modified Windows 11 Pro x64); other Windows configurations are not independently qualified. The installer is **unsigned** and uses a bundled runtime, with no separately installed Python required. See [release readiness](docs/RELEASE_READINESS.md).
 
@@ -92,4 +92,4 @@ Project source is GPL-3.0; inherited files retain their original notices, includ
 - [Third-party licenses and notices](THIRD_PARTY_NOTICES.md) and [license audit](docs/license-audit.csv).
 - [Contribution guidance](CONTRIBUTING.md).
 
-The owner also confirmed installation and gameplay with the Phase10E architecture-maintenance local test on original VR Kanojo v1.31. This is owner-reported evidence, not a claim that all recovery, DPI or stock-Windows tests passed. See [maintenance source metadata](docs/RELEASE_PREPARATION.json).
+The owner reports manual testing of published v1.1.1; earlier Phase10E installation/gameplay evidence remains historical. These are owner reports, not independent recovery, DPI or stock-Windows passes. See [release metadata](docs/RELEASE_PREPARATION.json).

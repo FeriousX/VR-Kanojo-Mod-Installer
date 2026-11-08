@@ -12,10 +12,14 @@ Existing essential/native provenance and exact notices remain authoritative: ESS
 
 ## Post-release documentation boundary
 
-Phase10C changed documentation/publication metadata; Phase10C1 aligns the active development source-export pins and release tests. Neither phase rebuilds or replaces published artifacts. The active `manifests/source-export-rules.json` describes the reviewed post-release development source, explicitly separate from the immutable published v1.1.0 ZIP.
+Phase10C changed documentation/publication metadata; Phase10C1 aligns the active development source-export pins and release tests. Neither phase rebuilds or replaces published artifacts. The active `manifests/source-export-rules.json` describes the reviewed post-release development source, explicitly separate from the immutable published v1.1.0/v1.1.1 ZIPs.
 
-The root `SOURCE_SHA256SUMS.txt` remains the historical pre-cleanup inventory, not a checksum list for current documentation. Published v1.0.0/v1.1.0 archives and their embedded inventories/checksums remain untouched. Use the read-only `tools/source_export_plan.py` to validate the active list; it does not export files or create a ZIP. A future source package needs its own source revision/inventory and must not overwrite the published archive.
+The root `SOURCE_SHA256SUMS.txt` remains the historical pre-cleanup inventory, not a checksum list for current documentation. Published v1.0.0/v1.1.0/v1.1.1 archives and their embedded inventories/checksums remain untouched. Use the read-only `tools/source_export_plan.py` to validate the active list; it does not export files or create a ZIP. A future source package needs its own source revision/inventory and must not overwrite the published archive.
 
 Release tests distinguish current PUBLISHED metadata, historical unpublished candidate/development identities and the immutable FINAL110 build-time recipe. All path/hash/archive-provenance exclusions remain enforced. See [test guide](TESTING.md).
 
 Phase10F.1 prepares v1.1.1 source/build metadata only, after owner-reported installation/gameplay success with the exact Phase10E local test. The active export list is explicitly marked as v1.1.1 development source and includes both relocated modules and compatibility imports. Historical root SOURCE_SHA256SUMS.txt, v1.0.0/v1.1.0 source inventories and released archives remain unchanged; a current development checksum plan is saved in the external commit-preparation report directory. No new source archive is generated here.
+
+## Published v1.1.1 boundary
+
+Phase10F.2 generated the exact published EXE and corresponding-source ZIP from 185 reviewed inputs plus its generated checksum inventory. Phase10G updates only current documentation/metadata, directly affected tests and active export pins. These post-release bytes must not be represented as the contents of the published ZIP. Its historical embedded inventory, tag commit and complete archive identity remain immutable. v1.1.1 is published and owner-tested; no new package is generated here. Source/build recipes retain their original `published: false` build-time constraint, not a current publication declaration.

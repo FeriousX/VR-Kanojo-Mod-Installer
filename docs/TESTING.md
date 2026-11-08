@@ -30,4 +30,4 @@ Record exact command, case count, input/source revision and failures. Keep owner
 
 ## v1.1.1 source preparation
 
-The active recipe defaults to FINAL111/version 1.1.1. Tests separately validate the immutable FINAL110/version 1.1.0 recipe and published v1.0.0/v1.1.0 identities. Both relocated transports/legacy imports remain covered. Source tests and PowerShell parsing do not prove that new version routing has compiled; no EXE/ZIP is generated in commit preparation. The owner's Phase10E installation/gameplay pass remains separate from unverified recovery/DPI/stock-Windows coverage.
+The active recipe defaults to FINAL111/version 1.1.1. Tests separately validate the immutable FINAL110/version 1.1.0 recipe and published v1.0.0/v1.1.0 identities. Both relocated transports/legacy imports remain covered. Phase10F.2 subsequently built FINAL111: 326 regression, 17 wizard, 932 differential, 161 frozen and 201 packaging checks passed. These are historical build-time results; Phase10G results are recorded separately. v1.1.1 is published and manually tested by owner report; independent recovery/DPI/stock-Windows coverage remains incomplete.

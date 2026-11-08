@@ -20,7 +20,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "95c04ff522ba10edfd0fb13b83626928af79b5fe4e344d56a27ecffa7933a927"
+      "sha256": "47a75f72d8c135e1b4105a534a80d5090dd0ba0819c7ce38ced85ee5db545f52"
     },
     {
       "path": "CREDITS.md",
@@ -32,11 +32,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "d371f63c6a5626164c7c726a7de1c6465d209b61fc05f04578b1b88b4be55be8"
+      "sha256": "909dfb6a2f9b4e84d744ce6300516b42d110aef8cc3129479d2ffb9d2a50253c"
     },
     {
       "path": "RELEASE_NOTES.md",
-      "sha256": "9a70d7269edf3c0591d982c3524c5e880cd6f41f7d1da96cbd32306dc1eeae92"
+      "sha256": "81bb298b24ceb837f66b64d3a70a8b040dc48373fa60ae2f165fcf2b242712da"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -48,7 +48,7 @@
     },
     {
       "path": "docs/BUILDING.md",
-      "sha256": "0ecaa89291cdd8f9d702f4f7bb478d1be83c6e064f9f5d1c9398d18120105db7"
+      "sha256": "0edaf952aa6d53416afbee2c8ccfc63b8fa08ab15d61bf6026c4d17f305dfa48"
     },
     {
       "path": "docs/CLEAN_WINDOWS_TESTING.md",
@@ -56,7 +56,7 @@
     },
     {
       "path": "docs/DISTRIBUTION_AUDIT.md",
-      "sha256": "162ab8a290778252d78fc1c18b3ff952b536c8ff44e091f2993fc2c522f02a50"
+      "sha256": "a549b820d8dae98f9e62bc62f32eae35063b0b857c8c9986239daf1a34589d07"
     },
     {
       "path": "docs/EMBEDDED_FILE_INVENTORY.json",
@@ -88,11 +88,11 @@
     },
     {
       "path": "docs/RELEASE_ARTIFACTS.json",
-      "sha256": "6f30bda53a22be320195f7aec6507f90d9704910564a3c9be210ddc603d97270"
+      "sha256": "27e18b939c04f26c0dd16d0b751166fdb6ec67cfd78ece469cf6170ca63ff39f"
     },
     {
       "path": "docs/RELEASE_READINESS.md",
-      "sha256": "db665e7f07da91077b6157c5eeac2f105a1fb48d0ad8ac24cf2a8e2f0d60203b"
+      "sha256": "8612f15136367d054a05d09a838507100a2adcbad009aa8bde7b9c3867c47b25"
     },
     {
       "path": "docs/RUNTIME_3_14_10_NOTICE_EVIDENCE.json",
@@ -108,7 +108,7 @@
     },
     {
       "path": "docs/SOURCE_PROVENANCE.md",
-      "sha256": "9a0ec3a1879d560a9eb5950f7572541f03b36071089985eb01663306d29550d4"
+      "sha256": "8c90932e4ed48fe551a91ad015ccc3fd457386628d67c7421af1c02755e57f5f"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -152,11 +152,11 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "5086871e7abc17da3565cf430307c0ff6267e14ebe40e4895baed05e78c8a577"
+      "sha256": "c9e13391eb1b8009590b10dfcd3af13762e2858a8ecc84a789f03d709c135075"
     },
     {
       "path": "release-status.json",
-      "sha256": "77c4a4ce13bc9cf6b25de89ab5d7af3f9fb80c630ff15c0488e4712b74c0ab5d"
+      "sha256": "20b2af68d967f950de731487f323fe2e478b0b0fbbdb8fb1523803375f48996e"
     },
     {
       "path": "src/hf_payload/__init__.py",
@@ -316,7 +316,7 @@
     },
     {
       "path": "tests/test_release_sync_9e2.py",
-      "sha256": "051c8ad2c45ec90bb79729aa946d8a3ed1395b139b002099b84c41300f839fe1"
+      "sha256": "46b962f5bef985f0a1ede9f8edb838f08d1b667467f77074326c160ddf916314"
     },
     {
       "path": "tests/test_runtime_packaging_9d1a.py",
@@ -708,15 +708,15 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "c60d3858a55d1575588764cb52b4c57b3e66159d6738b388f6cf28b3625fe5f2"
+      "sha256": "0ee5d510f39e1331b029aa0680e13d3b4555ef021c7a13d8046c32d93817cc94"
     },
     {
       "path": "docs/README.md",
-      "sha256": "1a7d5730c01227b8242e67f8d9f5a0f561b4ec104b8428d865013d65241d87fb"
+      "sha256": "b941213ade6185c3d506a867eb93e6fa9bc4ee1fe558b5bae3bf32a1f07c41f3"
     },
     {
       "path": "docs/TESTING.md",
-      "sha256": "4b3b160f614af894357733fb1137456f5429d83e336b8b166ce780e209244fee"
+      "sha256": "fc0f506806aa6f8ac995878d2a199084a8c95324d6f3b86260768e08eca0e1c4"
     },
     {
       "path": "src/hf_payload/transport/__init__.py",
@@ -744,6 +744,18 @@
     },
     {
       "path": "docs/RELEASE_PREPARATION.json",
+      "sha256": "1ab19c0f992ea4374d8cd741fbc9f5f5a2091c18c5f79fda66b1e65e3b5e2635"
+    },
+    {
+      "path": "docs/history/v1.1.0/RELEASE_ARTIFACTS.json",
+      "sha256": "6f30bda53a22be320195f7aec6507f90d9704910564a3c9be210ddc603d97270"
+    },
+    {
+      "path": "docs/history/v1.1.0/POST_PHASE10F1_STATUS.json",
+      "sha256": "77c4a4ce13bc9cf6b25de89ab5d7af3f9fb80c630ff15c0488e4712b74c0ab5d"
+    },
+    {
+      "path": "docs/history/v1.1.1/SOURCE_PREPARATION.json",
       "sha256": "fe2f8a82ce349e072d9930fe9ebf9b470f48c9ca0fc34a52307910f834f04ca1"
     }
   ],
@@ -763,7 +775,7 @@
     "state"
   ],
   "refresh_policy": "Any listed source change invalidates validation. Re-review and regenerate explicitly; do not silently relax the allowlist. This policy is an export integrity control, not authenticated ownership.",
-  "source_revision_scope": "MAINTENANCE_1.1.1_SOURCE_PREPARATION_NOT_RELEASE_ARTIFACT",
-  "published_source_archive_sha256": "51e4cf9eeac88739415b190eb0888973e3b3bd9035597844994b0b9786bb7ba4",
-  "published_source_archive_version": "1.1.0"
+  "source_revision_scope": "POST_RELEASE_1.1.1_DOCUMENTATION_NOT_PUBLISHED_ARCHIVE",
+  "published_source_archive_sha256": "93f75b8ad7d1a60b19940b2f7251256887fc1422835e3f9c23c5f4390dca427c",
+  "published_source_archive_version": "1.1.1"
 }

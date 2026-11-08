@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "status": "PUBLISHED",
   "published": true,
   "current_source_built": false,
@@ -7,10 +7,9 @@
   "release_qualified": false,
   "recommendation": "PUBLISHED_WITH_DOCUMENTED_QUALIFICATION_LIMITATIONS",
   "owner_reported_testing": {
-    "source": "Owner Phase9E1 report, recorded 2026-11-07; not independently repeated",
+    "source": "Owner Phase10G statement: v1.1.1 manually tested; not independently repeated. No additional per-feature or recovery/DPI/stock-Windows results supplied.",
+    "manual_release_test": "PASS_OWNER_REPORTED",
     "core_installation_and_gameplay": "PASS_OWNER_REPORTED",
-    "four_optional_mods": "WORKING_OWNER_REPORTED",
-    "footer_fix": "PASS_OWNER_VISUALLY_VERIFIED",
     "recovery_retest": "NOT_VERIFIED",
     "additional_dpi": "NOT_VERIFIED",
     "clean_windows": "NOT_VERIFIED"
@@ -33,28 +32,21 @@
     "regression_tests_passed": 290,
     "static_checks_passed": 41
   },
-  "field_meaning": "Owner statements are recorded separately; false independent flags mean this audit did not independently perform those checks. Publication fields describe the verified current GitHub release. publication_approval and prior audit/recommendation fields are historical Phase9E3 audit values, not a claim that the owner has not published. current_source_built describes the current maintenance working source (new v1.1.1 labels have not been built); final_build_performed and final_exe fields retain the published v1.1.0 build facts. The top-level publication fields describe public v1.1.0; next_release describes prepared v1.1.1 source only. The Phase10E local test pass is an owner statement, not independent or complete qualification.",
-  "final_exe_sha256": "0DE92037A58E3525478F33D87648FA44E028AC7B6E14E51CD71962B2943FE921",
-  "final_exe_bytes": 11133966,
+  "field_meaning": "Top-level publication/build/artifact fields describe published v1.1.1. Owner tests are separate from unchanged false independent flags. release_qualified remains false because documented qualification gaps remain. current_source_built=false refers only to the post-release documentation revision, not the verified published EXE. publication_approval and prior audit fields retain historical Phase9E3 values, not a denial of completed owner publication. Historical source/preparation and v1.1.0 publication records are preserved explicitly.",
+  "final_exe_sha256": "3ADB28B1B7D7B60F38605DC634F7CC7267B140C55BDD03213AB3CE2491CCEB3D",
+  "final_exe_bytes": 11134965,
   "source_zip_identity": "PUBLISHED_IDENTITY_IN_docs/RELEASE_ARTIFACTS.json",
-  "final_gui_test": "NOT_PERFORMED",
+  "final_gui_test": "PASS_OWNER_REPORTED",
   "publication_approval": "NOT_GRANTED",
   "source_zip_creation_status": "PUBLISHED_VERIFIED_ARCHIVE_UNCHANGED",
-  "release_url": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0",
-  "published_at": "2026-11-07T18:10:54Z",
+  "release_url": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.1",
+  "published_at": "2026-11-07T21:33:41Z",
   "draft": false,
   "prerelease": false,
-  "publication_evidence_url": "https://api.github.com/repos/FeriousX/VR-Kanojo-Mod-Installer/releases/tags/v1.1.0",
-  "publication_verified_on": "2026-11-07",
+  "publication_evidence_url": "https://api.github.com/repos/FeriousX/VR-Kanojo-Mod-Installer/releases/437857513",
+  "publication_verified_on": "2026-11-08",
   "artifact_record": "docs/RELEASE_ARTIFACTS.json",
   "historical_recommendation": "CONDITIONAL_GO_FOR_FINAL_PREPARATION",
-  "next_release": {
-    "version": "1.1.1",
-    "status": "SOURCE_PREPARED",
-    "published": false,
-    "artifact_built": false,
-    "metadata": "docs/RELEASE_PREPARATION.json"
-  },
   "phase10E_owner_testing": {
     "version": "1.1.0-Phase10E-LOCAL-TEST",
     "filename": "VRK-Mod-Installer-v1.1.0-Phase10E-LOCAL-TEST.exe",
@@ -69,5 +61,10 @@
       "differential_cases": 932,
       "packaged_checks": 161
     }
-  }
+  },
+  "release_tag_commit": "81bc721ad1a881e4819941cc3be6def2001bc775",
+  "source_zip_sha256": "93F75B8AD7D1A60B19940B2F7251256887FC1422835E3F9C23C5F4390DCA427C",
+  "source_zip_bytes": 586520,
+  "historical_status_record": "docs/history/v1.1.0/POST_PHASE10F1_STATUS.json",
+  "current_source_status": "POST_RELEASE_DOCUMENTATION_ONLY_NOT_REBUILT"
 }

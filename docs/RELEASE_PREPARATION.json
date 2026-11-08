@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "version": "1.1.1",
-  "status": "SOURCE_PREPARED",
-  "published": false,
-  "artifact_built": false,
+  "status": "PUBLISHED",
+  "published": true,
+  "artifact_built": true,
   "build_kind": "FINAL111",
   "exe_name": "VRK-Mod-Installer-v1.1.1.exe",
   "source_name": "VRK-Mod-Installer-v1.1.1-Source.zip",
-  "exe_sha256": null,
-  "source_sha256": null,
-  "release_page": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases",
+  "exe_sha256": "3ADB28B1B7D7B60F38605DC634F7CC7267B140C55BDD03213AB3CE2491CCEB3D",
+  "source_sha256": "93F75B8AD7D1A60B19940B2F7251256887FC1422835E3F9C23C5F4390DCA427C",
+  "release_page": "https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.1",
   "published_artifact_record": "RELEASE_ARTIFACTS.json",
   "tested_reference": {
     "version": "1.1.0-Phase10E-LOCAL-TEST",
@@ -32,6 +32,33 @@
     "stock_windows": "NOT_VERIFIED",
     "unsigned": true
   },
-  "build_requirement": "v1.1.1 metadata/build routing is source-validated only; actual v1.1.1 build/packaging must be verified separately.",
-  "no_installer_behavior_change": true
+  "build_requirement": "FINAL111 built and verified in Phase10F.2; current post-release documentation differs from the immutable published source ZIP. No rebuild performed in Phase10G.",
+  "no_installer_behavior_change": true,
+  "locally_verified": true,
+  "published_at": "2026-11-07T21:33:41Z",
+  "release_tag_commit": "81bc721ad1a881e4819941cc3be6def2001bc775",
+  "owner_reported_testing": {
+    "source": "Owner Phase10G statement: v1.1.1 manually tested; not independently repeated. No additional per-feature or recovery/DPI/stock-Windows results supplied.",
+    "manual_release_test": "PASS_OWNER_REPORTED",
+    "core_installation_and_gameplay": "PASS_OWNER_REPORTED",
+    "recovery_retest": "NOT_VERIFIED",
+    "additional_dpi": "NOT_VERIFIED",
+    "clean_windows": "NOT_VERIFIED"
+  },
+  "historical_preparation_record": "history/v1.1.1/SOURCE_PREPARATION.json",
+  "automated_build_verification": {
+    "phase": "10F.2",
+    "regression": 326,
+    "wizard_static": 17,
+    "differential_cases": 932,
+    "frozen_checks": 161,
+    "packaging_checks": 201,
+    "final_checks": 783,
+    "evidence": "Verified Phase10F.2 reports; historical build-time counts, not Phase10G reruns."
+  },
+  "exe_bytes": 11134965,
+  "source_bytes": 586520,
+  "checksum_name": "SHA256SUMS.txt",
+  "checksum_bytes": 197,
+  "checksum_sha256": "D8EEC86C4977CCA966D01C034D882C38601E831D78437881C3BB29BBC40A303D"
 }

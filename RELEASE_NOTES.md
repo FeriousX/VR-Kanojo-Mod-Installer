@@ -1,12 +1,12 @@
 # Release notes
 
-## v1.1.1 maintenance changes
+## [v1.1.1](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.1) — published November 7, 2026
 
-This maintenance source carries the Phase10 documentation/navigation corrections and the two targeted runtime transport moves, with compatibility imports preserved. Existing component versions/selections, installer behavior, consent, hashes, backups and recovery formats are unchanged. See [architecture](docs/ARCHITECTURE.md), [build guide](docs/BUILDING.md) and [preparation record](docs/RELEASE_PREPARATION.json).
+This maintenance release carries the Phase10 documentation/navigation corrections and the two targeted runtime transport moves, with compatibility imports preserved. Existing component versions/selections, installer behavior, consent, hashes, backups and recovery formats are unchanged. See [architecture](docs/ARCHITECTURE.md), [build guide](docs/BUILDING.md) and [preparation record](docs/RELEASE_PREPARATION.json).
 
-The owner reports successful Phase10E local-test installation and gameplay in original VR Kanojo v1.31. This evidence applies to that exact local test (11,135,199 bytes; SHA-256 9409B0299E0F75A7A9952B456A47ED0B8BE0C8ACD2A53E92F9613ACEF86F0620), not a newly built v1.1.1 installer. Manual recovery retest, extra DPI and stock Windows remain unverified; unsigned status remains.
+FINAL111 was freshly built and locally verified in Phase10F.2; the owner reports manual testing of v1.1.1. Published November 7, 2026 at 21:33:41 UTC, tag commit `81bc721ad1a881e4819941cc3be6def2001bc775`. Exact EXE/source/checksum identities are in [published artifacts](docs/RELEASE_ARTIFACTS.json). Earlier Phase10E owner testing remains separate historical evidence. Manual recovery retest, extra DPI and stock Windows remain unverified; unsigned status remains.
 
-Use the [official releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases) for actual published downloads. Source preparation is not publication.
+Use the [official releases](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases) for actual published downloads. All three versions, v1.0.0, v1.1.0 and v1.1.1, are published full releases; publication does not establish independent testing qualification.
 
 ## v1.1.0 — published November 7, 2026
 
@@ -28,6 +28,6 @@ Selected optional mods carry their exact licensing notices/source materials. Mut
 
 Owner reports core installation/gameplay, all four optional mods and footer fix passed. Recovery retest, additional DPI and stock Windows remain NOT VERIFIED; previous confirmed environment is Windows X-Lite Optimum (modified Windows 11 Pro x64). Unsigned; no universal compatibility or guaranteed power-loss/hostile-race recovery claim. No separately installed Python is needed by the bundled implementation.
 
-Published as a full [v1.1.0 GitHub Release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0) on November 7, 2026 (18:10:54 UTC). The published EXE and corresponding-source ZIP match the measured Phase9E3 identities; see [artifact metadata](docs/RELEASE_ARTIFACTS.json).
+Published as a full [v1.1.0 GitHub Release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0) on November 7, 2026 (18:10:54 UTC). The published EXE and corresponding-source ZIP match the measured Phase9E3 identities; see [historical v1.1.0 artifact metadata](docs/history/v1.1.0/RELEASE_ARTIFACTS.json).
 
 Publication is verified separately from testing. Historical packaging evidence remains in [Phase9E3 verification](docs/V1.1.0_PACKAGE_VERIFICATION.md); it records observations at build time, not current publication status. This documentation update performed no new installer, gameplay or independent recovery/DPI/stock-Windows tests.

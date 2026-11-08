@@ -16,3 +16,7 @@ Excluded: Original Play Without VR, XUnity Common/Resource Redirector, Uncensor 
 Official CPython 3.14.10 x64 + PyInstaller 6.22.3 are unchanged. Native provenance still requires exactly 18 approved native files; no development-collected UCRT/API-set DLLs. The final build needs explicit qualified runtime archive, native provenance and notices. Phase9E3 ran these gates; see the external final verification record.
 
 The full [v1.1.0 release](https://github.com/FeriousX/VR-Kanojo-Mod-Installer/releases/tag/v1.1.0) is published. Complete published EXE/source/checksum identities are in [RELEASE_ARTIFACTS.json](RELEASE_ARTIFACTS.json); historical build verification remains unchanged. Public source uses explicit clean export rules; private recovery data and game/payload binaries are excluded. Owner-reported passes are separate from unverified recovery retest, additional DPI and stock Windows. Unsigned status remains. See RELEASE_ARTIFACTS.json, EMBEDDED_FILE_INVENTORY.json, SOURCE_PROVENANCE.md and RELEASE_READINESS.md.
+
+## v1.1.1 publication
+
+The same approved component/license scope was retained in published v1.1.1. Phase10F.2 measured 109 total embedded inputs (107 backend files plus manifest/recovery helper), 56 component mappings and 18 native files. These are build-input measurements, not independent extraction of the final Inno EXE. Current identities are in RELEASE_ARTIFACTS.json; earlier FINAL110 observations above remain historical. No payload change or new licensing clearance is introduced by this metadata update.
